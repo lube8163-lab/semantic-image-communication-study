@@ -1,0 +1,232 @@
+{
+  "selection_salt": "semantic-communication-E004-v1",
+  "method": "Sort by SHA256(salt + image_id), take first two per existing evaluation keyword category before captioning or generation. Original categories are metadata heuristics.",
+  "category_source": "Previously acquired public-image evaluation cohort, unknown training overlap; not a newly sampled benchmark holdout.",
+  "metadata_url": "https://storage.googleapis.com/openimages/2018_04/validation/validation-images-with-rotation.csv",
+  "categories": {
+    "people": {
+      "candidates": [
+        {
+          "id": "07cdb16d66edeacb",
+          "selection_sha256": "3fa66a6097e115dc402c9368d62115be721d8d5f475c3b8930780626af434657"
+        },
+        {
+          "id": "67e67c811336e94b",
+          "selection_sha256": "5069e8d6756f57b75a3aae8f8c27ff9b97208bd69d9cbe1ae1292f7ea497f3f0"
+        },
+        {
+          "id": "19e3e69835151951",
+          "selection_sha256": "537fedf1020558d8f1114a53c1ed1da7f648f3ec52dd85a12fa8ec888ea17efa"
+        },
+        {
+          "id": "b944766c0f0f70b5",
+          "selection_sha256": "54e9d91eab9dd4a37c5b61c67c4d1fe3068a2d355b461a6db8bfb41d00521114"
+        },
+        {
+          "id": "d332f09da51a0970",
+          "selection_sha256": "5b81896fb261d8e188fb26d7df37be56c795ca587284204bcbfca2c0c85186a6"
+        },
+        {
+          "id": "5f67c35b00841fca",
+          "selection_sha256": "70d66b6ceaf97a432a185a1270b6590c98aabb0954f78eef0f46f22a2346915d"
+        },
+        {
+          "id": "1a2ecf83645336ce",
+          "selection_sha256": "739801b53fb11c831c9cc27cc2329a232df2c7d40f3dcb4191c5f78472945d61"
+        },
+        {
+          "id": "0f425a184b11200d",
+          "selection_sha256": "7439161501614223328e5ada17bce202aab88800fa7b46b9453441a26cd58023"
+        },
+        {
+          "id": "58530b01b352ee40",
+          "selection_sha256": "7e544bee085dc165dbf749cffdf76b368bd30bf57745e60fbfe9f5417dfe340f"
+        },
+        {
+          "id": "ce83958e97337334",
+          "selection_sha256": "a5293541a1054b05ed01a0bd7134022fe3d5c84a0d15bfdce6c6e3431e155a00"
+        },
+        {
+          "id": "84c1b6ccee2ad317",
+          "selection_sha256": "ddfd07943de3c63ec8b9a50670c2abe70fce334648faf5fce286acfc229ed139"
+        },
+        {
+          "id": "ee83804213ffc4ab",
+          "selection_sha256": "fd0a901589738aaa5ee8a61b12a0dfefedfc60e35634eee3c0c88003d490a17e"
+        }
+      ],
+      "selected": [
+        "07cdb16d66edeacb",
+        "67e67c811336e94b"
+      ]
+    },
+    "animals": {
+      "candidates": [
+        {
+          "id": "79083da149309142",
+          "selection_sha256": "016f6683a37b17a07901ea4ee53b792639b334ed3e5d8ea6da2c8c8992b131c3"
+        },
+        {
+          "id": "f5f2decfd4122750",
+          "selection_sha256": "30bcfcdfd10d508154dd71b7ba735d79bcd67f47727ff94bd884a5d9ac5521b5"
+        },
+        {
+          "id": "b419e040a014bb51",
+          "selection_sha256": "3dcaf8de0a8d9a69a8793d565d58e4620f1ec09defb9535dfee864efc506c53e"
+        },
+        {
+          "id": "d56de062ba07c186",
+          "selection_sha256": "4fd3bfd508ea72b743475b6c3ef44d3e308da985bef24220bfa6a3a60f033f8c"
+        },
+        {
+          "id": "df1b5d92341b82ce",
+          "selection_sha256": "8d42f86cfb3c2ae668608b9fb92d2117e53330501f8e12635461fa0afa27f9db"
+        },
+        {
+          "id": "8983ddc9076db444",
+          "selection_sha256": "9cc599a83981209c0804e6d2019eb751ed693b776469809e69fee5240216a2b5"
+        },
+        {
+          "id": "013a1c3dd211f9e7",
+          "selection_sha256": "ac6651720c5fa9521b7ad7ae7fbdbd38eb4f81a0e908d1606a867cb768e8eba4"
+        },
+        {
+          "id": "3919d586f70be9c4",
+          "selection_sha256": "b1af4e62ee251bcce4836a088acc560766e4d1e63cf59df39de04ea474166596"
+        },
+        {
+          "id": "82e5bdfa040010d7",
+          "selection_sha256": "bf1dd38168484f584c946dded69724b4bb587b4367ff8b93ade35eeab046cb1a"
+        },
+        {
+          "id": "4aa4edb45d204d96",
+          "selection_sha256": "d4f05da82bea25da1cd2f76dcf0274f061fa85281dca81fb0c8bbe790227e656"
+        },
+        {
+          "id": "57a79840e636bb18",
+          "selection_sha256": "e5c196392c3e4dc1fce5586211c13c47973be3e9fa128fa89cb2997df32a232e"
+        },
+        {
+          "id": "530db650d26ebcde",
+          "selection_sha256": "f97b9373d41fe4a0e2be2f7a60d2532bb8655a05e8a14ca00f69ddc740013ed6"
+        }
+      ],
+      "selected": [
+        "79083da149309142",
+        "f5f2decfd4122750"
+      ]
+    },
+    "objects_food": {
+      "candidates": [
+        {
+          "id": "a158e89a4415eb57",
+          "selection_sha256": "0b0167ccf62f051fc2de62421659b17a4dc15fe7ca130dd7bf153fcf8cdc7806"
+        },
+        {
+          "id": "e84c2f66a5963a9a",
+          "selection_sha256": "0e05189be8a61e22c966584aa547a8071604e412c04f5427e8e46743ec2a47a6"
+        },
+        {
+          "id": "2d17881734e7ee32",
+          "selection_sha256": "2003a414f14a66abf72a360c3a2dd61bbac25de93eb1efd07e37bf9410b9663d"
+        },
+        {
+          "id": "8c16ecec4cb6049f",
+          "selection_sha256": "203a3bc19f53fcdf8f5952f81c0e8b6da8f2f586e8a5f477d3a6aabf57532786"
+        },
+        {
+          "id": "398bcbc860e7f631",
+          "selection_sha256": "2fc4e2668782e74b8d05c7616ec306b2a097b93c96a96a987fba30eb7516b2d5"
+        },
+        {
+          "id": "2efc03661e7c4e60",
+          "selection_sha256": "55f759c0b231ad51427a7156a476eb3dbf7c93549e37834e83323c618fb22338"
+        },
+        {
+          "id": "fadb65dfa4deba70",
+          "selection_sha256": "657eb0e7fed4396114fe7553835e276c563a5ca23d493f3b0bb9e5b30e178c89"
+        },
+        {
+          "id": "c6953dd3dadb0646",
+          "selection_sha256": "972a474ba98d0159cb78979bd9bbbf79874a1a15e8376a8b39ff2f14258a6df6"
+        },
+        {
+          "id": "65fa0e3ecb5175c6",
+          "selection_sha256": "a121d6ebb36a92d43431eafdcaae66108747b10f5cd8a40e1be26150a64edadf"
+        },
+        {
+          "id": "780a4baa7c50d6e8",
+          "selection_sha256": "ae1a1459099170884613456491e3499c95910c67e2b4ec8f6c31cf734f4790e7"
+        },
+        {
+          "id": "be51f7840abc3b89",
+          "selection_sha256": "ca97bc3d13e26939f075332ae1b9dc1b7894f1e1891bdeec78d5bb5ec27b9e06"
+        },
+        {
+          "id": "851915865432c9b9",
+          "selection_sha256": "f1d18ab7663852d864afda559a71a93bfe852b9fd1f5f29f6bdb5b6577ea099f"
+        }
+      ],
+      "selected": [
+        "a158e89a4415eb57",
+        "e84c2f66a5963a9a"
+      ]
+    },
+    "landscape_buildings": {
+      "candidates": [
+        {
+          "id": "05430da00e88b5f9",
+          "selection_sha256": "4c9b10871e73f9212547e61fe73c82d97ecf49453a75e957ef36e36884bddeb8"
+        },
+        {
+          "id": "56e803d5e8c580e0",
+          "selection_sha256": "62cd8f4c8efa77a18b4ccd781ad2f308f684afb4607069e1bafb4e3858e6b676"
+        },
+        {
+          "id": "5d827ffd2c956a34",
+          "selection_sha256": "788de54ad927d57a17dd7ebe8a53f20eae4f060022e0d27ca06208d51414e439"
+        },
+        {
+          "id": "dd49cf137ccc9707",
+          "selection_sha256": "95a7aefd3ae62c91740740267d94c788188e43ece2358a184ffb2b8e601390cb"
+        },
+        {
+          "id": "da2b7cb2ba402ff4",
+          "selection_sha256": "a0a380b899cd72d62fff84856e3a4a3026bbb4ad711f6a53b98905e2527b4fc4"
+        },
+        {
+          "id": "dfc00511f6703aa0",
+          "selection_sha256": "b098ba437e18e8d2649735006b5acbe03e3eb92d3b844f45391a526bea0cafe2"
+        },
+        {
+          "id": "a95a0ee95f54f833",
+          "selection_sha256": "b4645fcf105b0ae5388aade4071db7fa94a9b59515af704c22024aa1f81a6d43"
+        },
+        {
+          "id": "bc31189f3656ff4a",
+          "selection_sha256": "b8176ffa1a946340c2dac63d488d22c7f8c57d5be8a84bb6028936063e085d67"
+        },
+        {
+          "id": "219811b23b6d2a99",
+          "selection_sha256": "d425b4541dfa76abeae3aee068cf9d9bbdc99b266dec2f27a9837a8fbbebb7a4"
+        },
+        {
+          "id": "51b249c59af97a00",
+          "selection_sha256": "dc51da5356ff55a2e04ef8ed72924dc86cb8578cd1db29c2babae41393e7477c"
+        },
+        {
+          "id": "07a678b5ff150db6",
+          "selection_sha256": "ed9cecf49fc904d663b8a919be2ec7e725f0513fd47d662a5ee2cb2e2cf9e2e1"
+        },
+        {
+          "id": "f0cfedabc5c6d615",
+          "selection_sha256": "fce28deeeb9ffcc2b2f379ecd2600a1170e260c33c5c0f4710b91e18302ba99e"
+        }
+      ],
+      "selected": [
+        "05430da00e88b5f9",
+        "56e803d5e8c580e0"
+      ]
+    }
+  }
+}
