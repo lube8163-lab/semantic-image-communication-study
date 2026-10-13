@@ -1,0 +1,32 @@
+{
+  "published_date": "2026-10-14",
+  "status": "published",
+  "zenn_article": "https://zenn.dev/lube8163/articles/594bea1c0f8397",
+  "repository": "https://github.com/lube8163-lab/semantic-image-communication-study",
+  "article_and_results_site": "https://lube8163-lab.github.io/semantic-image-communication-study/",
+  "branch": "main",
+  "measured_artifact_source_commit": "20f5cdc96d6e4950eefb5dafb4382a99eea3d53d",
+  "verified_build_and_deploy_run": "https://github.com/lube8163-lab/semantic-image-communication-study/actions/runs/38441286934",
+  "verification": {
+    "public_artifact_verifier": "passed locally and GitHub Actions Linux",
+    "unit_tests_passed": 11,
+    "output_and_exact_packet_hash_pairs": 176,
+    "measurement_rows": 459,
+    "photo_aggregate_values_recomputed": 30,
+    "local_report_references": 464,
+    "live_site_http_resources_checked": 11,
+    "live_result_resources_match_git_blobs": 8,
+    "zenn_unauthenticated_http_status": 200
+  },
+  "redistribution": {
+    "model_weights": false,
+    "environments_and_dependencies": false,
+    "raw_host_logs": false,
+    "high_dimensional_feature_or_text_caches": false,
+    "binary_feature_packets": false,
+    "normalized_attributed_inputs": 13,
+    "raw_captions": 78,
+    "native_generated_images": 176
+  },
+  "limitations": "Exploratory 11-photo cohort, unknown training overlap, native10 primary / 3-photo native40 check, no100-step run, no trained feature decoder, no real channel. Public portability adapter has not been fully rerun on a second clean PC."
+}

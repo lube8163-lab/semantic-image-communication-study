@@ -1,6 +1,6 @@
 # Semantic image communication: features vs. text
 
-[日本語のまとめ記事](https://lube8163-lab.github.io/semantic-image-communication-study/) · [記事のMarkdown](articles/semantic-image-communication-study.md) · [全条件の画像レポート](results/text-route-20261013/report.html) · [画像の出典](ASSETS.md)
+[Zennのまとめ記事](https://zenn.dev/lube8163/articles/594bea1c0f8397) · [記事と画像比較サイト](https://lube8163-lab.github.io/semantic-image-communication-study/) · [記事のMarkdown](articles/semantic-image-communication-study.md) · [全条件の画像レポート](results/text-route-20261013/report.html) · [画像の出典](ASSETS.md)
 
 Exploratory, untrained research harness comparing frozen Iris-3B intermediate-feature replay with image → VLM text → image reconstruction. This is a small local feasibility study, not a trained compression codec or a held-out benchmark.
 
