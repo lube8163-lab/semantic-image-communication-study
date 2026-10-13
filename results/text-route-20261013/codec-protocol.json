@@ -1,0 +1,31 @@
+{
+  "at": "2026-10-13T15:31:45.304372+00:00",
+  "role": "Secondary source-fidelity diagnostic; added before regeneration, does not change caption/generator arms",
+  "resolutions": [
+    256,
+    128,
+    96,
+    64,
+    48,
+    32,
+    24,
+    16,
+    8
+  ],
+  "qualities": [
+    0,
+    5,
+    10,
+    20,
+    40,
+    60,
+    80,
+    95
+  ],
+  "selection": "Highest source PSNR among finite candidate grid fitting the complete actual text-packet byte ceiling, chosen by sender; no oracle source access at receiver",
+  "primary_mode": "fixed256",
+  "additional_mode": "adaptive_resolution, to avoid confusing a 256px encoding-size failure with a codec's ability to send a small thumbnail",
+  "records": 312,
+  "completed": 146,
+  "not_fit": 166
+}

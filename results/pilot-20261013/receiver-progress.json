@@ -1,0 +1,454 @@
+{
+  "rows": [
+    {
+      "packet": "astronaut_s0.1_full_fp16_none.zip",
+      "output": "astronaut_s0.1_full_fp16_none.png",
+      "packet_bytes": 1199644,
+      "receiver_seconds": 0.12533989999792539,
+      "side_information": "shared noise only; clean image assumed zero",
+      "original_image_access": false,
+      "precision": "fp16_autocast",
+      "telemetry": {
+        "at": "2026-10-13T08:42:40.805023+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12203, 36, 42.43, 9",
+        "torch_peak_allocated_bytes": 12176394240,
+        "torch_peak_reserved_bytes": 12387876864
+      }
+    },
+    {
+      "packet": "astronaut_s0.1_full_fp16_thumb64.zip",
+      "output": "astronaut_s0.1_full_fp16_thumb64.png",
+      "packet_bytes": 1202569,
+      "receiver_seconds": 0.008707600005436689,
+      "side_information": "transmitted 64x64 JPEG and shared noise",
+      "original_image_access": false,
+      "precision": "fp16_autocast",
+      "telemetry": {
+        "at": "2026-10-13T08:42:40.884528+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12205, 37, 43.98, 9",
+        "torch_peak_allocated_bytes": 12178360320,
+        "torch_peak_reserved_bytes": 12389974016
+      }
+    },
+    {
+      "packet": "astronaut_s0.1_full_int8_none.zip",
+      "output": "astronaut_s0.1_full_int8_none.png",
+      "packet_bytes": 608423,
+      "receiver_seconds": 0.008582999995269347,
+      "side_information": "shared noise only; clean image assumed zero",
+      "original_image_access": false,
+      "precision": "fp16_autocast",
+      "telemetry": {
+        "at": "2026-10-13T08:42:40.964530+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12205, 37, 42.92, 8",
+        "torch_peak_allocated_bytes": 12178360320,
+        "torch_peak_reserved_bytes": 12389974016
+      }
+    },
+    {
+      "packet": "astronaut_s0.1_pool2_int4_thumb64.zip",
+      "output": "astronaut_s0.1_pool2_int4_thumb64.png",
+      "packet_bytes": 16762,
+      "receiver_seconds": 0.008595799998147413,
+      "side_information": "transmitted 64x64 JPEG and shared noise",
+      "original_image_access": false,
+      "precision": "fp16_autocast",
+      "telemetry": {
+        "at": "2026-10-13T08:42:41.044035+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12205, 37, 43.11, 8",
+        "torch_peak_allocated_bytes": 12178360320,
+        "torch_peak_reserved_bytes": 12389974016
+      }
+    },
+    {
+      "packet": "astronaut_s0.1_pool4_int4_none.zip",
+      "output": "astronaut_s0.1_pool4_int4_none.png",
+      "packet_bytes": 27146,
+      "receiver_seconds": 0.00849960000050487,
+      "side_information": "shared noise only; clean image assumed zero",
+      "original_image_access": false,
+      "precision": "fp16_autocast",
+      "telemetry": {
+        "at": "2026-10-13T08:42:41.108540+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12205, 37, 43.69, 15",
+        "torch_peak_allocated_bytes": 12178360320,
+        "torch_peak_reserved_bytes": 12389974016
+      }
+    },
+    {
+      "packet": "astronaut_s0.1_pool4_int4_thumb64.zip",
+      "output": "astronaut_s0.1_pool4_int4_thumb64.png",
+      "packet_bytes": 30071,
+      "receiver_seconds": 0.008542700001271442,
+      "side_information": "transmitted 64x64 JPEG and shared noise",
+      "original_image_access": false,
+      "precision": "fp16_autocast",
+      "telemetry": {
+        "at": "2026-10-13T08:42:41.188046+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12205, 37, 42.92, 15",
+        "torch_peak_allocated_bytes": 12178360320,
+        "torch_peak_reserved_bytes": 12389974016
+      }
+    },
+    {
+      "packet": "blue_square_right_s0.1_full_fp16_none.zip",
+      "output": "blue_square_right_s0.1_full_fp16_none.png",
+      "packet_bytes": 1225014,
+      "receiver_seconds": 0.008573599996452685,
+      "side_information": "shared noise only; clean image assumed zero",
+      "original_image_access": false,
+      "precision": "fp16_autocast",
+      "telemetry": {
+        "at": "2026-10-13T08:42:41.268048+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12205, 37, 43.01, 11",
+        "torch_peak_allocated_bytes": 12178360320,
+        "torch_peak_reserved_bytes": 12389974016
+      }
+    },
+    {
+      "packet": "blue_square_right_s0.1_full_fp16_thumb64.zip",
+      "output": "blue_square_right_s0.1_full_fp16_thumb64.png",
+      "packet_bytes": 1225824,
+      "receiver_seconds": 0.008586900003137998,
+      "side_information": "transmitted 64x64 JPEG and shared noise",
+      "original_image_access": false,
+      "precision": "fp16_autocast",
+      "telemetry": {
+        "at": "2026-10-13T08:42:41.347551+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12205, 37, 43.30, 11",
+        "torch_peak_allocated_bytes": 12178360320,
+        "torch_peak_reserved_bytes": 12389974016
+      }
+    },
+    {
+      "packet": "blue_square_right_s0.1_full_int8_none.zip",
+      "output": "blue_square_right_s0.1_full_int8_none.png",
+      "packet_bytes": 636009,
+      "receiver_seconds": 0.00855289999890374,
+      "side_information": "shared noise only; clean image assumed zero",
+      "original_image_access": false,
+      "precision": "fp16_autocast",
+      "telemetry": {
+        "at": "2026-10-13T08:42:41.427057+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12205, 37, 42.92, 10",
+        "torch_peak_allocated_bytes": 12178360320,
+        "torch_peak_reserved_bytes": 12389974016
+      }
+    },
+    {
+      "packet": "blue_square_right_s0.1_pool2_int4_thumb64.zip",
+      "output": "blue_square_right_s0.1_pool2_int4_thumb64.png",
+      "packet_bytes": 15219,
+      "receiver_seconds": 0.008601400004408788,
+      "side_information": "transmitted 64x64 JPEG and shared noise",
+      "original_image_access": false,
+      "precision": "fp16_autocast",
+      "telemetry": {
+        "at": "2026-10-13T08:42:41.508562+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12205, 37, 42.92, 10",
+        "torch_peak_allocated_bytes": 12178360320,
+        "torch_peak_reserved_bytes": 12389974016
+      }
+    },
+    {
+      "packet": "blue_square_right_s0.1_pool4_int4_none.zip",
+      "output": "blue_square_right_s0.1_pool4_int4_none.png",
+      "packet_bytes": 29157,
+      "receiver_seconds": 0.008551500002795365,
+      "side_information": "shared noise only; clean image assumed zero",
+      "original_image_access": false,
+      "precision": "fp16_autocast",
+      "telemetry": {
+        "at": "2026-10-13T08:42:41.586068+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12205, 37, 42.82, 10",
+        "torch_peak_allocated_bytes": 12178360320,
+        "torch_peak_reserved_bytes": 12389974016
+      }
+    },
+    {
+      "packet": "blue_square_right_s0.1_pool4_int4_thumb64.zip",
+      "output": "blue_square_right_s0.1_pool4_int4_thumb64.png",
+      "packet_bytes": 29967,
+      "receiver_seconds": 0.008588400000007823,
+      "side_information": "transmitted 64x64 JPEG and shared noise",
+      "original_image_access": false,
+      "precision": "fp16_autocast",
+      "telemetry": {
+        "at": "2026-10-13T08:42:41.666069+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12205, 37, 42.92, 10",
+        "torch_peak_allocated_bytes": 12178360320,
+        "torch_peak_reserved_bytes": 12389974016
+      }
+    },
+    {
+      "packet": "chelsea_s0.1_full_fp16_none.zip",
+      "output": "chelsea_s0.1_full_fp16_none.png",
+      "packet_bytes": 1191573,
+      "receiver_seconds": 0.008573899998737033,
+      "side_information": "shared noise only; clean image assumed zero",
+      "original_image_access": false,
+      "precision": "fp16_autocast",
+      "telemetry": {
+        "at": "2026-10-13T08:42:41.745573+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12205, 37, 43.11, 10",
+        "torch_peak_allocated_bytes": 12178360320,
+        "torch_peak_reserved_bytes": 12389974016
+      }
+    },
+    {
+      "packet": "chelsea_s0.1_full_fp16_thumb64.zip",
+      "output": "chelsea_s0.1_full_fp16_thumb64.png",
+      "packet_bytes": 1193675,
+      "receiver_seconds": 0.008531699997547548,
+      "side_information": "transmitted 64x64 JPEG and shared noise",
+      "original_image_access": false,
+      "precision": "fp16_autocast",
+      "telemetry": {
+        "at": "2026-10-13T08:42:41.825079+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12205, 37, 43.50, 10",
+        "torch_peak_allocated_bytes": 12178360320,
+        "torch_peak_reserved_bytes": 12389974016
+      }
+    },
+    {
+      "packet": "chelsea_s0.1_full_int8_none.zip",
+      "output": "chelsea_s0.1_full_int8_none.png",
+      "packet_bytes": 617539,
+      "receiver_seconds": 0.008563700001104735,
+      "side_information": "shared noise only; clean image assumed zero",
+      "original_image_access": false,
+      "precision": "fp16_autocast",
+      "telemetry": {
+        "at": "2026-10-13T08:42:41.904584+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12205, 37, 42.92, 10",
+        "torch_peak_allocated_bytes": 12178360320,
+        "torch_peak_reserved_bytes": 12389974016
+      }
+    },
+    {
+      "packet": "chelsea_s0.1_pool2_int4_thumb64.zip",
+      "output": "chelsea_s0.1_pool2_int4_thumb64.png",
+      "packet_bytes": 15863,
+      "receiver_seconds": 0.008582800001022406,
+      "side_information": "transmitted 64x64 JPEG and shared noise",
+      "original_image_access": false,
+      "precision": "fp16_autocast",
+      "telemetry": {
+        "at": "2026-10-13T08:42:41.984090+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12205, 37, 43.21, 10",
+        "torch_peak_allocated_bytes": 12178360320,
+        "torch_peak_reserved_bytes": 12389974016
+      }
+    },
+    {
+      "packet": "chelsea_s0.1_pool4_int4_none.zip",
+      "output": "chelsea_s0.1_pool4_int4_none.png",
+      "packet_bytes": 27038,
+      "receiver_seconds": 0.008563799994590227,
+      "side_information": "shared noise only; clean image assumed zero",
+      "original_image_access": false,
+      "precision": "fp16_autocast",
+      "telemetry": {
+        "at": "2026-10-13T08:42:42.064091+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12205, 37, 42.92, 10",
+        "torch_peak_allocated_bytes": 12178360320,
+        "torch_peak_reserved_bytes": 12389974016
+      }
+    },
+    {
+      "packet": "chelsea_s0.1_pool4_int4_thumb64.zip",
+      "output": "chelsea_s0.1_pool4_int4_thumb64.png",
+      "packet_bytes": 29140,
+      "receiver_seconds": 0.008573999999498483,
+      "side_information": "transmitted 64x64 JPEG and shared noise",
+      "original_image_access": false,
+      "precision": "fp16_autocast",
+      "telemetry": {
+        "at": "2026-10-13T08:42:42.159597+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12205, 37, 42.62, 10",
+        "torch_peak_allocated_bytes": 12178360320,
+        "torch_peak_reserved_bytes": 12389974016
+      }
+    },
+    {
+      "packet": "coffee_s0.1_full_fp16_none.zip",
+      "output": "coffee_s0.1_full_fp16_none.png",
+      "packet_bytes": 1200256,
+      "receiver_seconds": 0.008728799999516923,
+      "side_information": "shared noise only; clean image assumed zero",
+      "original_image_access": false,
+      "precision": "fp16_autocast",
+      "telemetry": {
+        "at": "2026-10-13T08:42:42.255101+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12205, 37, 42.63, 10",
+        "torch_peak_allocated_bytes": 12178360320,
+        "torch_peak_reserved_bytes": 12389974016
+      }
+    },
+    {
+      "packet": "coffee_s0.1_full_fp16_thumb64.zip",
+      "output": "coffee_s0.1_full_fp16_thumb64.png",
+      "packet_bytes": 1202875,
+      "receiver_seconds": 0.008619300002465025,
+      "side_information": "transmitted 64x64 JPEG and shared noise",
+      "original_image_access": false,
+      "precision": "fp16_autocast",
+      "telemetry": {
+        "at": "2026-10-13T08:42:42.366607+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12205, 37, 42.53, 10",
+        "torch_peak_allocated_bytes": 12178360320,
+        "torch_peak_reserved_bytes": 12389974016
+      }
+    },
+    {
+      "packet": "coffee_s0.1_full_int8_none.zip",
+      "output": "coffee_s0.1_full_int8_none.png",
+      "packet_bytes": 611203,
+      "receiver_seconds": 0.008581499998399522,
+      "side_information": "shared noise only; clean image assumed zero",
+      "original_image_access": false,
+      "precision": "fp16_autocast",
+      "telemetry": {
+        "at": "2026-10-13T08:42:42.462112+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12205, 37, 42.53, 10",
+        "torch_peak_allocated_bytes": 12178360320,
+        "torch_peak_reserved_bytes": 12389974016
+      }
+    },
+    {
+      "packet": "coffee_s0.1_pool2_int4_thumb64.zip",
+      "output": "coffee_s0.1_pool2_int4_thumb64.png",
+      "packet_bytes": 16409,
+      "receiver_seconds": 0.008588700002292171,
+      "side_information": "transmitted 64x64 JPEG and shared noise",
+      "original_image_access": false,
+      "precision": "fp16_autocast",
+      "telemetry": {
+        "at": "2026-10-13T08:42:42.540616+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12205, 37, 43.21, 10",
+        "torch_peak_allocated_bytes": 12178360320,
+        "torch_peak_reserved_bytes": 12389974016
+      }
+    },
+    {
+      "packet": "coffee_s0.1_pool4_int4_none.zip",
+      "output": "coffee_s0.1_pool4_int4_none.png",
+      "packet_bytes": 27351,
+      "receiver_seconds": 0.008539099995687138,
+      "side_information": "shared noise only; clean image assumed zero",
+      "original_image_access": false,
+      "precision": "fp16_autocast",
+      "telemetry": {
+        "at": "2026-10-13T08:42:42.620121+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12205, 37, 42.82, 10",
+        "torch_peak_allocated_bytes": 12178360320,
+        "torch_peak_reserved_bytes": 12389974016
+      }
+    },
+    {
+      "packet": "coffee_s0.1_pool4_int4_thumb64.zip",
+      "output": "coffee_s0.1_pool4_int4_thumb64.png",
+      "packet_bytes": 29970,
+      "receiver_seconds": 0.008615400001872331,
+      "side_information": "transmitted 64x64 JPEG and shared noise",
+      "original_image_access": false,
+      "precision": "fp16_autocast",
+      "telemetry": {
+        "at": "2026-10-13T08:42:42.699628+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12205, 37, 43.11, 10",
+        "torch_peak_allocated_bytes": 12178360320,
+        "torch_peak_reserved_bytes": 12389974016
+      }
+    },
+    {
+      "packet": "red_circle_left_s0.1_full_fp16_none.zip",
+      "output": "red_circle_left_s0.1_full_fp16_none.png",
+      "packet_bytes": 1225180,
+      "receiver_seconds": 0.00859929999569431,
+      "side_information": "shared noise only; clean image assumed zero",
+      "original_image_access": false,
+      "precision": "fp16_autocast",
+      "telemetry": {
+        "at": "2026-10-13T08:42:42.780133+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12205, 37, 43.01, 10",
+        "torch_peak_allocated_bytes": 12178360320,
+        "torch_peak_reserved_bytes": 12389974016
+      }
+    },
+    {
+      "packet": "red_circle_left_s0.1_full_fp16_thumb64.zip",
+      "output": "red_circle_left_s0.1_full_fp16_thumb64.png",
+      "packet_bytes": 1226085,
+      "receiver_seconds": 0.008603000002040062,
+      "side_information": "transmitted 64x64 JPEG and shared noise",
+      "original_image_access": false,
+      "precision": "fp16_autocast",
+      "telemetry": {
+        "at": "2026-10-13T08:42:42.860134+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12205, 37, 43.40, 10",
+        "torch_peak_allocated_bytes": 12178360320,
+        "torch_peak_reserved_bytes": 12389974016
+      }
+    },
+    {
+      "packet": "red_circle_left_s0.1_full_int8_none.zip",
+      "output": "red_circle_left_s0.1_full_int8_none.png",
+      "packet_bytes": 621121,
+      "receiver_seconds": 0.008551699997042306,
+      "side_information": "shared noise only; clean image assumed zero",
+      "original_image_access": false,
+      "precision": "fp16_autocast",
+      "telemetry": {
+        "at": "2026-10-13T08:42:42.936638+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12205, 37, 43.21, 10",
+        "torch_peak_allocated_bytes": 12178360320,
+        "torch_peak_reserved_bytes": 12389974016
+      }
+    },
+    {
+      "packet": "red_circle_left_s0.1_pool2_int4_thumb64.zip",
+      "output": "red_circle_left_s0.1_pool2_int4_thumb64.png",
+      "packet_bytes": 15303,
+      "receiver_seconds": 0.00857710000127554,
+      "side_information": "transmitted 64x64 JPEG and shared noise",
+      "original_image_access": false,
+      "precision": "fp16_autocast",
+      "telemetry": {
+        "at": "2026-10-13T08:42:43.016144+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12205, 37, 42.92, 10",
+        "torch_peak_allocated_bytes": 12178360320,
+        "torch_peak_reserved_bytes": 12389974016
+      }
+    },
+    {
+      "packet": "red_circle_left_s0.1_pool4_int4_none.zip",
+      "output": "red_circle_left_s0.1_pool4_int4_none.png",
+      "packet_bytes": 29187,
+      "receiver_seconds": 0.008543700001609977,
+      "side_information": "shared noise only; clean image assumed zero",
+      "original_image_access": false,
+      "precision": "fp16_autocast",
+      "telemetry": {
+        "at": "2026-10-13T08:42:43.095650+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12205, 37, 42.92, 10",
+        "torch_peak_allocated_bytes": 12178360320,
+        "torch_peak_reserved_bytes": 12389974016
+      }
+    },
+    {
+      "packet": "red_circle_left_s0.1_pool4_int4_thumb64.zip",
+      "output": "red_circle_left_s0.1_pool4_int4_thumb64.png",
+      "packet_bytes": 30092,
+      "receiver_seconds": 0.008578500004659873,
+      "side_information": "transmitted 64x64 JPEG and shared noise",
+      "original_image_access": false,
+      "precision": "fp16_autocast",
+      "telemetry": {
+        "at": "2026-10-13T08:42:43.175155+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12205, 37, 43.01, 10",
+        "torch_peak_allocated_bytes": 12178360320,
+        "torch_peak_reserved_bytes": 12389974016
+      }
+    }
+  ]
+}

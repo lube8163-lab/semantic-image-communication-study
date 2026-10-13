@@ -1,0 +1,30 @@
+{
+  "experiment": "E004-text-route-20261013-native10",
+  "selection_salt": "semantic-communication-E004-v1",
+  "public_photos_per_category": 2,
+  "models": ["qwen4b", "minicpm", "lfm16"],
+  "budgets": {
+    "compact": {"max_words": 40, "max_new_tokens": 192},
+    "detailed": {"max_words": 100, "max_new_tokens": 384}
+  },
+  "seeds": [20261013, 20261014],
+  "input_width": 256,
+  "input_height": 256,
+  "width": 1024,
+  "height": 1024,
+  "evaluation_width": 256,
+  "evaluation_height": 256,
+  "steps": 10,
+  "refinement_check": {"steps": 40, "case_ids": ["astronaut", "coffee", "chelsea"], "seed": 20261013, "protocol": "E004-text-route-20261013-native40"},
+  "order": 2,
+  "cfg_scale": 3.0,
+  "cfg_interval": [0.0, 1.0],
+  "shift": 4.0,
+  "negative_prompt": "",
+  "precision": "Iris BF16 parameters and network autocast on RTX5070, FP32 integrator, cuDNN SDPA on unmasked trunk/PiT, standard masked SDPA on text refiner; VLM and receiver text language stack FP16 on V100",
+  "caption_language": "English",
+  "caption_decoding": "greedy, repetition_penalty=1.05, native photo preprocessing",
+  "communication": "UTF8 JSON packet containing prompt, seed, resolution and immutable decoder protocol id. Model revisions are shared protocol assets; no image or image-conditioned hidden states at receiver.",
+  "evaluation": "CLIP image cosine, DINOv2 image cosine, PSNR and MAE separately; visual review of counts, shape, color and layout. Average seeds within each image before paired image bootstrap. Synthetic controls excluded from photo aggregate.",
+  "limitations": "Exploratory 11-photo cohort; known examples and unknown training overlap. Native 1024px sampling at 10 steps is below the official 100-step recommendation; 40-step check on three predefined photos only. Outputs downsampled to 256px for matching sources and feature pilot. Word targets requested rather than edited; actual bytes recorded. Initial feature-head diagnostic uses a different decoder, compute and byte budget."
+}

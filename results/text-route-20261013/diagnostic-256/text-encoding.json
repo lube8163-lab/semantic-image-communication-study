@@ -1,0 +1,2372 @@
+[
+  {
+    "key": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "model": "empty_control",
+    "case_id": "empty_control",
+    "budget": "empty",
+    "prompt": "",
+    "at": "2026-10-13T15:10:30.786557+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 0,
+    "encoding_seconds": 0.3065701000014087,
+    "sha256": "df6ae2340839ae3466b5a72bd7c45ae680afc2a8c0b0d19689f144b3116cbc31",
+    "file": "text-embeddings/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/empty-20261013.json",
+        "bytes": 92,
+        "sha256": "dd7c134f6c09686f03e172312ac11e43fc5e4eb1648b2bba5ef76a8b2e161341",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/empty-20261014.json",
+        "bytes": 92,
+        "sha256": "1ce40ca639434dc1f7ef4e5aab36085ed94ee2b43f0bffd828d937f830353531",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "a68e3861b8625fe3218c94b1b160b669dfd7141ffdd53b9b0f04edeabe608b78",
+    "model": "qwen4b",
+    "case_id": "astronaut",
+    "budget": "compact",
+    "prompt": "A woman in an orange spacesuit smiles, holding a black helmet. Behind her: American flag on left, white rocket with brown nose cone on right. Framed photograph.",
+    "at": "2026-10-13T15:10:31.121087+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 35,
+    "encoding_seconds": 0.09815799999341834,
+    "sha256": "2b50836c9d9ed1fe7da95e2b472aacc5a53f03965f29091851dfd22bf6406bbc",
+    "file": "text-embeddings/a68e3861b8625fe3218c94b1b160b669dfd7141ffdd53b9b0f04edeabe608b78.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/qwen4b-compact-astronaut-20261013.json",
+        "bytes": 252,
+        "sha256": "d3949f5fcdc3b977dad1049d07178ce12182738f60f2074ff6bf6cb7084caa09",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/qwen4b-compact-astronaut-20261014.json",
+        "bytes": 252,
+        "sha256": "53c912520f37737603502308bc23937b335f45c9809d82914b2d6c848263209d",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "0744b0883de3de1f36de05634a123ffe03d85ce6a842cb84e54570db68a180a8",
+    "model": "qwen4b",
+    "case_id": "astronaut",
+    "budget": "detailed",
+    "prompt": "A woman in an orange spacesuit with a helmet stands smiling, holding a black helmet. Behind her, an American flag is to the left, and a white rocket with a brown nose cone stands to the right. The background is a neutral gray wall. The suit has patches, including one with a blue and white design. The scene is framed as a studio photograph.",
+    "at": "2026-10-13T15:10:31.245601+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 74,
+    "encoding_seconds": 0.09862970000540372,
+    "sha256": "8fa48ac2f99d57d960598de682a22723adc9b6690bc9b5894681117d99f70511",
+    "file": "text-embeddings/0744b0883de3de1f36de05634a123ffe03d85ce6a842cb84e54570db68a180a8.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/qwen4b-detailed-astronaut-20261013.json",
+        "bytes": 433,
+        "sha256": "c049ea074870bba498cd728f1536d1c0dd5afc304500512b685b8ea96f42e2bc",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/qwen4b-detailed-astronaut-20261014.json",
+        "bytes": 433,
+        "sha256": "b3805cf8e38ce54abe9c93734b16b979096d9006a30f05f8a6aef35026666820",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "d75317314f62df970a363d5a5b0385316aadaf42f5ccb12df7c7afe5cbbcf5d0",
+    "model": "qwen4b",
+    "case_id": "coffee",
+    "budget": "compact",
+    "prompt": "Red ceramic cup with espresso sits on matching saucer. Silver spoon rests beside it. Wooden table background. Top-down view. No people present.",
+    "at": "2026-10-13T15:10:31.369623+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 29,
+    "encoding_seconds": 0.09771089999412652,
+    "sha256": "ac45132e1e84cc184b564a6dcb0d39ebaa437bb50583a613a71a652e23196a5c",
+    "file": "text-embeddings/d75317314f62df970a363d5a5b0385316aadaf42f5ccb12df7c7afe5cbbcf5d0.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/qwen4b-compact-coffee-20261013.json",
+        "bytes": 235,
+        "sha256": "059140f414ef61c742de2718120ce700b84a0724b5115906bf9671602f75df45",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/qwen4b-compact-coffee-20261014.json",
+        "bytes": 235,
+        "sha256": "afe81b88fc0c8adc4fb5ccde5fb3a9492ee0c5bfd2728c657e065fdb17c11c2a",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "2768575f86bf1c470383a8f64cf58fe2710afc3a41712ea3ec7e7315eedf9fbf",
+    "model": "qwen4b",
+    "case_id": "coffee",
+    "budget": "detailed",
+    "prompt": "A red ceramic espresso cup with a handle sits on a matching saucer. A silver spoon rests beside it. The cup contains amber-brown espresso. The scene is on a wooden surface. The cup is centered, slightly left of the saucer’s edge. Lighting casts soft shadows. No other objects are visible. The image appears photographic.",
+    "at": "2026-10-13T15:10:31.494128+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 68,
+    "encoding_seconds": 0.09742950000509154,
+    "sha256": "759b4467d6e56eeeef55f76784886a7c57f0ce4cb2f853d9afc86577625f3dd1",
+    "file": "text-embeddings/2768575f86bf1c470383a8f64cf58fe2710afc3a41712ea3ec7e7315eedf9fbf.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/qwen4b-detailed-coffee-20261013.json",
+        "bytes": 414,
+        "sha256": "ed366efd49823727051ef14002814fccdd0f80e08c6019fd2c11da7ae206b8f3",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/qwen4b-detailed-coffee-20261014.json",
+        "bytes": 414,
+        "sha256": "2106bb467f4dbf350c0f10f55c772354041ca6350f8bfae5f2270dcbdc5bd0fa",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "8a65c7e12f0bd0dfa91a033c49e2182f42a75e9293e89f762ced7db477c98911",
+    "model": "qwen4b",
+    "case_id": "chelsea",
+    "budget": "compact",
+    "prompt": "Close-up of a tabby cat’s face. Large green eyes, orange-brown fur with stripes, pink nose, white whiskers. Framed tightly, no background visible.",
+    "at": "2026-10-13T15:10:31.618639+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 36,
+    "encoding_seconds": 0.10220249999838416,
+    "sha256": "2722ace39f2341650046ba715443496f32e3b701e790fe75795cfda7ddc61388",
+    "file": "text-embeddings/8a65c7e12f0bd0dfa91a033c49e2182f42a75e9293e89f762ced7db477c98911.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/qwen4b-compact-chelsea-20261013.json",
+        "bytes": 240,
+        "sha256": "3e7263b8b4ae256e7aae8a3fb880d68cc20d40979752aec4bf5ddb64d9ba6f0f",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/qwen4b-compact-chelsea-20261014.json",
+        "bytes": 240,
+        "sha256": "3e200ffffdd3de26c7ea284acd6273987955a369eef17aae13f60d8dfa618d5d",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "93ca0731aa5e59d2fc00c850d8596eba375b3dd5122fe80c1ec90048ec18468e",
+    "model": "qwen4b",
+    "case_id": "chelsea",
+    "budget": "detailed",
+    "prompt": "Close-up of a tabby cat’s face. Large, round, green eyes with black pupils. Brown and tan fur with distinct stripes. Small, pink nose. Long white whiskers extending from cheeks. Cat gazes forward. Background blurred. No other animals or objects visible. Image appears photographic.",
+    "at": "2026-10-13T15:10:31.748158+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 60,
+    "encoding_seconds": 0.09719880000920966,
+    "sha256": "f63e24f01e9cb232a4a9e23a9eb7d5836954ab23149d49e6ff0b233264de25e5",
+    "file": "text-embeddings/93ca0731aa5e59d2fc00c850d8596eba375b3dd5122fe80c1ec90048ec18468e.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/qwen4b-detailed-chelsea-20261013.json",
+        "bytes": 375,
+        "sha256": "e9c397ac802ff75028a8bb8941eb5271fc5ba2785f0f4a662c38315912295eb4",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/qwen4b-detailed-chelsea-20261014.json",
+        "bytes": 375,
+        "sha256": "10c98a88cf0bb5dda058dd27e89bddef3ede77b52c8e2cb112db2a5eb8c77e75",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "90afc133c895f6cef8143f6b5bac5f890e0dbd7cdb3b37877b80e8c176b9d0e3",
+    "model": "qwen4b",
+    "case_id": "red_circle_left",
+    "budget": "compact",
+    "prompt": "Red circle sits left of horizontal gray line on beige background. No motion or other objects present. Simple illustration style.",
+    "at": "2026-10-13T15:10:31.872177+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 23,
+    "encoding_seconds": 0.09695320000173524,
+    "sha256": "ea4c08da7adac3b90fe2090231f77030988afcf3304203cf660b7fc9f95492de",
+    "file": "text-embeddings/90afc133c895f6cef8143f6b5bac5f890e0dbd7cdb3b37877b80e8c176b9d0e3.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/qwen4b-compact-red_circle_left-20261013.json",
+        "bytes": 220,
+        "sha256": "99b6217461d6c4858ca1eb776dfe813fd5d3b4146c4052b71ab0d0668dc3b39d",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/qwen4b-compact-red_circle_left-20261014.json",
+        "bytes": 220,
+        "sha256": "f85be3198901afc340b51fbd4012e8b98ca12a25a50b82b832522b7e32710729",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "83e9e79015ccf8eee9992b90661ff6e2b0a8186b9247abf1efda4ede28471987",
+    "model": "qwen4b",
+    "case_id": "red_circle_left",
+    "budget": "detailed",
+    "prompt": "A solid red circle sits left of center on a light beige background. A thin dark gray horizontal line runs across the bottom edge. No other shapes or objects are present. The circle is static, untextured, and fully visible. The composition is minimalist, with no motion or depth cues. The image appears as a flat illustration.",
+    "at": "2026-10-13T15:10:31.994686+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 67,
+    "encoding_seconds": 0.09677239999291487,
+    "sha256": "cd326bac1a050f1e693b20613d90b6d89dbac2aeaf1bc5d9b9e4d04abad44627",
+    "file": "text-embeddings/83e9e79015ccf8eee9992b90661ff6e2b0a8186b9247abf1efda4ede28471987.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/qwen4b-detailed-red_circle_left-20261013.json",
+        "bytes": 417,
+        "sha256": "1a604db0cf3125556828ea4a5643bf00ddcfc76e58b672e21a262d784950b862",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/qwen4b-detailed-red_circle_left-20261014.json",
+        "bytes": 417,
+        "sha256": "be26a24bded256e21e67e30145871017344ee072d2bf28f0af21c04a5efe1469",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "bc596b5982c2b57e7de6114a7784650f180943c6a9a5be86e2b7e077c3baa68a",
+    "model": "qwen4b",
+    "case_id": "blue_square_right",
+    "budget": "compact",
+    "prompt": "Blue square centered right, above dark horizontal line. Light beige background. No motion or other objects. Simple illustration style.",
+    "at": "2026-10-13T15:10:32.118198+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 24,
+    "encoding_seconds": 0.09688110000570305,
+    "sha256": "71124c424cc35f5a1a908f0c56e065f3c63677103ea8bd452079abca60f4d8c0",
+    "file": "text-embeddings/bc596b5982c2b57e7de6114a7784650f180943c6a9a5be86e2b7e077c3baa68a.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/qwen4b-compact-blue_square_right-20261013.json",
+        "bytes": 226,
+        "sha256": "de33ac0cca744fd25f6805206cdbd6d056982be22a84b5170c2e085567f48786",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/qwen4b-compact-blue_square_right-20261014.json",
+        "bytes": 226,
+        "sha256": "fa347ef8c7bf730a64907b22757eb3a5a74f6c2b1529272c5a2e7e212a5b72b5",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "19a1c6acf77b07c0035919ecd6bc9a35e883029f2bfc1b823047d2c87b16a696",
+    "model": "qwen4b",
+    "case_id": "blue_square_right",
+    "budget": "detailed",
+    "prompt": "A blue square sits centered on a light beige background. A dark gray horizontal line runs across the bottom edge. The square is positioned above the line, with no other objects or shapes present. The composition is minimal, with clear left-right spatial separation between the square and the line. No motion or action is depicted. The image appears flat and illustrative.",
+    "at": "2026-10-13T15:10:32.239706+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 71,
+    "encoding_seconds": 0.09687069999927189,
+    "sha256": "e55e6e3f6a096cc7b529d20e005b9fb10e6389b567d095ae5145d907ca562f92",
+    "file": "text-embeddings/19a1c6acf77b07c0035919ecd6bc9a35e883029f2bfc1b823047d2c87b16a696.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/qwen4b-detailed-blue_square_right-20261013.json",
+        "bytes": 463,
+        "sha256": "b1267b33abbcf4c43a53a5c5135ed6bbfff33f12d833184c41819a8cdeaf5242",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/qwen4b-detailed-blue_square_right-20261014.json",
+        "bytes": 463,
+        "sha256": "e3a5188f0d797596cd0f46dc324ea41d6296183e97f5a0937241e971edd7e9b1",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "d4a28ee8aaeb70dbcabe2f13f45c63bdd98c3eff97c42fbd463fee213c1c9a04",
+    "model": "qwen4b",
+    "case_id": "07cdb16d66edeacb",
+    "budget": "compact",
+    "prompt": "Athlete leaps over hurdle on red track, landing in sandpit. Others run nearby. Spectators stand behind. Bright flags line field. Photo captures motion blur and dynamic action.",
+    "at": "2026-10-13T15:10:32.362731+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 36,
+    "encoding_seconds": 0.0968051999952877,
+    "sha256": "ade4e643767dee4e4abcd80f6d9df7a612309f086674ca644a29ea5cb0ed9095",
+    "file": "text-embeddings/d4a28ee8aaeb70dbcabe2f13f45c63bdd98c3eff97c42fbd463fee213c1c9a04.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/qwen4b-compact-07cdb16d66edeacb-20261013.json",
+        "bytes": 267,
+        "sha256": "0e1eaf2e75520ae3573f2954e39df211caf2318a3c8dd2da8dcaf25eeb8baf68",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/qwen4b-compact-07cdb16d66edeacb-20261014.json",
+        "bytes": 267,
+        "sha256": "71617069cfcd0710d20a9f965bfef6c03f9456a10783e00b170ec9abe3c1d6fb",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "77021de85018c7ed2e4dffdefeb67bf8ff76d275b271cbfffb07b5179c13b3b8",
+    "model": "qwen4b",
+    "case_id": "07cdb16d66edeacb",
+    "budget": "detailed",
+    "prompt": "A sprinter leaps over a hurdle on a red track, mid-air with one leg extended forward. Another runner approaches from right. A sandpit lies beyond the track. Spectators stand in the background under a grassy field with colorful flags. The scene is captured in a slightly blurred, candid photograph style. Hurdle and track lines are clearly visible.",
+    "at": "2026-10-13T15:10:32.485247+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 72,
+    "encoding_seconds": 0.0970616999984486,
+    "sha256": "609795c3bbede57edba0b6949f65094b22e7b730646f90238bf41805e5412092",
+    "file": "text-embeddings/77021de85018c7ed2e4dffdefeb67bf8ff76d275b271cbfffb07b5179c13b3b8.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/qwen4b-detailed-07cdb16d66edeacb-20261013.json",
+        "bytes": 439,
+        "sha256": "dac24e5ec4f1d7cc9df6815e889e2ffd634c2cd3f0c4a3210b2e0fd6fbd75211",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/qwen4b-detailed-07cdb16d66edeacb-20261014.json",
+        "bytes": 439,
+        "sha256": "62280e1daebbf50b55fa651b9b44d2c7ed14dea8c3e6c54f0c0f0168273fea21",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "f6ca74b3d74ad8fa83d91a340c3c3989cb907cf47dc7aef8ec56ce81399d899f",
+    "model": "qwen4b",
+    "case_id": "67e67c811336e94b",
+    "budget": "compact",
+    "prompt": "Two figures walk along a sunlit forest path flanked by tall, slender trees. Shadows stretch across the ground. Bright sunlight filters through dense green foliage.",
+    "at": "2026-10-13T15:10:32.607753+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 31,
+    "encoding_seconds": 0.09654410000075586,
+    "sha256": "9b1a3bb0ebaf884b1637dc865260d0390348de27b361e2d4f4b9230fdd53aa5e",
+    "file": "text-embeddings/f6ca74b3d74ad8fa83d91a340c3c3989cb907cf47dc7aef8ec56ce81399d899f.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/qwen4b-compact-67e67c811336e94b-20261013.json",
+        "bytes": 255,
+        "sha256": "f441304945b47848e28f3f2bfea191a4d0a2f173786113dd537f43360ea4e93d",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/qwen4b-compact-67e67c811336e94b-20261014.json",
+        "bytes": 255,
+        "sha256": "9273a314415c173d95683fdfd9878adc25d02d2f454e8c79bb1fed7e5730b32f",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "54e54846475c106f06d0be72a5eb3e03877f1ceac8ef5eae1cb7f40debaf4ed0",
+    "model": "qwen4b",
+    "case_id": "67e67c811336e94b",
+    "budget": "detailed",
+    "prompt": "Two figures walk along a sunlit forest path flanked by tall, slender trees. The path curves gently to the right, with dappled sunlight filtering through dense green canopies. Shadows stretch across the ground. Trees line both sides, creating a natural corridor. The scene is captured in a realistic photograph, emphasizing depth and natural lighting. No other objects or people are visible.",
+    "at": "2026-10-13T15:10:32.734269+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 76,
+    "encoding_seconds": 0.09647140000015497,
+    "sha256": "2351e8b9df3e7e27b562c24ff5d3981f1342ba1129fe91e3f272c0997fba77d7",
+    "file": "text-embeddings/54e54846475c106f06d0be72a5eb3e03877f1ceac8ef5eae1cb7f40debaf4ed0.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/qwen4b-detailed-67e67c811336e94b-20261013.json",
+        "bytes": 482,
+        "sha256": "812fb45d6f1b5bd07ab701967cf05884865d0170bc65a49de6a437728ec273f8",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/qwen4b-detailed-67e67c811336e94b-20261014.json",
+        "bytes": 482,
+        "sha256": "367f6d0d8e0fa3a6ad7d525be2114f2420c1f0ce31c9b2c32ed30181562a375d",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "aaed78477de088e4e736c920a4e27b3e1c0b51b93cb4f9701bd045788147d733",
+    "model": "qwen4b",
+    "case_id": "79083da149309142",
+    "budget": "compact",
+    "prompt": "A colorful bird perches on a bare branch, facing right. Its plumage features purple, blue, and pink hues. Background is blurred green foliage. The bird’s beak is black, and its eyes are dark.",
+    "at": "2026-10-13T15:10:32.857286+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 45,
+    "encoding_seconds": 0.0966138000076171,
+    "sha256": "5bbdaf99813ea7ddca7632c8be4542a0a795a3590bb63ca649536034e5135cd9",
+    "file": "text-embeddings/aaed78477de088e4e736c920a4e27b3e1c0b51b93cb4f9701bd045788147d733.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/qwen4b-compact-79083da149309142-20261013.json",
+        "bytes": 285,
+        "sha256": "5cffdc5380d39e329ccbca3f9d3b21555c31d42c4cd7eea180db7d88b050d4d7",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/qwen4b-compact-79083da149309142-20261014.json",
+        "bytes": 285,
+        "sha256": "4ac646a8dede6133f5570fd362b1c7f33624c8672ee06e6730bb8d478f750141",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "1b8f6d85d4928ce898f1ddb1b3c7abb5d7c65718309439c2c871661ab20233ee",
+    "model": "qwen4b",
+    "case_id": "79083da149309142",
+    "budget": "detailed",
+    "prompt": "A colorful bird perches on a bare branch, facing right. Its plumage features purple, pink, blue, and brown hues. The bird has a black beak and gray head. Branches extend diagonally across the frame. Background is blurred green foliage. The bird’s feet grip the branch. No other birds or objects are visible. The image appears photographic.",
+    "at": "2026-10-13T15:10:32.979801+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 74,
+    "encoding_seconds": 0.0965930000093067,
+    "sha256": "631c8e1513f911f9ff05681ff9bdb406a535ced0908912411af9f259ad7d1af8",
+    "file": "text-embeddings/1b8f6d85d4928ce898f1ddb1b3c7abb5d7c65718309439c2c871661ab20233ee.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/qwen4b-detailed-79083da149309142-20261013.json",
+        "bytes": 433,
+        "sha256": "c1fc59b3cf4cccdcae3c443a5600d44daa2b3f2e3a26cd595bfa9a8c0f47b30b",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/qwen4b-detailed-79083da149309142-20261014.json",
+        "bytes": 433,
+        "sha256": "df86f3ab0c8aa01d3943cd84d8590a1d6b34dbf91f8574250ff23a18a6f73f5e",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "86058bb13ec51f63fe9566177d92c207d27140ae631489ec4825840bac677370",
+    "model": "qwen4b",
+    "case_id": "f5f2decfd4122750",
+    "budget": "compact",
+    "prompt": "White cockatoo with yellow crest perched on branch, facing left. Background blurred, showing wooden structure and bare branches. Natural daylight illumination.",
+    "at": "2026-10-13T15:10:33.102308+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 29,
+    "encoding_seconds": 0.09637729999667499,
+    "sha256": "2e02a849ee991bf459da554dffa0c0fd261b681b02bfca4036cda439a50c8680",
+    "file": "text-embeddings/86058bb13ec51f63fe9566177d92c207d27140ae631489ec4825840bac677370.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/qwen4b-compact-f5f2decfd4122750-20261013.json",
+        "bytes": 251,
+        "sha256": "e32120a24931e3ca4079cde45e98bf348dccfe26dab20bbb744232fdaa2c8705",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/qwen4b-compact-f5f2decfd4122750-20261014.json",
+        "bytes": 251,
+        "sha256": "aac564d8b069d17571c501a1b9e6e8e5ae9049043e2f6f96b030e5f134a36001",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "17dcac2d6012ef3702573e0312dc92f4dd482d8c9c056cb761687acc29f1cb70",
+    "model": "qwen4b",
+    "case_id": "f5f2decfd4122750",
+    "budget": "detailed",
+    "prompt": "A white cockatoo with bright yellow crest feathers perched on a branch. Its gray beak and feet are visible. The bird faces slightly left, head tilted. Background is blurred, showing wooden structures and bare branches. Lighting casts soft shadows. The image is a photograph with shallow depth of field, emphasizing the bird’s sharp features against a muted backdrop.",
+    "at": "2026-10-13T15:10:33.223820+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 72,
+    "encoding_seconds": 0.09665659999882337,
+    "sha256": "e89bf8def955d1735f7c3833ffb6486f141b136815f69091c74d5de0855795e8",
+    "file": "text-embeddings/17dcac2d6012ef3702573e0312dc92f4dd482d8c9c056cb761687acc29f1cb70.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/qwen4b-detailed-f5f2decfd4122750-20261013.json",
+        "bytes": 460,
+        "sha256": "a916e8da491482e623b6080e7903329ba9e4a6ad9eb2229d61253e084754c3fd",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/qwen4b-detailed-f5f2decfd4122750-20261014.json",
+        "bytes": 460,
+        "sha256": "98172054596d4433d788ebcdbbbc4a9de5f6623bcf9257ecf6953456226c3228",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "6b94fe2bdd924fbeffc02ad6b64e244bed14a199e2075a6cd77d0a6c3a57d3fb",
+    "model": "qwen4b",
+    "case_id": "a158e89a4415eb57",
+    "budget": "compact",
+    "prompt": "Dark blue sedan parked on grass. Front view shows headlight, orange turn signal, Volkswagen emblem, and license plate reading \"794-95\". Windshield wipers visible. No people present.",
+    "at": "2026-10-13T15:10:33.346323+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 42,
+    "encoding_seconds": 0.09675730000890326,
+    "sha256": "5a10de689d7f5ede51378d41cef5d2ae5c00798a723ff052d4ee0f46ff2fc57e",
+    "file": "text-embeddings/6b94fe2bdd924fbeffc02ad6b64e244bed14a199e2075a6cd77d0a6c3a57d3fb.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/qwen4b-compact-a158e89a4415eb57-20261013.json",
+        "bytes": 275,
+        "sha256": "3391e76f51814489d3334d796cad271b2cc58a13572c5bdc72d7c7775d7eb8d7",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/qwen4b-compact-a158e89a4415eb57-20261014.json",
+        "bytes": 275,
+        "sha256": "b24d64fa8a980ffcd282450206876599db9cf34c36cc2f7584426781ca710bad",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "0786eed7d885840e45a22a7a0ab6f311246eb87b2ea571c786f3838ebb17dbfb",
+    "model": "qwen4b",
+    "case_id": "a158e89a4415eb57",
+    "budget": "detailed",
+    "prompt": "Dark blue sedan parked on grass. Front grille with Volkswagen emblem. Orange turn signal, white headlight, red license plate reading “794-95”. Windshield wipers visible. Left front wheel with silver hubcap. Grass surrounds vehicle. Image appears photographic, slightly reflective surface. No people or motion present.",
+    "at": "2026-10-13T15:10:33.469343+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 65,
+    "encoding_seconds": 0.09717750000709202,
+    "sha256": "67101fa85f4a975fcb11cad1eba84f26281d67c76ba2ebb49c3b402f3e406dd4",
+    "file": "text-embeddings/0786eed7d885840e45a22a7a0ab6f311246eb87b2ea571c786f3838ebb17dbfb.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/qwen4b-detailed-a158e89a4415eb57-20261013.json",
+        "bytes": 413,
+        "sha256": "2c1b87f2862561c24bcd51d74c7cf972f78e45b8d7c90e8350211d9e93b94dba",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/qwen4b-detailed-a158e89a4415eb57-20261014.json",
+        "bytes": 413,
+        "sha256": "9aaab594e4142f77f8eb3caa76369c25184135be9aa936e1dee2935fea8018cd",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "0778b01f8d4b2f20e1bd2eb65be3132c3ff980805883fdf15f4199503e8850da",
+    "model": "qwen4b",
+    "case_id": "e84c2f66a5963a9a",
+    "budget": "compact",
+    "prompt": "Hand holds metal tool over pink bowl filled with white popcorn. Bowl rests on plaid fabric. Scene captured in close-up, shallow depth of field.",
+    "at": "2026-10-13T15:10:33.591854+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 30,
+    "encoding_seconds": 0.09655480000947136,
+    "sha256": "57edc6d5b9b1a247b8d2f830b4fffce450144641d1ffd1d9a117d62994691ed7",
+    "file": "text-embeddings/0778b01f8d4b2f20e1bd2eb65be3132c3ff980805883fdf15f4199503e8850da.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/qwen4b-compact-e84c2f66a5963a9a-20261013.json",
+        "bytes": 235,
+        "sha256": "2ff7aba4f0e3b96e9285dc24ca3c14b247ed1abe9dea91fdd80eae5a70d164d1",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/qwen4b-compact-e84c2f66a5963a9a-20261014.json",
+        "bytes": 235,
+        "sha256": "8a8083c64a0142d279a6b6daf5e6fd8543180d61f32ccb5ab667a32595265018",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "3599f4332e77a5430e62f7426d83a9b88d5c8f937f6cbd2f5f9c7cc8de9ce905",
+    "model": "qwen4b",
+    "case_id": "e84c2f66a5963a9a",
+    "budget": "detailed",
+    "prompt": "A hand holds a metal tool over a pink bowl filled with white popcorn. The bowl rests on a blue-and-white checkered surface. Popcorn kernels are scattered, some popped, others unpopped. The tool is angled diagonally across the bowl’s surface. No other objects or people are visible. The scene is captured in a close-up, real photograph.",
+    "at": "2026-10-13T15:10:33.715362+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 72,
+    "encoding_seconds": 0.09733170000254177,
+    "sha256": "2476e5bcb285d58c45c14f71bd4cac373cdf9e06dc76eaf7416d772653d53ed5",
+    "file": "text-embeddings/3599f4332e77a5430e62f7426d83a9b88d5c8f937f6cbd2f5f9c7cc8de9ce905.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/qwen4b-detailed-e84c2f66a5963a9a-20261013.json",
+        "bytes": 429,
+        "sha256": "3e6ecb08cd9be5c2e3d9f29b220de3e53cb1c00cf7019330e5bfec9962d69749",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/qwen4b-detailed-e84c2f66a5963a9a-20261014.json",
+        "bytes": 429,
+        "sha256": "2374c73da001f4c2f712dc5bed3d9e087a2d55e34ee521e3b1cb064aa02f45fd",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "d66a483015fe7f9628cb7a58b015aabc4a47dba9391e6f1b8719ac495d3a045e",
+    "model": "qwen4b",
+    "case_id": "05430da00e88b5f9",
+    "budget": "compact",
+    "prompt": "Man in red shirt draws bow, aiming right. Another person stands left, holding bow. Green arrow nocked. Outdoor grassy area with trees. Bright daylight.",
+    "at": "2026-10-13T15:10:33.839871+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 34,
+    "encoding_seconds": 0.0969662999996217,
+    "sha256": "5cf2e227969f2e5a394ff5c40f8f78cbe9061bc8782c8ab4781ef3c917a5e44b",
+    "file": "text-embeddings/d66a483015fe7f9628cb7a58b015aabc4a47dba9391e6f1b8719ac495d3a045e.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/qwen4b-compact-05430da00e88b5f9-20261013.json",
+        "bytes": 243,
+        "sha256": "84df91c6e23d8d9fd8540ff7fc1728f81d63c4b37d717c7d0b06136a5ad6c3ef",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/qwen4b-compact-05430da00e88b5f9-20261014.json",
+        "bytes": 243,
+        "sha256": "a8620661c45e796a1e00349d46442610373a0fc8ae2d12fd1d8308ce621c9ac9",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "1a8a0ed8cdf40f3be1d4f8089827b47e47e13e6bdf5fcbd5db5c434f09d11c82",
+    "model": "qwen4b",
+    "case_id": "05430da00e88b5f9",
+    "budget": "detailed",
+    "prompt": "A man in a red shirt and black cap draws a bow, aiming right. Another person in dark clothing stands behind him, also holding a bow. A third figure is partially visible with a tripod. Green grass and trees frame the scene under blue sky. The bowstring is taut, arrow nocked. A water bottle hangs from the archer’s belt. The image is a clear photograph.",
+    "at": "2026-10-13T15:10:33.962999+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 81,
+    "encoding_seconds": 0.09729050000896677,
+    "sha256": "5d626586923b89eeb7c306eda6ec3520de60f49a646d8da7cf5e75e1f354f9a0",
+    "file": "text-embeddings/1a8a0ed8cdf40f3be1d4f8089827b47e47e13e6bdf5fcbd5db5c434f09d11c82.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/qwen4b-detailed-05430da00e88b5f9-20261013.json",
+        "bytes": 446,
+        "sha256": "4af27f25319e0ef9f32b1be1cd81290e7a6006d9e68e7d938d6411335b3ea4e1",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/qwen4b-detailed-05430da00e88b5f9-20261014.json",
+        "bytes": 446,
+        "sha256": "6ae594bb8af26e4e018d8a76a02f4e3831795c3edf0dac64ab53c7c3978ec7e0",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "4136e218e1ab25d6388174952b9150501048a32795fa3f5d1d3aeceffa964c2d",
+    "model": "qwen4b",
+    "case_id": "56e803d5e8c580e0",
+    "budget": "compact",
+    "prompt": "Classroom with red chairs around blue circular table, whiteboard, American flag, shelves, and windows. Bright lighting, wooden ceiling beams. No people visible.",
+    "at": "2026-10-13T15:10:34.087509+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 32,
+    "encoding_seconds": 0.09647099999710917,
+    "sha256": "fce38c1fc4da0669f9eaef372244adbfe7767be95121e84d6931f8827efee777",
+    "file": "text-embeddings/4136e218e1ab25d6388174952b9150501048a32795fa3f5d1d3aeceffa964c2d.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/qwen4b-compact-56e803d5e8c580e0-20261013.json",
+        "bytes": 252,
+        "sha256": "98028580f5060327d2ba51b32f208f4059a8b72cc8ff7fb090a77956dc62ac1a",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/qwen4b-compact-56e803d5e8c580e0-20261014.json",
+        "bytes": 252,
+        "sha256": "503b94032c62893595a2f69bee376fea25959eed59e5db853c78f0e5d14ea6d3",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "2c45e6012b64b21d65cfcb8e7784bc346d336990948d921b29479e8039ec5798",
+    "model": "qwen4b",
+    "case_id": "56e803d5e8c580e0",
+    "budget": "detailed",
+    "prompt": "A classroom with red chairs around blue and red tables. A whiteboard with pink marker lines is mounted on the wall. A refrigerator, shelves, and a window with blinds are visible. An American flag hangs on the right. A circular rug lies beneath a table. The ceiling has exposed wooden beams and fluorescent lights. The floor is light wood. No people are present.",
+    "at": "2026-10-13T15:10:34.209015+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 74,
+    "encoding_seconds": 0.09670829999959096,
+    "sha256": "d700368c408bffa966dd912b362a3e52c6384f7e127024994961c12fbefa5080",
+    "file": "text-embeddings/2c45e6012b64b21d65cfcb8e7784bc346d336990948d921b29479e8039ec5798.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/qwen4b-detailed-56e803d5e8c580e0-20261013.json",
+        "bytes": 453,
+        "sha256": "ee9ce2e03e06a29181c441d04c56240939741480f11005964ce5c6beabca9427",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/qwen4b-detailed-56e803d5e8c580e0-20261014.json",
+        "bytes": 453,
+        "sha256": "e84ca5ead529a7dc9a001a321ee5d88750142e5fa35991d50a08b534c71a3ca1",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "fde3e2542f3cc247cc452c6f9e6c946b7eece94573dfe8230a0d70fa99ac020e",
+    "model": "minicpm",
+    "case_id": "astronaut",
+    "budget": "compact",
+    "prompt": "A woman in an orange space suit stands beside a black helmet. An American flag is to her left. A space shuttle model is behind her. The setting is indoors. The image is a photograph or illustration. Colors are vibrant, with orange, white, and blue prominent.",
+    "at": "2026-10-13T15:10:34.331523+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 55,
+    "encoding_seconds": 0.09664040000643581,
+    "sha256": "bc526b5a008a9a8a97f6e992c5e9cfd5f23705d4e457e6d405fbcfc8d3cabbdc",
+    "file": "text-embeddings/fde3e2542f3cc247cc452c6f9e6c946b7eece94573dfe8230a0d70fa99ac020e.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/minicpm-compact-astronaut-20261013.json",
+        "bytes": 350,
+        "sha256": "e48f817a3023be1f1f83b5c50bbf8f6d769ccc8191ab49422b620b55465db66c",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/minicpm-compact-astronaut-20261014.json",
+        "bytes": 350,
+        "sha256": "a461b86a6b37f9c421b5c4eaed62b4441affc76fa04b2e1a0373d312cbe345c0",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "3352ed141998b6aa5c8d22563f6acc67b9a3c816064f73fbc52eb1b0ebba36ef",
+    "model": "minicpm",
+    "case_id": "astronaut",
+    "budget": "detailed",
+    "prompt": "A woman in an orange astronaut suit stands beside a black helmet. An American flag is to her left, and a space shuttle model is behind her. A white and brown space shuttle is also visible. The setting appears to be a studio with neutral backgrounds. The image is a photograph or illustration, showing clear details and colors.",
+    "at": "2026-10-13T15:10:34.455036+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 65,
+    "encoding_seconds": 0.09666829998604953,
+    "sha256": "8218b45d9a876338bf6a0e9b880755edd6b6944a39f49bd3887d7c4cbc4d43bb",
+    "file": "text-embeddings/3352ed141998b6aa5c8d22563f6acc67b9a3c816064f73fbc52eb1b0ebba36ef.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/minicpm-detailed-astronaut-20261013.json",
+        "bytes": 418,
+        "sha256": "6cfcd86c7131a5b03655e3cd55fce25a1b8633b167bbefe2fa9e706de95d313b",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/minicpm-detailed-astronaut-20261014.json",
+        "bytes": 418,
+        "sha256": "7eaade0298ce69a618627d68b71beaf551ce19d4347757efb4368d25af658be1",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "b8d713a26ac20b684eea8308fd7f86775affdacec3dec188232a444ea0a9e9a7",
+    "model": "minicpm",
+    "case_id": "coffee",
+    "budget": "compact",
+    "prompt": "A red cup with white interior holds espresso, placed on a matching red saucer. A silver spoon rests beside the cup. The setting is a wooden surface. The image is clear and focused.",
+    "at": "2026-10-13T15:10:34.577053+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 39,
+    "encoding_seconds": 0.09644939999270719,
+    "sha256": "72af552a5dbd0817a9592d0dcc3350301eaa36ba3fb97f20ab933a17f6fdd5b2",
+    "file": "text-embeddings/b8d713a26ac20b684eea8308fd7f86775affdacec3dec188232a444ea0a9e9a7.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/minicpm-compact-coffee-20261013.json",
+        "bytes": 272,
+        "sha256": "2a83bf3f5ef33123bdc8cb0c726cde2377ad1d66c4a930e29b5e5e311657c1bb",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/minicpm-compact-coffee-20261014.json",
+        "bytes": 272,
+        "sha256": "e6e48a6adab001dcb3ccca643be7f211767a37e7e91fc6607e4c579338a10dd3",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "da391ae46d6d0dce0d905ffe511f6a097ab22e035f48463d1293571f925571b6",
+    "model": "minicpm",
+    "case_id": "coffee",
+    "budget": "detailed",
+    "prompt": "A red cup with a white interior holds a light brown beverage. A small silver spoon rests beside it on a matching red saucer. The cup and saucer are placed on a wooden surface. The scene is framed, showing a close-up view. The lighting highlights the cup's glossy finish and the spoon's metallic sheen. The overall setting suggests a cozy café or dining area.",
+    "at": "2026-10-13T15:10:34.698560+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 77,
+    "encoding_seconds": 0.09689869999419898,
+    "sha256": "4456dacd0fffdf7c9625f01b0d47cad342a7bf24e0ab169dee45ac210fa13d36",
+    "file": "text-embeddings/da391ae46d6d0dce0d905ffe511f6a097ab22e035f48463d1293571f925571b6.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/minicpm-detailed-coffee-20261013.json",
+        "bytes": 451,
+        "sha256": "ba9a6761524ee8c4b552370fcbd662428b4a8122248f2a0c6852daf8518b1f55",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/minicpm-detailed-coffee-20261014.json",
+        "bytes": 451,
+        "sha256": "a518834c152672bfbd42c11f7551572be0a57c027742a3d063e1901588ddbd0e",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "31c22571e7a21d7d2d12c18048b02b1c930646a88181df0adf193c22a6d43566",
+    "model": "minicpm",
+    "case_id": "chelsea",
+    "budget": "compact",
+    "prompt": "A close-up of a cat with yellow-green eyes and striped fur. Its nose is pink, and whiskers are visible. The focus is on the face, showing detailed texture and color. The background is out of focus. The image is a photograph or illustration.",
+    "at": "2026-10-13T15:10:34.824070+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 53,
+    "encoding_seconds": 0.09638270000868943,
+    "sha256": "c0096c048086c54178fe5b235cc4bce1a82311a00bee6cb7d4bac3506644c9fb",
+    "file": "text-embeddings/31c22571e7a21d7d2d12c18048b02b1c930646a88181df0adf193c22a6d43566.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/minicpm-compact-chelsea-20261013.json",
+        "bytes": 332,
+        "sha256": "57e05ba6db4dab0d606f563a88c395d1d0abfc70315d2c5d5a2245730c214cf9",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/minicpm-compact-chelsea-20261014.json",
+        "bytes": 332,
+        "sha256": "821d2f581ee6cb13de21a71e8d0ff4a797a52335db3764340d0a0e53663130ac",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "0487061ee89c02ef324d37c472354c83e63b8f0b81c56fd10c18e3608224d05e",
+    "model": "minicpm",
+    "case_id": "chelsea",
+    "budget": "detailed",
+    "prompt": "A close-up of a cat's face shows large, green eyes with dark pupils. The cat has a striped pattern on its fur, with shades of brown and tan. Its nose is small and pinkish, and whiskers are visible. The background is out of focus, emphasizing the cat. The image is a detailed, close-up photograph.",
+    "at": "2026-10-13T15:10:34.946579+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 69,
+    "encoding_seconds": 0.09646950000023935,
+    "sha256": "ccfb20df2b28134b5b04909edbcc0065b7678b7fbf556d026b3c4c39ad958ff2",
+    "file": "text-embeddings/0487061ee89c02ef324d37c472354c83e63b8f0b81c56fd10c18e3608224d05e.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/minicpm-detailed-chelsea-20261013.json",
+        "bytes": 388,
+        "sha256": "e6ec3baaca8390c744a8c1deabcd520a0f2e38338a7d53ae97535281441e71f1",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/minicpm-detailed-chelsea-20261014.json",
+        "bytes": 388,
+        "sha256": "9a8a7a1e740030fa3e0f58b820357f8d53085ffe2913fdb77fa0df88bc2dcf48",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "6ac3febaed4ababf4f7d49dcd0d06b02acebf5078b1db6312e96e9d9612da2de",
+    "model": "minicpm",
+    "case_id": "red_circle_left",
+    "budget": "compact",
+    "prompt": "A red circle is positioned on the left side of a plain background. The scene is simple and flat, with no additional elements. The focus is on the red circular shape.",
+    "at": "2026-10-13T15:10:35.067592+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 35,
+    "encoding_seconds": 0.09695569999166764,
+    "sha256": "c99c9054285d6101b53f38fa5fe64e8c4c2b84b955c5fee85a0c7b210610cf16",
+    "file": "text-embeddings/6ac3febaed4ababf4f7d49dcd0d06b02acebf5078b1db6312e96e9d9612da2de.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/minicpm-compact-red_circle_left-20261013.json",
+        "bytes": 257,
+        "sha256": "873c8a31d94caa1f21bf58d12a6ce3d76cb8e5d2fc6afa6c4ce2e9890ea6af54",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/minicpm-compact-red_circle_left-20261014.json",
+        "bytes": 257,
+        "sha256": "7bce9324afe6df77b269cb695dbe4e37cad357030dcc20393cba352e7da92adf",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "2cebb3406daa5df906248188ed4fd9cbcf33d70c4c098ac028f30504a753706d",
+    "model": "minicpm",
+    "case_id": "red_circle_left",
+    "budget": "detailed",
+    "prompt": "A red circular shape is positioned on the left side. The background is light-colored. The image is simple and illustrative. No other objects or details are present. The focus is on the red circle and the space around it.",
+    "at": "2026-10-13T15:10:35.190103+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 46,
+    "encoding_seconds": 0.09670650000043679,
+    "sha256": "0eb2e75f0f33342804d7b7d04666aa0b99254f6420442fd8ab21c9f1777f6f9b",
+    "file": "text-embeddings/2cebb3406daa5df906248188ed4fd9cbcf33d70c4c098ac028f30504a753706d.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/minicpm-detailed-red_circle_left-20261013.json",
+        "bytes": 312,
+        "sha256": "7cd845319b4c5aef353f1e204d312b04dd50d7eed8534227933e1e42bc342d5b",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/minicpm-detailed-red_circle_left-20261014.json",
+        "bytes": 312,
+        "sha256": "32924fb2a6af31d54808cc54699be54f1ea196558c6acb3357da10b7b4b10d8b",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "9465082dbc1f3bc016bb00de5de857a91bf4d2e519ed820789a416ef0fd0eb0b",
+    "model": "minicpm",
+    "case_id": "blue_square_right",
+    "budget": "compact",
+    "prompt": "A blue square is positioned on a light background. The square is centered horizontally. The setting is plain and neutral. The image is simple and illustrative.",
+    "at": "2026-10-13T15:10:35.313609+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 31,
+    "encoding_seconds": 0.09670900000492111,
+    "sha256": "bb33913315d8baf58a6bcd825b96ffbdd41b9b5a5dbd97e2b6189ed9f85a3698",
+    "file": "text-embeddings/9465082dbc1f3bc016bb00de5de857a91bf4d2e519ed820789a416ef0fd0eb0b.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/minicpm-compact-blue_square_right-20261013.json",
+        "bytes": 251,
+        "sha256": "963e26e8a5cb12c30dc0469616c2799c440f817060daea081e4570b3df8df1fd",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/minicpm-compact-blue_square_right-20261014.json",
+        "bytes": 251,
+        "sha256": "6cabeecabe4745805b73a8e412344c6b28f63bc048294498f325c7d30023f13d",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "7193b6b606450bad79f7ed7008a870c9ec222156bd875145e9f672b0e8252c77",
+    "model": "minicpm",
+    "case_id": "blue_square_right",
+    "budget": "detailed",
+    "prompt": "A blue square is positioned on a light background. The square is centered horizontally. A horizontal line runs across the bottom of the image. The scene is simple and flat, resembling a graphic illustration. The focus is on the blue square and the surrounding space.",
+    "at": "2026-10-13T15:10:35.437229+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 51,
+    "encoding_seconds": 0.09653989999787882,
+    "sha256": "8d787a739be3742c443ae5a202ee9acecc6bd6ff21f4d1e879a69e95bd6b0aa6",
+    "file": "text-embeddings/7193b6b606450bad79f7ed7008a870c9ec222156bd875145e9f672b0e8252c77.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/minicpm-detailed-blue_square_right-20261013.json",
+        "bytes": 358,
+        "sha256": "36600a19f3184663df936b10a1af437377252d06cc29c3cbbad1a2dfd4338c0b",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/minicpm-detailed-blue_square_right-20261014.json",
+        "bytes": 358,
+        "sha256": "c5a18bdc127216d6d397b1f40da891bdeaacce7f134abfb9c75a07c8d7acb9dc",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "3a59a9cafe38cbad61515ea161f999decf5f7366866d1a3ffdd132e16fc0c632",
+    "model": "minicpm",
+    "case_id": "07cdb16d66edeacb",
+    "budget": "compact",
+    "prompt": "A track event shows a runner jumping over a hurdle. Other runners and spectators are present. The track is red, and the grassy field is behind. The scene is outdoors, during a sports activity. The image is captured with motion blur.",
+    "at": "2026-10-13T15:10:35.559247+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 49,
+    "encoding_seconds": 0.0963705000031041,
+    "sha256": "71d501df8f76c0f5518b8be19dff78ad12a8e0fbdf14060311028dfe6aa89fd8",
+    "file": "text-embeddings/3a59a9cafe38cbad61515ea161f999decf5f7366866d1a3ffdd132e16fc0c632.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/minicpm-compact-07cdb16d66edeacb-20261013.json",
+        "bytes": 324,
+        "sha256": "30f0bcfb456bcc24df2789f8ba9a239ffe0aff77ab0c92b564fbbd8378818b23",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/minicpm-compact-07cdb16d66edeacb-20261014.json",
+        "bytes": 324,
+        "sha256": "b70a442dc39d511dcdffa1eac7467c82d85594300be9627aea8541f8a8dfb7d9",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "bff136b2da9260ff7bedbff219ddbdd11f3db3989269cfea86336f711bfb1f1c",
+    "model": "minicpm",
+    "case_id": "07cdb16d66edeacb",
+    "budget": "detailed",
+    "prompt": "A track event shows a runner jumping over a hurdle. Another runner is visible behind. The track is red with white lanes. Spectators and other participants are in the background on a grassy field. The scene is outdoors, during a sports activity. The image is captured with motion blur.",
+    "at": "2026-10-13T15:10:35.682757+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 58,
+    "encoding_seconds": 0.09660150000127032,
+    "sha256": "ede68b13a4b890d12bcf5a3ba71c590fdd0019cc45acf4167af7f871dc3372b3",
+    "file": "text-embeddings/bff136b2da9260ff7bedbff219ddbdd11f3db3989269cfea86336f711bfb1f1c.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/minicpm-detailed-07cdb16d66edeacb-20261013.json",
+        "bytes": 376,
+        "sha256": "d1d46f6bfc4b41ff2cbd924eb1dba9930061c34a28516fa858f5def528851d07",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/minicpm-detailed-07cdb16d66edeacb-20261014.json",
+        "bytes": 376,
+        "sha256": "fdefb8b89e06eefdd81df43d83672acda536cdc38825081cb28b2ba3386505d0",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "38e3ae122bdc033cbf3e450a70dc6c568fa5a0efb2f96baa427ac04735102261",
+    "model": "minicpm",
+    "case_id": "67e67c811336e94b",
+    "budget": "compact",
+    "prompt": "A tree-lined path with tall trees on both sides. Two small figures walk along the path. The scene is outdoors, bright, and natural. The ground is covered with dry leaves. The atmosphere is serene and wooded. The image is clear and detailed.",
+    "at": "2026-10-13T15:10:35.806263+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 51,
+    "encoding_seconds": 0.09650719999626745,
+    "sha256": "d93e1a651937fbc5afd62f27f91110a555037aa712703ae73bb986ddd7011a25",
+    "file": "text-embeddings/38e3ae122bdc033cbf3e450a70dc6c568fa5a0efb2f96baa427ac04735102261.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/minicpm-compact-67e67c811336e94b-20261013.json",
+        "bytes": 332,
+        "sha256": "123ae0acbe10759ab9fa0b4759117c410c70ace6d2ab882460cb5da15c6a62fe",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/minicpm-compact-67e67c811336e94b-20261014.json",
+        "bytes": 332,
+        "sha256": "66bc2240112273394150ef0b518f0330c5be805bf3a508b4dc374a0f3f2d32bf",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "c4dfc82d43b65464894c83d3f1459aa3f422825a17a808dcc8851223e1da85bf",
+    "model": "minicpm",
+    "case_id": "67e67c811336e94b",
+    "budget": "detailed",
+    "prompt": "A paved path is flanked by tall, slender trees with dense green foliage. Two small figures walk away down the center of the path. The scene is brightly lit with sunlight filtering through the trees. The setting is a forested area with a clear view of the path extending into the distance. The image is framed to show the path and surrounding trees. It appears to be a natural, outdoor environment.",
+    "at": "2026-10-13T15:10:35.929774+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 81,
+    "encoding_seconds": 0.09665680000034627,
+    "sha256": "485aff7ec04a35dbbff2997f706f90f829d3acad405c1e13f1ff119e29c87b98",
+    "file": "text-embeddings/c4dfc82d43b65464894c83d3f1459aa3f422825a17a808dcc8851223e1da85bf.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/minicpm-detailed-67e67c811336e94b-20261013.json",
+        "bytes": 489,
+        "sha256": "3426ad802ac70e026bd04e15e6d71f9289f554969ec6d785578215bb9e2eee6e",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/minicpm-detailed-67e67c811336e94b-20261014.json",
+        "bytes": 489,
+        "sha256": "872e72eeb08f91202590cdca9d338f67a473a5fe2598057daeeef38fbe2fba33",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "ce3a69bb10f2b55c9c1dd7c7352c0d74de874571b16c9862fee9b641a99a46cf",
+    "model": "minicpm",
+    "case_id": "79083da149309142",
+    "budget": "compact",
+    "prompt": "A colorful bird perches on a branch. Its plumage features purple, blue, and brown hues. The background shows green foliage. The bird is centered, with branches extending to the left. The image is a photograph or illustration.",
+    "at": "2026-10-13T15:10:36.052504+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 47,
+    "encoding_seconds": 0.09637600000132807,
+    "sha256": "85d8b29a5435f118cf5d8805afa95ace84decf1ce497f9c8faa34eabe1a1739f",
+    "file": "text-embeddings/ce3a69bb10f2b55c9c1dd7c7352c0d74de874571b16c9862fee9b641a99a46cf.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/minicpm-compact-79083da149309142-20261013.json",
+        "bytes": 317,
+        "sha256": "b52c97bb8a2f7a1b247d0183da0e64faf24b8d19e2c815a505020cb8e7970b62",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/minicpm-compact-79083da149309142-20261014.json",
+        "bytes": 317,
+        "sha256": "76d7925e62a9c4a02b4a91d36f343d19e8fac97e86c288a18636359e50194552",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "4497954dfed6738edcea995a3987702aae22de9a0efd6577acee9dd355399271",
+    "model": "minicpm",
+    "case_id": "79083da149309142",
+    "budget": "detailed",
+    "prompt": "A colorful bird perches on a branch. Its plumage features purple, blue, and brown hues. The bird has a black beak and eye. The background is blurred green foliage. The branch is light brown and extends diagonally. The scene is framed, showing the bird's detailed feathers and structure. The image is a photograph or illustration.",
+    "at": "2026-10-13T15:10:36.174516+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 70,
+    "encoding_seconds": 0.09639890000107698,
+    "sha256": "e6a9257e78d86b18ee480c368ed9d4d1221063de62d41d3d5a9a4ae23ba38272",
+    "file": "text-embeddings/4497954dfed6738edcea995a3987702aae22de9a0efd6577acee9dd355399271.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/minicpm-detailed-79083da149309142-20261013.json",
+        "bytes": 421,
+        "sha256": "1a5a373fb4b147933fb17d5fc16db356aa7d334e71cb8469a5f4eca4eecff76a",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/minicpm-detailed-79083da149309142-20261014.json",
+        "bytes": 421,
+        "sha256": "d370f3b646ec1ce7778bcfa4afc88b360eb3fe3727d7dadb068930e163008f71",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "8b3660ffa09294f5ab21e039eebbb7e70a1a66e5351e707526321ff796b5bd76",
+    "model": "minicpm",
+    "case_id": "f5f2decfd4122750",
+    "budget": "compact",
+    "prompt": "A white cockatoo with yellow crests perches on a branch. Its beak is gray, and eyes are visible. The background is blurred, showing soft tones. The image is a photograph or illustration, focusing on the bird.",
+    "at": "2026-10-13T15:10:36.296022+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 48,
+    "encoding_seconds": 0.09636560000944883,
+    "sha256": "2de1dc37713dc9ba5b11dc8f7d14958533b16dafb29fd71d47ede4d18ff64a19",
+    "file": "text-embeddings/8b3660ffa09294f5ab21e039eebbb7e70a1a66e5351e707526321ff796b5bd76.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/minicpm-compact-f5f2decfd4122750-20261013.json",
+        "bytes": 300,
+        "sha256": "e6cb8b5f14f94340fa20028689d44efb92f8532a61a77cacb2e09a7c3bf2770f",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/minicpm-compact-f5f2decfd4122750-20261014.json",
+        "bytes": 300,
+        "sha256": "da856df58517955e869d49fac6355d2dbd6aba60119faa818aa48667f76144f8",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "194b6925bf3fb1e7d3c174233dd2d6e467f5b92ead5e38ed3dd1a368a6f3915e",
+    "model": "minicpm",
+    "case_id": "f5f2decfd4122750",
+    "budget": "detailed",
+    "prompt": "A white cockatoo with yellow crests perches on a wooden branch. Its beak is gray, and its eye is visible. The feathers are predominantly white, with yellow accents. The background is out of focus, showing muted tones. The image is a close-up, capturing the bird's detailed features. It is framed to show the cockatoo prominently. The medium appears to be a photograph.",
+    "at": "2026-10-13T15:10:36.418531+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 82,
+    "encoding_seconds": 0.09710410000116099,
+    "sha256": "cee09e552405575e3cff56e020d18153a3d35dec237ae16c202166d18c6295b4",
+    "file": "text-embeddings/194b6925bf3fb1e7d3c174233dd2d6e467f5b92ead5e38ed3dd1a368a6f3915e.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/minicpm-detailed-f5f2decfd4122750-20261013.json",
+        "bytes": 460,
+        "sha256": "5f72c38b188d4efa9eb3d99c4c8868112f985cfa08988d565bed2167deacfaae",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/minicpm-detailed-f5f2decfd4122750-20261014.json",
+        "bytes": 460,
+        "sha256": "dc65d5cbfb8d2147ee2c507d1394be01323b57e564787abf2a52f44e2a0303e0",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "1b000617c6cf11253a0043ab4a74a13bc57238a4348015299cc73e51d3416612",
+    "model": "minicpm",
+    "case_id": "a158e89a4415eb57",
+    "budget": "compact",
+    "prompt": "A dark blue car is shown, focusing on its front section. The headlight and grille are visible, along with a license plate. The car is parked on grass. The image is a photograph, capturing the vehicle's exterior.",
+    "at": "2026-10-13T15:10:36.542038+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 46,
+    "encoding_seconds": 0.09642980000353418,
+    "sha256": "b464f991b024a9da303612eb0ee08f299ccea417070431650e7794f1b317d9c7",
+    "file": "text-embeddings/1b000617c6cf11253a0043ab4a74a13bc57238a4348015299cc73e51d3416612.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/minicpm-compact-a158e89a4415eb57-20261013.json",
+        "bytes": 303,
+        "sha256": "a423e51b1ab5e507f36905605d54e8ef0486e7be38cdb4cd36c24b545c953549",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/minicpm-compact-a158e89a4415eb57-20261014.json",
+        "bytes": 303,
+        "sha256": "ca7820626a39d1483844e233c9e17692bc1aa69968bf5efe2129924a75ee3c46",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "576b1bfd92b49ae9aa67e6b6445c727819fa56d40c0d92bb855f1d18750d9019",
+    "model": "minicpm",
+    "case_id": "a158e89a4415eb57",
+    "budget": "detailed",
+    "prompt": "A dark blue car is shown from the front. The headlight and orange turn signal are visible. A license plate with the number 794-95 is attached. The car is parked on grass. The background includes some greenery. The image is a photograph, capturing the car's exterior.",
+    "at": "2026-10-13T15:10:36.664061+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 62,
+    "encoding_seconds": 0.09607830000459217,
+    "sha256": "a91179b894b66a4636ca5f8eeee1c6cfd82cb3c7d61c858580bde7b47d253f23",
+    "file": "text-embeddings/576b1bfd92b49ae9aa67e6b6445c727819fa56d40c0d92bb855f1d18750d9019.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/minicpm-detailed-a158e89a4415eb57-20261013.json",
+        "bytes": 358,
+        "sha256": "d7972003ed8d830b30a40ec808a3f527503ae309be841c9757133cb0c37ff602",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/minicpm-detailed-a158e89a4415eb57-20261014.json",
+        "bytes": 358,
+        "sha256": "d5b03910aa4309b9f540f7260f8424c6171b0bc4b5268362b8b2050005af5451",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "c7488204579b15c2503a1cea13fef915838301cc4b61ba6ff609c6fc0776a497",
+    "model": "minicpm",
+    "case_id": "e84c2f66a5963a9a",
+    "budget": "compact",
+    "prompt": "A hand holds a small tool over a bowl of popped popcorn. The bowl is pink with a red rim. The background shows a checkered fabric. The scene is indoors, likely casual. The image is clear and focused.",
+    "at": "2026-10-13T15:10:36.786571+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 45,
+    "encoding_seconds": 0.09671730000991374,
+    "sha256": "0eccff0d836c231858396ffd741c4a0ab5fd14be265953c2c36bfa744b54daaa",
+    "file": "text-embeddings/c7488204579b15c2503a1cea13fef915838301cc4b61ba6ff609c6fc0776a497.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/minicpm-compact-e84c2f66a5963a9a-20261013.json",
+        "bytes": 291,
+        "sha256": "7843b1420f5f2c1e238cc5da5619124b13feff934a97cd2cb5a8f8792f960e0b",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/minicpm-compact-e84c2f66a5963a9a-20261014.json",
+        "bytes": 291,
+        "sha256": "4361633e2a91af282736967e5aff8ee6c4fec86e5b33c37e553a040d910d8106",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "0d1f2a7ed6b10655447887e6fdb864bd3beab30773dd2321ec56f341ea7dde55",
+    "model": "minicpm",
+    "case_id": "e84c2f66a5963a9a",
+    "budget": "detailed",
+    "prompt": "A hand holds a small tool over a large bowl of popped popcorn. The bowl is pink with a red rim. The popcorn is white and fluffy. The background shows a checkered fabric. The scene is indoors. The image is a photograph.",
+    "at": "2026-10-13T15:10:36.912083+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 49,
+    "encoding_seconds": 0.0969935000030091,
+    "sha256": "67ab3fa684e798bf8b5aac6f38ae63b6f5a1ffd6d5973744749dcd85360198c2",
+    "file": "text-embeddings/0d1f2a7ed6b10655447887e6fdb864bd3beab30773dd2321ec56f341ea7dde55.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/minicpm-detailed-e84c2f66a5963a9a-20261013.json",
+        "bytes": 310,
+        "sha256": "fcd9ccf69eb7d720f442dab2e4135a90433a9c7ef45ea876ee41eb78b18ef11b",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/minicpm-detailed-e84c2f66a5963a9a-20261014.json",
+        "bytes": 310,
+        "sha256": "5971841d02cda09c77beac5cac46d6de48c7980df5b6ac1a5177a4d97c3e5ae8",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "950c64336c0ea1c7dcaa693e01113f264e71960601b3ce0b4ea35f9263fbf519",
+    "model": "minicpm",
+    "case_id": "05430da00e88b5f9",
+    "budget": "compact",
+    "prompt": "Two archers in outdoor setting. One wears red shirt, black cap, holding arrow. Other in black. Background has trees and grass. Archery equipment visible. Clear daylight. Image is photographic.",
+    "at": "2026-10-13T15:10:37.034592+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 40,
+    "encoding_seconds": 0.09716869999829214,
+    "sha256": "33f8a8d63f9815178c096b1f3d2023c400af7ad1b0a4e2c1b169e677c648b81f",
+    "file": "text-embeddings/950c64336c0ea1c7dcaa693e01113f264e71960601b3ce0b4ea35f9263fbf519.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/minicpm-compact-05430da00e88b5f9-20261013.json",
+        "bytes": 284,
+        "sha256": "b5815e8ba5dec7deb28b683ffac8b23ec6f938b2e14a7495f966fde98e400402",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/minicpm-compact-05430da00e88b5f9-20261014.json",
+        "bytes": 284,
+        "sha256": "7d961619ec466ea6839ddbc57afce32f9690b4312b3fee73c2c08e8f0b16c7f2",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "1e2e6385e92fc50b1bcfeebc5ea6e617ea4560be16108163ec0eaa93d30ca624",
+    "model": "minicpm",
+    "case_id": "05430da00e88b5f9",
+    "budget": "detailed",
+    "prompt": "A person in a red shirt draws a bow, with an arrow nocked. Another individual stands nearby. A black cap and a waist bag are visible. The scene is outdoors on grassy ground under a clear sky. Trees and structures are in the background. The image is a photograph, showing archery activity.",
+    "at": "2026-10-13T15:10:37.157713+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 64,
+    "encoding_seconds": 0.09636009999667294,
+    "sha256": "6b4df1dc5cb18d00ba58f849cd4fc848ee47bd3e6d283cc59850ae575d3e9d80",
+    "file": "text-embeddings/1e2e6385e92fc50b1bcfeebc5ea6e617ea4560be16108163ec0eaa93d30ca624.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/minicpm-detailed-05430da00e88b5f9-20261013.json",
+        "bytes": 380,
+        "sha256": "ee438d0fce58a24fa86f9b1a089c2ab1dd6f91fa10dc83e99e64a32ad10136d5",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/minicpm-detailed-05430da00e88b5f9-20261014.json",
+        "bytes": 380,
+        "sha256": "bbea6a6324727dd18ba741b946059dcb9df6a329b20454e59819c3f88c786d61",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "65715a11d8c141f6a1f5abf64047e7f43474d6a7bbd2378a7ae86714591dc711",
+    "model": "minicpm",
+    "case_id": "56e803d5e8c580e0",
+    "budget": "compact",
+    "prompt": "A bright classroom with red chairs and tables. A large blue circular rug is center. A white projector screen is mounted on a wall. Windows let in light. Shelves hold books and supplies. The room is spacious and colorful. Everything is arranged for activity. The scene is indoors, photographed.",
+    "at": "2026-10-13T15:10:37.279227+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 59,
+    "encoding_seconds": 0.09654529999534134,
+    "sha256": "7db132c23ce332c4e6d8887bee8e4345d4412da5b849740475a2a8900940c7e1",
+    "file": "text-embeddings/65715a11d8c141f6a1f5abf64047e7f43474d6a7bbd2378a7ae86714591dc711.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/minicpm-compact-56e803d5e8c580e0-20261013.json",
+        "bytes": 385,
+        "sha256": "d026c4fb9e84a1e28214837aac2a3b01543442b5d9b1359949406ea1f4b77058",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/minicpm-compact-56e803d5e8c580e0-20261014.json",
+        "bytes": 385,
+        "sha256": "fae6b8e40bb28580f332c4b8bb6ea06a8bd16fd1d289d96ffe80ec9584f6d579",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "347e319a6e5b0173b13631cdb72ee8f4e2f1891b31d652a8f70e342fa9e197bb",
+    "model": "minicpm",
+    "case_id": "56e803d5e8c580e0",
+    "budget": "detailed",
+    "prompt": "A bright classroom with red and blue furniture. Red chairs surround red tables. A large circular blue and white rug is centered. A white projector screen is mounted on a wall. A window with blinds is on the left. Shelves and storage units are visible. Overhead lights illuminate the space. The setting is educational and colorful.",
+    "at": "2026-10-13T15:10:37.404733+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 66,
+    "encoding_seconds": 0.09690290001162793,
+    "sha256": "a8ff2260eb8200a9c4b2075c8a41abbf28d203b13250fcfc2eaa206f73422551",
+    "file": "text-embeddings/347e319a6e5b0173b13631cdb72ee8f4e2f1891b31d652a8f70e342fa9e197bb.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/minicpm-detailed-56e803d5e8c580e0-20261013.json",
+        "bytes": 422,
+        "sha256": "58e69c4841f2fa84c61e5e7ce17a80f6a6af8031e195ffe2932aac6bf53aee9e",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/minicpm-detailed-56e803d5e8c580e0-20261014.json",
+        "bytes": 422,
+        "sha256": "68b82e9b1fd2ed8fd692b6e681fabce871cb559449d78e521e3b42920f5d0e87",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "f5c8275df57a411303bd8c87a42d2350d4721df801eb36f20dbf7eff5c174f0c",
+    "model": "lfm16",
+    "case_id": "astronaut",
+    "budget": "compact",
+    "prompt": "A person wearing an orange space suit with a helmet on their right shoulder stands in front of an American flag and a model of a space shuttle. The person is smiling and looking directly at the camera. The background includes a plain wall and a table with the space shuttle model. The image appears to be a professional portrait taken in a studio setting.",
+    "at": "2026-10-13T15:10:37.528241+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 69,
+    "encoding_seconds": 0.09732380000059493,
+    "sha256": "2f7aa0171a59eac7d4e14ac578e8b0dcf9c0c92cc041443ee6f045083ee36eab",
+    "file": "text-embeddings/f5c8275df57a411303bd8c87a42d2350d4721df801eb36f20dbf7eff5c174f0c.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/lfm16-compact-astronaut-20261013.json",
+        "bytes": 447,
+        "sha256": "8c4a3769076cd67322debf20577b37060c0891ec8daaad53d029464ec734dc7e",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/lfm16-compact-astronaut-20261014.json",
+        "bytes": 447,
+        "sha256": "7d1946fbbecdbc33e4c3e5daac98bfb649f3305d3d5b7603a369f538e8a26ca7",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "bf521ad69b17ec2544758cc28e27d18427930dea807e863d3963893b98679dbc",
+    "model": "lfm16",
+    "case_id": "astronaut",
+    "budget": "detailed",
+    "prompt": "A person wearing an orange space suit with a black helmet is standing in front of an American flag and a model of a space shuttle. The person is smiling and looking directly at the camera. The background includes a plain wall and a table with the space shuttle model. The image appears to be a professional portrait, likely taken in a studio setting. The colors are vibrant, with the orange of the suit contrasting against the blue of the flag and the white of the shuttle model. The person's posture is upright and confident, suggesting a sense of pride and accomplishment. The overall composition is balanced, with the person centered and the objects arranged symmetrically around them.",
+    "at": "2026-10-13T15:10:37.651860+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 131,
+    "encoding_seconds": 0.09633580000081565,
+    "sha256": "e39c9369019aafa06cb23b7411677bb6325b5c8e542c1efec9b474381c520e0d",
+    "file": "text-embeddings/bf521ad69b17ec2544758cc28e27d18427930dea807e863d3963893b98679dbc.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/lfm16-detailed-astronaut-20261013.json",
+        "bytes": 780,
+        "sha256": "bf3b1282dc18c5fb35819cd78ef3d2bac32f2aef7d47663cdc0cc308a514ded8",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/lfm16-detailed-astronaut-20261014.json",
+        "bytes": 780,
+        "sha256": "72bd15781edddbcde02a3dab9273aa50cb4bca8619f912fe48906ecd5d3f04aa",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "2bddc1b254923bb89f49ba8c9ac2d4fa9b4d18ef90296c9aee630dd6583b3d0e",
+    "model": "lfm16",
+    "case_id": "coffee",
+    "budget": "compact",
+    "prompt": "A small red cup of espresso sits on a matching saucer with a silver spoon beside it. The cup is filled to the brim with dark brown coffee. The background is a wooden table. The lighting is soft and even. The image is a close-up shot.",
+    "at": "2026-10-13T15:10:37.774880+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 54,
+    "encoding_seconds": 0.09646010000142269,
+    "sha256": "30b0db80147d327e03fb303f3711c965056df614981c83ebf8d1e2b2eb551072",
+    "file": "text-embeddings/2bddc1b254923bb89f49ba8c9ac2d4fa9b4d18ef90296c9aee630dd6583b3d0e.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/lfm16-compact-coffee-20261013.json",
+        "bytes": 325,
+        "sha256": "7deea456784014047c92a49985effeac7751f63dac49e1af1ab9820d4bca828f",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/lfm16-compact-coffee-20261014.json",
+        "bytes": 325,
+        "sha256": "edfc5ac254e633432dd69cc82951a395cc195f5a2554154bec58f63333e1516f",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "ed405d3be6ebd3d40402d6dca6b58525ad21bae7cf7972738933dc87fba284c9",
+    "model": "lfm16",
+    "case_id": "coffee",
+    "budget": "detailed",
+    "prompt": "A small red cup of espresso sits on a matching saucer. A silver spoon rests beside the cup. The cup is filled with a light brown liquid. The saucer is circular with a slightly raised edge. The cup has a handle on its right side. The background is a wooden surface. The lighting is even, highlighting the textures of the cup, saucer, and wood. The image is a photograph.",
+    "at": "2026-10-13T15:10:37.898496+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 83,
+    "encoding_seconds": 0.09721190000709612,
+    "sha256": "c12752d79dc911898be477773d48a6499a58fd13e9792b63a7a92c03f75e41b7",
+    "file": "text-embeddings/ed405d3be6ebd3d40402d6dca6b58525ad21bae7cf7972738933dc87fba284c9.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/lfm16-detailed-coffee-20261013.json",
+        "bytes": 461,
+        "sha256": "0f69b6c855893afc8ac8f57113e17b7a99bb41161bc5328ba516826860df8358",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/lfm16-detailed-coffee-20261014.json",
+        "bytes": 461,
+        "sha256": "fff9de154ada958666f65f57777c9ab26fe00550010d105a686cfabbada57d2e",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "1cb0dc1a1d5ca18f3c4f043a64fbb3afe8be166ec7397478321fb45e8fc82171",
+    "model": "lfm16",
+    "case_id": "chelsea",
+    "budget": "compact",
+    "prompt": "A close-up of a cat's face with wide green eyes, light brown fur with darker stripes, white whiskers, and a pink nose. The cat is looking directly at the camera. The background is blurred, focusing on the cat's face. The image is a photograph.",
+    "at": "2026-10-13T15:10:38.022005+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 56,
+    "encoding_seconds": 0.0963597999943886,
+    "sha256": "199568f69a542286941ab31784a104fe3b478ed4335ce3d4ab22b2518698a52c",
+    "file": "text-embeddings/1cb0dc1a1d5ca18f3c4f043a64fbb3afe8be166ec7397478321fb45e8fc82171.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/lfm16-compact-chelsea-20261013.json",
+        "bytes": 335,
+        "sha256": "19b969ca7341b19632cb64d478c106e019b03743d8a1c85f2a3f217b19f9bea4",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/lfm16-compact-chelsea-20261014.json",
+        "bytes": 335,
+        "sha256": "bd8a2664aaea66127cb107b24a2a9014e28fb29fc25d4a4fea2e2d62be999980",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "aa6751cb880b5c4f6b44ea9f71db659c689ef82eedca914bb95b3678b6ed105f",
+    "model": "lfm16",
+    "case_id": "chelsea",
+    "budget": "detailed",
+    "prompt": "A close-up of a cat's face with wide green eyes, light brown fur with darker stripes, and a pink nose. The cat is looking directly at the camera with its ears slightly back. The background is blurred, focusing attention on the cat's face. The image appears to be taken indoors with soft lighting.",
+    "at": "2026-10-13T15:10:38.144516+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 63,
+    "encoding_seconds": 0.09714319999329746,
+    "sha256": "daa595850eef9adc5055fba163cef90cfa0aec74804df6a3897380deefe09cc9",
+    "file": "text-embeddings/aa6751cb880b5c4f6b44ea9f71db659c689ef82eedca914bb95b3678b6ed105f.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/lfm16-detailed-chelsea-20261013.json",
+        "bytes": 388,
+        "sha256": "d629a3b24b5a69eea57fa46666f17dc5aa9bbe2d0dbf928cf19fb5c4e3b1965f",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/lfm16-detailed-chelsea-20261014.json",
+        "bytes": 388,
+        "sha256": "060943c850b9c3be7337af88e6959a5148e8af049f9b1188e0a0fad233da148c",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "73d123b6136cbb6fcf24068c74d93ba9a0c8739178e1d612ed36f399f10e4438",
+    "model": "lfm16",
+    "case_id": "red_circle_left",
+    "budget": "compact",
+    "prompt": "A red circle on a beige background with a thin black line below it. The circle is centered and the line runs horizontally across the bottom of the image. There are no other objects or text present.",
+    "at": "2026-10-13T15:10:38.268532+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 40,
+    "encoding_seconds": 0.09696540000732057,
+    "sha256": "acba3e7053594581dee4db64bb884344f44d4a28edd53455213f13210f7cb544",
+    "file": "text-embeddings/73d123b6136cbb6fcf24068c74d93ba9a0c8739178e1d612ed36f399f10e4438.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/lfm16-compact-red_circle_left-20261013.json",
+        "bytes": 289,
+        "sha256": "88c0094acaf233347a3fe5b87172388c030cbcf5947d461a823968e8a5d245e0",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/lfm16-compact-red_circle_left-20261014.json",
+        "bytes": 289,
+        "sha256": "30e801cf50778bea3fe434d3e0d38236fb90a500fd84cf07788562269635b8d3",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "14e855c3ac0d3369f3017d32234712cee61d860ecc0ee084710e041a3f3ec39b",
+    "model": "lfm16",
+    "case_id": "red_circle_left",
+    "budget": "detailed",
+    "prompt": "A red circle is centered on a light beige background. A thin black horizontal line runs across the bottom of the image. The circle is solid and unbroken. There are no other objects or text present. The image has a simple, minimalist design.",
+    "at": "2026-10-13T15:10:38.394039+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 50,
+    "encoding_seconds": 0.09688510000705719,
+    "sha256": "869ef2eb557d11fc766c83df8948d2557bef84261207704f0ca0e69e43aff3ad",
+    "file": "text-embeddings/14e855c3ac0d3369f3017d32234712cee61d860ecc0ee084710e041a3f3ec39b.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/lfm16-detailed-red_circle_left-20261013.json",
+        "bytes": 332,
+        "sha256": "b4fb51148261d53f23b3e0ba924c1130582674bae8871773e6e8426c6000e506",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/lfm16-detailed-red_circle_left-20261014.json",
+        "bytes": 332,
+        "sha256": "0eb2557cd1c94de27ca85967944f2a95628d2eeba8da41454afe520649cc5ff7",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "67a8e41be9e5c9703053f25a867d0f11ccd841493df4b755bbae210359129012",
+    "model": "lfm16",
+    "case_id": "blue_square_right",
+    "budget": "compact",
+    "prompt": "A blue square is positioned on a light beige background. A thin black line runs horizontally across the bottom of the image. The blue square is centered vertically but shifted slightly to the right. There are no other objects or text present. The image has a simple, minimalist design with a clear contrast between the blue square and the background.",
+    "at": "2026-10-13T15:10:38.517545+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 66,
+    "encoding_seconds": 0.09650909999618307,
+    "sha256": "bcc5a05c040f83940a700d4ef006972180d63e497fb72854a87873d4bf0c48b7",
+    "file": "text-embeddings/67a8e41be9e5c9703053f25a867d0f11ccd841493df4b755bbae210359129012.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/lfm16-compact-blue_square_right-20261013.json",
+        "bytes": 442,
+        "sha256": "2fc9d158fa59e9e03065e458dce1906fd57657d552b6663b9265633370c13a10",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/lfm16-compact-blue_square_right-20261014.json",
+        "bytes": 442,
+        "sha256": "14de3203a76533761699d59e8f5864b24abb27d015e35d3b6c13f85adc97e568",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "bd17aa4d502be961c48e5adbe9cc9c02e517b48abc93def5414362db021b6a49",
+    "model": "lfm16",
+    "case_id": "blue_square_right",
+    "budget": "detailed",
+    "prompt": "A blue square is positioned on a light beige background. The square is centered vertically but slightly offset to the right. A thin horizontal line runs across the bottom of the image, separating the blue square from the rest of the background. The image has a minimalist design with no additional objects or text.",
+    "at": "2026-10-13T15:10:38.640052+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 59,
+    "encoding_seconds": 0.09654420000151731,
+    "sha256": "a2b54572fcb66a284fa4c88b7abd6b566a1f07073bc568f2d004a06b866b5a44",
+    "file": "text-embeddings/bd17aa4d502be961c48e5adbe9cc9c02e517b48abc93def5414362db021b6a49.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/lfm16-detailed-blue_square_right-20261013.json",
+        "bytes": 406,
+        "sha256": "e20d72faa28ddffa1eb754813021278b8fe1c2ab4d0c01d0e410e23e4e1513ae",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/lfm16-detailed-blue_square_right-20261014.json",
+        "bytes": 406,
+        "sha256": "01c5dd43888c350a2e06dd33c83351d50e0ce01b244a3bad82bc03cfd2e4bca8",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "7f9eb8f107548a0c65435583e05205f1dfd8568bd42ae9fd1325a8ce36de8692",
+    "model": "lfm16",
+    "case_id": "07cdb16d66edeacb",
+    "budget": "compact",
+    "prompt": "A runner is captured mid-air as they leap over a hurdle on a red track. The athlete wears a black and red uniform with white shoes. The hurdle is metallic with a white top rail. Spectators are visible in the background, watching the event. The scene is set outdoors on a grassy field with a clear sky. The image is a photograph taken during daylight.",
+    "at": "2026-10-13T15:10:38.763073+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 75,
+    "encoding_seconds": 0.09639640001114458,
+    "sha256": "d4b8f6d040fa11f1fa397872dee84235d46aa447287a6e50618b539d394b02d5",
+    "file": "text-embeddings/7f9eb8f107548a0c65435583e05205f1dfd8568bd42ae9fd1325a8ce36de8692.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/lfm16-compact-07cdb16d66edeacb-20261013.json",
+        "bytes": 442,
+        "sha256": "1f3108f02548e1a2b44d31fc5ce03937ec15163f2d6426fe0fc9da227d21c807",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/lfm16-compact-07cdb16d66edeacb-20261014.json",
+        "bytes": 442,
+        "sha256": "679b8af5fd524390f5a2322e00f182b739afb9cf724997a3659a2a1f1d9d20b4",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "d914d0910e51fd8d98b301532eb5f2da84efb9074b0f482d6dfa2c8abe054a66",
+    "model": "lfm16",
+    "case_id": "07cdb16d66edeacb",
+    "budget": "detailed",
+    "prompt": "A track athlete is captured mid-jump over a hurdle. The athlete wears a black and red uniform with white shoes. The hurdle is metallic with a red base. The track surface is red with white lane markings. Spectators are visible in the background, standing on grass. The scene is set outdoors during the day. The photograph is in color and appears to be taken from a side angle of the track.",
+    "at": "2026-10-13T15:10:38.885690+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 82,
+    "encoding_seconds": 0.09711849999439437,
+    "sha256": "d7503a7a6d7a696c5a4ff2a0c03a5d685dde4dbc0b6c910796b5c67acaf19166",
+    "file": "text-embeddings/d914d0910e51fd8d98b301532eb5f2da84efb9074b0f482d6dfa2c8abe054a66.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/lfm16-detailed-07cdb16d66edeacb-20261013.json",
+        "bytes": 480,
+        "sha256": "af5301ea7fc76bcaca9463b7b50af34b4e8310a98f4809222062492eec48e33b",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/lfm16-detailed-07cdb16d66edeacb-20261014.json",
+        "bytes": 480,
+        "sha256": "f8a1a62f1aab765097b4457fadb12af8c84758e714ebee573c85403a0f9ca155",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "d757e3ec66390be329ad04997f880da49b14f4c02b0c7f37aa118fb13aea2b79",
+    "model": "lfm16",
+    "case_id": "67e67c811336e94b",
+    "budget": "compact",
+    "prompt": "A paved road stretches through a dense forest of tall pine trees. Two people walk side by side on the road, facing away from the camera. The sky is bright and clear, indicating daytime. The road is flanked by tall, straight trees with green needles. The forest floor is covered with fallen leaves and pine needles. The scene is serene and natural, with no signs of urban development.",
+    "at": "2026-10-13T15:10:39.010199+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 79,
+    "encoding_seconds": 0.09666899999137968,
+    "sha256": "0d1636bfdb6e6e7e42e885b15ead6922295adaf10d8ea44eca17eea55a8ca64b",
+    "file": "text-embeddings/d757e3ec66390be329ad04997f880da49b14f4c02b0c7f37aa118fb13aea2b79.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/lfm16-compact-67e67c811336e94b-20261013.json",
+        "bytes": 475,
+        "sha256": "3744550a6d2682a410023b008a0df2b52266e77812d7e52a1b47e6581d91ca0b",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/lfm16-compact-67e67c811336e94b-20261014.json",
+        "bytes": 475,
+        "sha256": "dc4996a0ad2cf72f44017cd6dbf248d111ef30fd315e369f3535e0fbbb446e52",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "eadea68467f53d68f72cd0e1b57ccc042b533789092c2db37c4cb32d4f6eb24e",
+    "model": "lfm16",
+    "case_id": "67e67c811336e94b",
+    "budget": "detailed",
+    "prompt": "A paved road stretches through a dense forest of tall evergreen trees. Two people walk side by side along the road, facing away from the camera. The sunlight filters through the tree canopy, casting dappled shadows on the ground. The scene is serene and natural, with no other vehicles or structures visible. The trees are closely packed, creating a tunnel-like effect down the road. The sky is partially visible through the gaps in the foliage. The overall atmosphere is peaceful and secluded.",
+    "at": "2026-10-13T15:10:39.132706+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 97,
+    "encoding_seconds": 0.0968144999933429,
+    "sha256": "8747e7d5b8b3557d4a010881dc63ca54bfd6e4a215c12064c65d7540e8347912",
+    "file": "text-embeddings/eadea68467f53d68f72cd0e1b57ccc042b533789092c2db37c4cb32d4f6eb24e.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/lfm16-detailed-67e67c811336e94b-20261013.json",
+        "bytes": 586,
+        "sha256": "5d1581eeda677a46b9497d22ee5e57b01f6aeee0ec18e0b9a2afe38feb0ce985",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/lfm16-detailed-67e67c811336e94b-20261014.json",
+        "bytes": 586,
+        "sha256": "b2e9472d06cf6335392b8b9446138221a26319467a86eba151d7a8795f2a4c83",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "168739e82f3a941e3b7eb0561891b1608caa0f8b4c11140421841cc5ce0aab96",
+    "model": "lfm16",
+    "case_id": "79083da149309142",
+    "budget": "compact",
+    "prompt": "A colorful bird with a pink chest, blue wings, and brown body perches on a branch. The background is blurred foliage. The bird faces right, showing its profile. The scene is natural, likely in a forest or garden. The image is a photograph.",
+    "at": "2026-10-13T15:10:39.256220+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 53,
+    "encoding_seconds": 0.09655720001319423,
+    "sha256": "e72a58bfa5c937d409b03ee1087d467e858859995ac1fd32e45e57e64858f12f",
+    "file": "text-embeddings/168739e82f3a941e3b7eb0561891b1608caa0f8b4c11140421841cc5ce0aab96.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/lfm16-compact-79083da149309142-20261013.json",
+        "bytes": 331,
+        "sha256": "79cdebbc21ca10901637589ac4669d8cf67c8517c3b57958748721b6d5dfd259",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/lfm16-compact-79083da149309142-20261014.json",
+        "bytes": 331,
+        "sha256": "585128854477c45de869daa918bb57e8dcd54e3eb54363c79f02671a1d66c364",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "2b5d142dca767530d866b551409591300a4ab6a1273aa950a541d82598d1624c",
+    "model": "lfm16",
+    "case_id": "79083da149309142",
+    "budget": "detailed",
+    "prompt": "A bird with a colorful plumage is perched on a branch. The bird has a mix of pink, purple, blue, and brown feathers. Its beak is black, and its eyes are dark. The background consists of green foliage and a blurred wooden structure. The bird is facing to the right, and its tail feathers are visible. The image appears to be taken in a natural outdoor setting. The photograph is in color and has a realistic style.",
+    "at": "2026-10-13T15:10:39.380238+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 92,
+    "encoding_seconds": 0.09737249999307096,
+    "sha256": "12ac324fc4949db619041d71bc1d62e3314859497a439c8a068b65a2ebf11408",
+    "file": "text-embeddings/2b5d142dca767530d866b551409591300a4ab6a1273aa950a541d82598d1624c.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/lfm16-detailed-79083da149309142-20261013.json",
+        "bytes": 505,
+        "sha256": "3f938f07a1bf0c5d0d3525f30a650e004085cb671be3f5ebb1b6c3f8e8f7dde0",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/lfm16-detailed-79083da149309142-20261014.json",
+        "bytes": 505,
+        "sha256": "6c217939f59b102651c372b46e351af681c46c178be870d1773ff5cc871211f3",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "e7684e476a0a4e6db5702061b6c45866bac3ce4539e67b885e8fb964a19230f9",
+    "model": "lfm16",
+    "case_id": "f5f2decfd4122750",
+    "budget": "compact",
+    "prompt": "White cockatoo with yellow crest perched on branch. Feathers are ruffled. Background is blurred. Light source appears from left. Bird is facing forward. No other objects visible.",
+    "at": "2026-10-13T15:10:39.504745+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 38,
+    "encoding_seconds": 0.09865640000498388,
+    "sha256": "3ca5d4190392920bc21e2f8a072d5384e163dac7fc8917df73301ea5e4df5204",
+    "file": "text-embeddings/e7684e476a0a4e6db5702061b6c45866bac3ce4539e67b885e8fb964a19230f9.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/lfm16-compact-f5f2decfd4122750-20261013.json",
+        "bytes": 270,
+        "sha256": "157f969c47a10b605df1f9dc6095f2ed1fdfbeed025d57f4894135feeffcd629",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/lfm16-compact-f5f2decfd4122750-20261014.json",
+        "bytes": 270,
+        "sha256": "38148b5f038a7f07fd2e887b427415d0590ff10f7aec03ad7c3853b516e3fac5",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "78546a439a211e6cfb756516b929df9f4828ede38f71afdbbb544347cea20b88",
+    "model": "lfm16",
+    "case_id": "f5f2decfd4122750",
+    "budget": "detailed",
+    "prompt": "A white cockatoo with yellow crest feathers perched on a branch. The bird has a curved beak and black eyes. The background is blurred, showing a natural outdoor setting. The bird is facing forward, slightly turned to the left. The branch is brown and appears sturdy. The lighting suggests daytime. The image is a photograph.",
+    "at": "2026-10-13T15:10:39.630250+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 68,
+    "encoding_seconds": 0.0967986000032397,
+    "sha256": "256568c2d5d7b0792316bfff200fb533335dd2bb5c7461a74b10039cd0803fbe",
+    "file": "text-embeddings/78546a439a211e6cfb756516b929df9f4828ede38f71afdbbb544347cea20b88.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/lfm16-detailed-f5f2decfd4122750-20261013.json",
+        "bytes": 416,
+        "sha256": "18ad0f510649540788971ebd213262f1f6ac9d1bf9ca684eb708fd50f5a524a8",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/lfm16-detailed-f5f2decfd4122750-20261014.json",
+        "bytes": 416,
+        "sha256": "9fa807c08e2eb9396870bbcac29d546792f17c90733b499a412bbe7a8993168b",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "3aea90a3b865c130b3c9fcb2a188e1afaa9c55afc8e1014251ffeca865f73937",
+    "model": "lfm16",
+    "case_id": "a158e89a4415eb57",
+    "budget": "compact",
+    "prompt": "A dark blue Volkswagen car is parked on grass. The front end is visible, with the hood, grille, and headlights in view. The license plate reads \"794-95.\" The car appears to be stationary, with no motion blur or activity. The background consists of green grass and a clear sky. The image is taken during daylight hours.",
+    "at": "2026-10-13T15:10:39.753761+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 72,
+    "encoding_seconds": 0.09630530000140425,
+    "sha256": "d217e7faa4b93819150b402a33e1239037b19753ef60221281438d5eb8edd91c",
+    "file": "text-embeddings/3aea90a3b865c130b3c9fcb2a188e1afaa9c55afc8e1014251ffeca865f73937.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/lfm16-compact-a158e89a4415eb57-20261013.json",
+        "bytes": 412,
+        "sha256": "42308741c7f257473efe88b19dcb68c4ac2ba2d6214e30d6e6f1ff7f5abfa8e6",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/lfm16-compact-a158e89a4415eb57-20261014.json",
+        "bytes": 412,
+        "sha256": "e7796c9aa33de8ae263e4a6e3994be61a2ee1ea74b9614e7a4b6e6a21e408698",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "ed87e11f8f1a7be4b9c912dfe4cb2cfdbcce8ac2e6a8280659f2695fb8feb817",
+    "model": "lfm16",
+    "case_id": "a158e89a4415eb57",
+    "budget": "detailed",
+    "prompt": "A dark blue Volkswagen car is parked on grass. The front end is visible, showing the grille, headlights, and license plate. The car has a clean, reflective surface. The background includes green grass and a portion of a sidewalk. The vehicle appears to be stationary with no motion blur. The lighting suggests daytime with natural sunlight.",
+    "at": "2026-10-13T15:10:39.875772+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 66,
+    "encoding_seconds": 0.09641169999667909,
+    "sha256": "35a5e1baed68fe5393a7bf0359df479c43b0c7c2b9dcee793acfb1150c82aae1",
+    "file": "text-embeddings/ed87e11f8f1a7be4b9c912dfe4cb2cfdbcce8ac2e6a8280659f2695fb8feb817.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/lfm16-detailed-a158e89a4415eb57-20261013.json",
+        "bytes": 432,
+        "sha256": "5e7918d66cd205e7e3e3c63df68d4e60248fdaf7bb0689cc65a4f693e56b4c94",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/lfm16-detailed-a158e89a4415eb57-20261014.json",
+        "bytes": 432,
+        "sha256": "6ab463e78c92805c7193d115beaf9c3e96466b92b258f097c54e57670c7b5afd",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "b8cae1d4d272d081ce2efcc578caea6b68d55c289a2be09308dad4bd819482c8",
+    "model": "lfm16",
+    "case_id": "e84c2f66a5963a9a",
+    "budget": "compact",
+    "prompt": "A hand holds a crochet hook over a bowl of popcorn. The popcorn is white with yellow kernels. The hand is resting on a plaid fabric surface. The crochet hook is silver with a black tip. The scene is indoors.",
+    "at": "2026-10-13T15:10:39.999281+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 46,
+    "encoding_seconds": 0.09633679999387823,
+    "sha256": "a7cb47c3b558efa9373ab8fb7363d19e96f8641bcdfcad9fbab272ced53bc0f0",
+    "file": "text-embeddings/b8cae1d4d272d081ce2efcc578caea6b68d55c289a2be09308dad4bd819482c8.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/lfm16-compact-e84c2f66a5963a9a-20261013.json",
+        "bytes": 299,
+        "sha256": "257bc8b3178564c2de513b095d50b024999fa29c99ee2e74ca977b43c886bf3c",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/lfm16-compact-e84c2f66a5963a9a-20261014.json",
+        "bytes": 299,
+        "sha256": "84bc34900854b6f92559e26f2ccddb22940f192b14a66bb161f0ec7bdcae2e7d",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "8e9a5147d54b5fa2115456f1ab6c8720750ace00d77440e8921340f18bac970f",
+    "model": "lfm16",
+    "case_id": "e84c2f66a5963a9a",
+    "budget": "detailed",
+    "prompt": "A hand holds a crochet hook over a bowl of popcorn. The bowl is pink with a red rim. Popcorn kernels are white and yellow. The hand has a ring on the ring finger. The background shows a plaid fabric, possibly clothing. The lighting is soft, casting gentle shadows. The scene suggests a casual, relaxed setting.",
+    "at": "2026-10-13T15:10:40.121788+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 68,
+    "encoding_seconds": 0.09634730000107083,
+    "sha256": "725fa77bfeeb85878a0e814f1d63ef512b2e42ea5ba1d9d174bd706345d6c321",
+    "file": "text-embeddings/8e9a5147d54b5fa2115456f1ab6c8720750ace00d77440e8921340f18bac970f.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/lfm16-detailed-e84c2f66a5963a9a-20261013.json",
+        "bytes": 402,
+        "sha256": "c39937435361f5fd7f143887640b152b68c179d0d44ae01787b21f363bae5b20",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/lfm16-detailed-e84c2f66a5963a9a-20261014.json",
+        "bytes": 402,
+        "sha256": "3e89b3c044d27782c3de09135d4040bcde5b2b7478d2956c91075a69c871782a",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "9291e18db93568d6201530396e8df921702ad55ba68b9668b41c80fc83b519e8",
+    "model": "lfm16",
+    "case_id": "05430da00e88b5f9",
+    "budget": "compact",
+    "prompt": "A man in a red shirt is drawing a bow with an arrow nocked. He is wearing a black cap and sunglasses on top. Another person is standing behind him, observing. The setting appears to be outdoors with trees and grass visible. The man is focused on his target, while the other person watches attentively.",
+    "at": "2026-10-13T15:10:40.245300+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 65,
+    "encoding_seconds": 0.09657100000185892,
+    "sha256": "02c19776d50bff6c610bef5cccb677ae4c9152dbb5fa26381cefdcbff191b43d",
+    "file": "text-embeddings/9291e18db93568d6201530396e8df921702ad55ba68b9668b41c80fc83b519e8.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/lfm16-compact-05430da00e88b5f9-20261013.json",
+        "bytes": 393,
+        "sha256": "d9c4e7f3521c1cc8482a7ca130fa748a06e9a29077f562b12588e7f1c535a539",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/lfm16-compact-05430da00e88b5f9-20261014.json",
+        "bytes": 393,
+        "sha256": "84fb18ecc5660bb93676d76f60c06c76cabe674ad9390fb618abb265b22926e8",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "547ef3502e45bd42f98ea30aad5230b396791efcbc4cb013930c9b80188acb9d",
+    "model": "lfm16",
+    "case_id": "05430da00e88b5f9",
+    "budget": "detailed",
+    "prompt": "A person wearing a red shirt is holding a bow and arrow, aiming at a target. Another person in black clothing stands nearby. The scene takes place outdoors with trees and grass visible in the background. The person in red is facing away from the camera, while the person in black is facing towards the camera. The bow is drawn back, ready to release the arrow. The setting appears to be a park or recreational area. The image is a photograph taken during the daytime.",
+    "at": "2026-10-13T15:10:40.369314+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 95,
+    "encoding_seconds": 0.0969150000018999,
+    "sha256": "2bfa0009f363d5866bae9f747477baec1372524a3aac2aa073a1c3d365f138b6",
+    "file": "text-embeddings/547ef3502e45bd42f98ea30aad5230b396791efcbc4cb013930c9b80188acb9d.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/lfm16-detailed-05430da00e88b5f9-20261013.json",
+        "bytes": 559,
+        "sha256": "97d2f878543562ccb169387f40e47f05ae3c6ca5987633f2f398fe30d2da0399",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/lfm16-detailed-05430da00e88b5f9-20261014.json",
+        "bytes": 559,
+        "sha256": "a5bdd7532410e84e28e072870ccc71cc5699630b3e4bc4b51c03831e1b9a973c",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "d0cf31dae21b95f7cdffd2cacac666b3c3e89b68a655a9506f5e9187428eab37",
+    "model": "lfm16",
+    "case_id": "56e803d5e8c580e0",
+    "budget": "compact",
+    "prompt": "A classroom with round tables and chairs arranged in a circle. There is a whiteboard on the wall and a colorful rug on the floor. The room has windows with blinds and shelves with books and toys. The walls are painted white and the ceiling has wooden beams. The lighting is bright and natural.",
+    "at": "2026-10-13T15:10:40.493822+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 60,
+    "encoding_seconds": 0.09756480000214651,
+    "sha256": "40e2396f233548903d00a753402e1f9b19ae91ec5e13c8429cce355751dfab8c",
+    "file": "text-embeddings/d0cf31dae21b95f7cdffd2cacac666b3c3e89b68a655a9506f5e9187428eab37.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/lfm16-compact-56e803d5e8c580e0-20261013.json",
+        "bytes": 385,
+        "sha256": "ce32990486dedaf081bf3bb43e629fa176b5e863f3227df3be0c9c2812e1ee56",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/lfm16-compact-56e803d5e8c580e0-20261014.json",
+        "bytes": 385,
+        "sha256": "fd80076eab37d97b134270b174479fb229345f661a9ae78582951acd6683e971",
+        "seed": 20261014
+      }
+    ]
+  },
+  {
+    "key": "d0f6a9b935979ffd1021146f512b6fc81d06d9fe9e2ee64d51538db498f93b53",
+    "model": "lfm16",
+    "case_id": "56e803d5e8c580e0",
+    "budget": "detailed",
+    "prompt": "A classroom with round tables and red chairs arranged in a circle. A whiteboard is mounted on the wall, and there are shelves with books and toys. The floor has a blue circular rug. The room has large windows with blinds partially open, allowing natural light to enter. The walls are painted white, and the ceiling has wooden beams. The overall setting appears to be a bright and organized learning environment.",
+    "at": "2026-10-13T15:10:40.617329+00:00",
+    "source": "Text only, re-encoded independently at receiver",
+    "caption_token_budget": 295,
+    "protocol_sha256": "b5784b92c0bf7e026992ffea9605d8bb5a4df8c4cb3841edaabb6f4db0904ffd",
+    "caption_tokens": 81,
+    "encoding_seconds": 0.10071919999609236,
+    "sha256": "e684742c70cdd32240af5290ec960dec7021f63201d5da06161eb9f2af6a871e",
+    "file": "text-embeddings/d0f6a9b935979ffd1021146f512b6fc81d06d9fe9e2ee64d51538db498f93b53.safetensors",
+    "status": "completed",
+    "packets": [
+      {
+        "file": "text-packets/lfm16-detailed-56e803d5e8c580e0-20261013.json",
+        "bytes": 503,
+        "sha256": "a05ae1f64223b64bba4926276b43af641dc38b565dff02fe7d91c6caf908b73b",
+        "seed": 20261013
+      },
+      {
+        "file": "text-packets/lfm16-detailed-56e803d5e8c580e0-20261014.json",
+        "bytes": 503,
+        "sha256": "1fe2d11306dbacc5a8e443968a70064e7f629c04ef39df711dcb307f68f3a046",
+        "seed": 20261014
+      }
+    ]
+  }
+]

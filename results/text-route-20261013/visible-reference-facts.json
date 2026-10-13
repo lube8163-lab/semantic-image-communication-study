@@ -1,0 +1,94 @@
+{
+  "role": "Manual visible facts fixed from normalized source images before reading model captions or regenerated images. Not generator inputs. Exploratory visual reference, not an independent human panel.",
+  "cases": {
+    "astronaut": [
+      "Woman in orange astronaut suit",
+      "Short light brown hair and upper body portrait",
+      "Black helmet at lower right",
+      "US flag at left",
+      "Space shuttle model at right"
+    ],
+    "coffee": [
+      "One cup containing brown coffee with light crema",
+      "Red outside and white inside of cup",
+      "Matching red saucer",
+      "Metal spoon on right side of saucer",
+      "Oblique overhead view on wooden table"
+    ],
+    "chelsea": [
+      "Close view of tabby cat face",
+      "Brown fur with dark stripes",
+      "Two large green/gold eyes",
+      "Nose below center and white whiskers",
+      "Face fills the frame"
+    ],
+    "red_circle_left": [
+      "One filled red circle",
+      "Circle on left half above horizontal line",
+      "Light cream background",
+      "Thin dark horizontal line below circle"
+    ],
+    "blue_square_right": [
+      "One filled blue square",
+      "Square on right half above horizontal line",
+      "Light cream background",
+      "Thin dark horizontal line below square"
+    ],
+    "07cdb16d66edeacb": [
+      "Athlete clearing a hurdle at left foreground",
+      "Extended leg and airborne pose",
+      "Red running track",
+      "White lane lines",
+      "Green field and people in background"
+    ],
+    "67e67c811336e94b": [
+      "Tall straight trees form forest corridor",
+      "Paved path recedes toward center",
+      "Two small people walking in distance",
+      "Bright daylight through canopy",
+      "Vertical trunks dominate image"
+    ],
+    "79083da149309142": [
+      "One colorful bird perched on branch",
+      "Purple throat and turquoise/blue chest",
+      "Dark pointed beak faces left",
+      "Bird on right side of frame",
+      "Soft green background and diagonal branches"
+    ],
+    "f5f2decfd4122750": [
+      "One white cockatoo perched on branch",
+      "Long yellow raised curved crest",
+      "Dark beak and eye",
+      "Bird body and feet visible",
+      "Soft brown background"
+    ],
+    "a158e89a4415eb57": [
+      "Front of dark Volkswagen car",
+      "Oblique close view of hood and windshield",
+      "Rectangular headlight with amber corner",
+      "VW badge at grille",
+      "Grass and foliage reflections"
+    ],
+    "e84c2f66a5963a9a": [
+      "Pink/orange bowl full of white popcorn",
+      "Hand enters from left/top foreground",
+      "Thin metal utensil over bowl",
+      "Close oblique overhead framing",
+      "Dark surface around bowl"
+    ],
+    "05430da00e88b5f9": [
+      "Man in red shirt and dark cap",
+      "Arms extended to left holding archery equipment",
+      "Other people partly visible at left",
+      "Outdoor green trees and blue sky",
+      "Side view of man"
+    ],
+    "56e803d5e8c580e0": [
+      "Empty classroom with small red chairs and low tables",
+      "Whiteboard on back wall",
+      "Windows along left wall",
+      "Toys and books around tables",
+      "Wood ceiling beams and US flag at upper right"
+    ]
+  }
+}

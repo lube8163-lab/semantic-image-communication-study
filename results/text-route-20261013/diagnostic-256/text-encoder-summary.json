@@ -1,0 +1,10 @@
+{
+  "at": "2026-10-13T15:10:40.787453+00:00",
+  "successful": 79,
+  "failed": [],
+  "caption_token_budget": 295,
+  "max_caption_tokens": 131,
+  "empty_vs_supplied_empty_relative_l2": 0.018825344741344452,
+  "empty_masks_equal": true,
+  "null_choice": "Independently encoded empty text using the same FP16 language encoder as positive captions"
+}

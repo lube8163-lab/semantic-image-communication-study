@@ -1,0 +1,65 @@
+{
+  "role": "Targeted qualitative checks by Codex against the fixed256 source. Not a comprehensive, blinded or independent human accuracy score. No raw caption is edited.",
+  "checks": [
+    {
+      "case_id": "red_circle_left",
+      "model": "qwen4b",
+      "budget": "compact",
+      "finding": "Caption places the circle left of the horizontal line; source has a full-width line below the circle. The regenerated short-text image places a short line beside the circle."
+    },
+    {
+      "case_id": "blue_square_right",
+      "model": "qwen4b",
+      "budget": "detailed",
+      "finding": "Caption calls the square centered; source square is on the right. Short caption correctly mentions right, showing more words are not always more faithful."
+    },
+    {
+      "case_id": "blue_square_right",
+      "model": "minicpm",
+      "budget": "both",
+      "finding": "Both captions explicitly say centered horizontally, contradicting the right-hand source location."
+    },
+    {
+      "case_id": "red_circle_left",
+      "model": "minicpm",
+      "budget": "both",
+      "finding": "Left position is preserved, but the horizontal line is omitted and the captions state there are no additional elements/details."
+    },
+    {
+      "case_id": "red_circle_left",
+      "model": "lfm16",
+      "budget": "both",
+      "finding": "Both captions call the circle centered despite its left position. The bottom line is recognized."
+    },
+    {
+      "case_id": "coffee",
+      "model": "lfm16",
+      "budget": "compact",
+      "finding": "Caption says coffee fills the cup to the brim; the input shows considerable empty white interior above the coffee."
+    },
+    {
+      "case_id": "coffee",
+      "model": "lfm16",
+      "budget": "detailed",
+      "finding": "Caption places handle on the right; source handle points lower-left."
+    },
+    {
+      "case_id": "79083da149309142",
+      "model": "qwen4b",
+      "budget": "both",
+      "finding": "Both captions say the bird faces right; the source bird faces left. The first-seed regeneration nevertheless faces left, illustrating that generator priors can override words."
+    },
+    {
+      "case_id": "79083da149309142",
+      "model": "lfm16",
+      "budget": "both",
+      "finding": "Both captions say bird faces right instead of the source left. Preserve the raw failure independently of whether the receiver happens to correct it."
+    },
+    {
+      "case_id": "astronaut",
+      "model": "qwen4b",
+      "budget": "compact",
+      "finding": "Framed photograph describes framing ambiguously; receiver draws a visible picture frame absent from the source. Rocket wording also simplifies the shuttle-stack structure."
+    }
+  ]
+}

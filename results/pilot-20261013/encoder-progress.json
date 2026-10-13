@@ -1,0 +1,2589 @@
+{
+  "rows": [
+    {
+      "image": "astronaut",
+      "kind": "photograph",
+      "input_sha256": "35104b000dbc1b242d19203de6c8be1077cafe367723a8bca39e7f21657d9122",
+      "sigma": 0.1,
+      "seed": 20261013,
+      "text_condition": "official cached empty prompt",
+      "precision": "fp16_autocast",
+      "layers": {
+        "1": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -49.887359619140625,
+          "max": 140.70751953125,
+          "mean": 0.11044764518737793,
+          "std": 2.764303207397461,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "8": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -53.31201934814453,
+          "max": 268.8594970703125,
+          "mean": 0.17490367591381073,
+          "std": 4.567594051361084,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "10": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -53.09619140625,
+          "max": 77.87146759033203,
+          "mean": 0.03748147934675217,
+          "std": 1.5374970436096191,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "16": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -54.28451919555664,
+          "max": 375.55908203125,
+          "mean": 0.14125663042068481,
+          "std": 5.517358779907227,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "24": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -918.4407348632812,
+          "max": 57.271568298339844,
+          "mean": 0.4412689208984375,
+          "std": 11.905486106872559,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        }
+      },
+      "forward_seconds": 0.5024209000039264,
+      "feature_archive_bytes": 12146340,
+      "diagnostic_psnr": 32.77883715427442,
+      "diagnostic_mae": 4.1237945556640625,
+      "telemetry": {
+        "at": "2026-10-13T08:41:42.789136+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12677, 37, 42.72, 0",
+        "torch_peak_allocated_bytes": 12513530368,
+        "torch_peak_reserved_bytes": 12884901888
+      }
+    },
+    {
+      "image": "astronaut",
+      "kind": "photograph",
+      "input_sha256": "35104b000dbc1b242d19203de6c8be1077cafe367723a8bca39e7f21657d9122",
+      "sigma": 0.5,
+      "seed": 20261013,
+      "text_condition": "official cached empty prompt",
+      "precision": "fp16_autocast",
+      "layers": {
+        "1": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -29.90923309326172,
+          "max": 160.72853088378906,
+          "mean": 0.14474093914031982,
+          "std": 2.9766530990600586,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "8": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -33.34374237060547,
+          "max": 315.6502990722656,
+          "mean": 0.20801472663879395,
+          "std": 5.258228778839111,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "10": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -33.25440979003906,
+          "max": 100.73745727539062,
+          "mean": 0.053290121257305145,
+          "std": 1.678579330444336,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "16": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -33.663658142089844,
+          "max": 371.23529052734375,
+          "mean": 0.2414199560880661,
+          "std": 6.264514923095703,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "24": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -850.4945068359375,
+          "max": 53.27495193481445,
+          "mean": 0.8950744867324829,
+          "std": 12.973076820373535,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        }
+      },
+      "forward_seconds": 0.14944320000358857,
+      "feature_archive_bytes": 12123611,
+      "diagnostic_psnr": 21.545025450471876,
+      "diagnostic_mae": 14.754140218098959,
+      "telemetry": {
+        "at": "2026-10-13T08:41:43.553687+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12679, 37, 43.50, 0",
+        "torch_peak_allocated_bytes": 12516829696,
+        "torch_peak_reserved_bytes": 12886999040
+      }
+    },
+    {
+      "image": "astronaut",
+      "kind": "photograph",
+      "input_sha256": "35104b000dbc1b242d19203de6c8be1077cafe367723a8bca39e7f21657d9122",
+      "sigma": 0.9,
+      "seed": 20261013,
+      "text_condition": "official cached empty prompt",
+      "precision": "fp16_autocast",
+      "layers": {
+        "1": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -12.876113891601562,
+          "max": 157.92164611816406,
+          "mean": 0.15700045228004456,
+          "std": 2.957706928253174,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "8": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -11.415450096130371,
+          "max": 342.18145751953125,
+          "mean": 0.23655113577842712,
+          "std": 5.273104190826416,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "10": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -11.380619049072266,
+          "max": 107.77951049804688,
+          "mean": 0.07359322905540466,
+          "std": 1.7912412881851196,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "16": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -11.545413970947266,
+          "max": 375.60540771484375,
+          "mean": 0.30509090423583984,
+          "std": 6.808040618896484,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "24": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -429.1143798828125,
+          "max": 25.27804183959961,
+          "mean": 1.475258231163025,
+          "std": 5.623931407928467,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        }
+      },
+      "forward_seconds": 0.14939450000383658,
+      "feature_archive_bytes": 12120200,
+      "diagnostic_psnr": 9.582495567067436,
+      "diagnostic_mae": 64.47217305501302,
+      "telemetry": {
+        "at": "2026-10-13T08:41:44.191254+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12679, 38, 43.50, 0",
+        "torch_peak_allocated_bytes": 12516829696,
+        "torch_peak_reserved_bytes": 12886999040
+      }
+    },
+    {
+      "image": "coffee",
+      "kind": "photograph",
+      "input_sha256": "ed76d8a096234720bab84b476d1640da817e06813d2a93695c4bebd61cbe10c4",
+      "sigma": 0.1,
+      "seed": 20261013,
+      "text_condition": "official cached empty prompt",
+      "precision": "fp16_autocast",
+      "layers": {
+        "1": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -45.77602005004883,
+          "max": 129.9611358642578,
+          "mean": 0.1098065972328186,
+          "std": 2.794809341430664,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "8": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -48.66938781738281,
+          "max": 282.89862060546875,
+          "mean": 0.1758011132478714,
+          "std": 4.76235818862915,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "10": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -48.45791244506836,
+          "max": 70.60250854492188,
+          "mean": 0.03359333798289299,
+          "std": 1.5560808181762695,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "16": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -49.33150863647461,
+          "max": 361.7248840332031,
+          "mean": 0.12747667729854584,
+          "std": 5.1972479820251465,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "24": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -824.7369995117188,
+          "max": 39.79548645019531,
+          "mean": 0.40486836433410645,
+          "std": 11.348122596740723,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        }
+      },
+      "forward_seconds": 0.14957489999505924,
+      "feature_archive_bytes": 12145597,
+      "diagnostic_psnr": 33.6539999373712,
+      "diagnostic_mae": 3.794275919596354,
+      "telemetry": {
+        "at": "2026-10-13T08:41:44.833302+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12679, 38, 43.59, 0",
+        "torch_peak_allocated_bytes": 12516829696,
+        "torch_peak_reserved_bytes": 12886999040
+      }
+    },
+    {
+      "image": "coffee",
+      "kind": "photograph",
+      "input_sha256": "ed76d8a096234720bab84b476d1640da817e06813d2a93695c4bebd61cbe10c4",
+      "sigma": 0.5,
+      "seed": 20261013,
+      "text_condition": "official cached empty prompt",
+      "precision": "fp16_autocast",
+      "layers": {
+        "1": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -26.674482345581055,
+          "max": 160.9420928955078,
+          "mean": 0.1448061615228653,
+          "std": 3.072239875793457,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "8": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -30.078907012939453,
+          "max": 314.6547546386719,
+          "mean": 0.21417498588562012,
+          "std": 5.248187065124512,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "10": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -29.99951171875,
+          "max": 104.13023376464844,
+          "mean": 0.056511811912059784,
+          "std": 1.7386609315872192,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "16": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -30.474931716918945,
+          "max": 394.95574951171875,
+          "mean": 0.2324461042881012,
+          "std": 6.127805233001709,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "24": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -739.3734130859375,
+          "max": 47.01836395263672,
+          "mean": 0.9308497309684753,
+          "std": 11.456661224365234,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        }
+      },
+      "forward_seconds": 0.14936709999892628,
+      "feature_archive_bytes": 12125340,
+      "diagnostic_psnr": 22.327866195793284,
+      "diagnostic_mae": 13.900853474934896,
+      "telemetry": {
+        "at": "2026-10-13T08:41:45.559857+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12679, 38, 43.59, 0",
+        "torch_peak_allocated_bytes": 12516829696,
+        "torch_peak_reserved_bytes": 12886999040
+      }
+    },
+    {
+      "image": "coffee",
+      "kind": "photograph",
+      "input_sha256": "ed76d8a096234720bab84b476d1640da817e06813d2a93695c4bebd61cbe10c4",
+      "sigma": 0.9,
+      "seed": 20261013,
+      "text_condition": "official cached empty prompt",
+      "precision": "fp16_autocast",
+      "layers": {
+        "1": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -13.837133407592773,
+          "max": 160.046875,
+          "mean": 0.15661510825157166,
+          "std": 2.9563052654266357,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "8": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -11.183198928833008,
+          "max": 343.08721923828125,
+          "mean": 0.23511669039726257,
+          "std": 5.30259895324707,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "10": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -11.144363403320312,
+          "max": 104.01788330078125,
+          "mean": 0.07090433686971664,
+          "std": 1.7379900217056274,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "16": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -11.255936622619629,
+          "max": 398.6554260253906,
+          "mean": 0.3031740188598633,
+          "std": 6.789727687835693,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "24": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -398.7841796875,
+          "max": 29.250732421875,
+          "mean": 1.5147483348846436,
+          "std": 4.6489081382751465,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        }
+      },
+      "forward_seconds": 0.14944139999715844,
+      "feature_archive_bytes": 12125576,
+      "diagnostic_psnr": 10.161827774049353,
+      "diagnostic_mae": 58.340972900390625,
+      "telemetry": {
+        "at": "2026-10-13T08:41:46.180413+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12679, 38, 43.59, 0",
+        "torch_peak_allocated_bytes": 12516829696,
+        "torch_peak_reserved_bytes": 12886999040
+      }
+    },
+    {
+      "image": "chelsea",
+      "kind": "photograph",
+      "input_sha256": "34dd3ca5ca2ccf23024a22092bcd4e61b6fa1a430d92f4025500fb48d1b38264",
+      "sigma": 0.1,
+      "seed": 20261013,
+      "text_condition": "official cached empty prompt",
+      "precision": "fp16_autocast",
+      "layers": {
+        "1": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -34.694313049316406,
+          "max": 141.42784118652344,
+          "mean": 0.11162124574184418,
+          "std": 2.7667744159698486,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "8": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -35.23576736450195,
+          "max": 268.5352783203125,
+          "mean": 0.16614770889282227,
+          "std": 4.497128486633301,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "10": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -34.98761749267578,
+          "max": 70.59407043457031,
+          "mean": 0.03200250118970871,
+          "std": 1.3308547735214233,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "16": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -35.33749008178711,
+          "max": 287.2975769042969,
+          "mean": 0.11790530383586884,
+          "std": 4.674332618713379,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "24": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -937.27099609375,
+          "max": 37.31076431274414,
+          "mean": 0.22117042541503906,
+          "std": 16.0779972076416,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        }
+      },
+      "forward_seconds": 0.14952980000089156,
+      "feature_archive_bytes": 12129332,
+      "diagnostic_psnr": 33.3492317358199,
+      "diagnostic_mae": 4.242523193359375,
+      "telemetry": {
+        "at": "2026-10-13T08:41:46.833460+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12679, 38, 43.68, 0",
+        "torch_peak_allocated_bytes": 12516829696,
+        "torch_peak_reserved_bytes": 12886999040
+      }
+    },
+    {
+      "image": "chelsea",
+      "kind": "photograph",
+      "input_sha256": "34dd3ca5ca2ccf23024a22092bcd4e61b6fa1a430d92f4025500fb48d1b38264",
+      "sigma": 0.5,
+      "seed": 20261013,
+      "text_condition": "official cached empty prompt",
+      "precision": "fp16_autocast",
+      "layers": {
+        "1": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -20.164634704589844,
+          "max": 162.4657440185547,
+          "mean": 0.14447231590747833,
+          "std": 3.0484063625335693,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "8": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -22.30144500732422,
+          "max": 314.35772705078125,
+          "mean": 0.20137813687324524,
+          "std": 5.240854263305664,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "10": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -22.200347900390625,
+          "max": 91.69577026367188,
+          "mean": 0.049299996346235275,
+          "std": 1.5471045970916748,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "16": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -22.46360206604004,
+          "max": 357.5618896484375,
+          "mean": 0.22441235184669495,
+          "std": 6.175396919250488,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "24": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -812.4083251953125,
+          "max": 38.250526428222656,
+          "mean": 0.879806399345398,
+          "std": 13.451099395751953,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        }
+      },
+      "forward_seconds": 0.14941710000130115,
+      "feature_archive_bytes": 12119780,
+      "diagnostic_psnr": 21.980729747248017,
+      "diagnostic_mae": 15.916163126627604,
+      "telemetry": {
+        "at": "2026-10-13T08:41:47.564521+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12679, 38, 43.78, 0",
+        "torch_peak_allocated_bytes": 12516829696,
+        "torch_peak_reserved_bytes": 12886999040
+      }
+    },
+    {
+      "image": "chelsea",
+      "kind": "photograph",
+      "input_sha256": "34dd3ca5ca2ccf23024a22092bcd4e61b6fa1a430d92f4025500fb48d1b38264",
+      "sigma": 0.9,
+      "seed": 20261013,
+      "text_condition": "official cached empty prompt",
+      "precision": "fp16_autocast",
+      "layers": {
+        "1": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -10.987016677856445,
+          "max": 154.9813995361328,
+          "mean": 0.15654626488685608,
+          "std": 2.945608377456665,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "8": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -8.011308670043945,
+          "max": 350.9527587890625,
+          "mean": 0.2392396181821823,
+          "std": 5.380550384521484,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "10": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -8.03676986694336,
+          "max": 104.0177001953125,
+          "mean": 0.06963236629962921,
+          "std": 1.6890658140182495,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "16": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -9.247937202453613,
+          "max": 371.3058776855469,
+          "mean": 0.29504522681236267,
+          "std": 6.690589427947998,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "24": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -374.928955078125,
+          "max": 20.99883270263672,
+          "mean": 1.5919111967086792,
+          "std": 4.982115745544434,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        }
+      },
+      "forward_seconds": 0.14955230000487063,
+      "feature_archive_bytes": 12118516,
+      "diagnostic_psnr": 9.874499134195464,
+      "diagnostic_mae": 68.28499348958333,
+      "telemetry": {
+        "at": "2026-10-13T08:41:48.195575+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12679, 38, 43.68, 0",
+        "torch_peak_allocated_bytes": 12516829696,
+        "torch_peak_reserved_bytes": 12886999040
+      }
+    },
+    {
+      "image": "red_circle_left",
+      "kind": "synthetic_control",
+      "input_sha256": "81b9b64cdc602f9b1b35de28ee0046bab507ca62a38984847c699e2e28644ef8",
+      "sigma": 0.1,
+      "seed": 20261013,
+      "text_condition": "official cached empty prompt",
+      "precision": "fp16_autocast",
+      "layers": {
+        "1": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -41.83548355102539,
+          "max": 120.72216796875,
+          "mean": 0.12110938131809235,
+          "std": 2.6342997550964355,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "8": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -43.68596649169922,
+          "max": 269.20440673828125,
+          "mean": 0.17149993777275085,
+          "std": 4.4863810539245605,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "10": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -43.625919342041016,
+          "max": 62.79142761230469,
+          "mean": 0.029863441362977028,
+          "std": 1.5470216274261475,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "16": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -37.99833679199219,
+          "max": 361.2237548828125,
+          "mean": 0.0878768339753151,
+          "std": 4.383202075958252,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "24": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -722.7381591796875,
+          "max": 40.10901641845703,
+          "mean": 0.02388407103717327,
+          "std": 12.602876663208008,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        }
+      },
+      "forward_seconds": 0.14966170000116108,
+      "feature_archive_bytes": 12166168,
+      "diagnostic_psnr": 38.792705131171225,
+      "diagnostic_mae": 2.0278422037760415,
+      "telemetry": {
+        "at": "2026-10-13T08:41:48.816620+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12679, 38, 43.88, 0",
+        "torch_peak_allocated_bytes": 12516829696,
+        "torch_peak_reserved_bytes": 12886999040
+      }
+    },
+    {
+      "image": "red_circle_left",
+      "kind": "synthetic_control",
+      "input_sha256": "81b9b64cdc602f9b1b35de28ee0046bab507ca62a38984847c699e2e28644ef8",
+      "sigma": 0.5,
+      "seed": 20261013,
+      "text_condition": "official cached empty prompt",
+      "precision": "fp16_autocast",
+      "layers": {
+        "1": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -28.789798736572266,
+          "max": 165.42849731445312,
+          "mean": 0.15450994670391083,
+          "std": 2.977048397064209,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "8": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -30.01900863647461,
+          "max": 313.12799072265625,
+          "mean": 0.19752970337867737,
+          "std": 5.194775581359863,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "10": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -29.996767044067383,
+          "max": 90.74073791503906,
+          "mean": 0.04310600459575653,
+          "std": 1.5660374164581299,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "16": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -28.341400146484375,
+          "max": 388.90875244140625,
+          "mean": 0.19763728976249695,
+          "std": 5.927181243896484,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "24": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -633.1028442382812,
+          "max": 32.633880615234375,
+          "mean": 0.9100137948989868,
+          "std": 10.485527992248535,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        }
+      },
+      "forward_seconds": 0.1494661000033375,
+      "feature_archive_bytes": 12129040,
+      "diagnostic_psnr": 24.777333700667956,
+      "diagnostic_mae": 11.224502563476562,
+      "telemetry": {
+        "at": "2026-10-13T08:41:49.563276+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12679, 38, 42.62, 0",
+        "torch_peak_allocated_bytes": 12516829696,
+        "torch_peak_reserved_bytes": 12886999040
+      }
+    },
+    {
+      "image": "red_circle_left",
+      "kind": "synthetic_control",
+      "input_sha256": "81b9b64cdc602f9b1b35de28ee0046bab507ca62a38984847c699e2e28644ef8",
+      "sigma": 0.9,
+      "seed": 20261013,
+      "text_condition": "official cached empty prompt",
+      "precision": "fp16_autocast",
+      "layers": {
+        "1": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -15.117696762084961,
+          "max": 162.51112365722656,
+          "mean": 0.16574516892433167,
+          "std": 3.105231761932373,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "8": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -13.219828605651855,
+          "max": 360.8345947265625,
+          "mean": 0.2293766438961029,
+          "std": 5.329516887664795,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "10": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -13.215374946594238,
+          "max": 106.10377502441406,
+          "mean": 0.07082828134298325,
+          "std": 1.7413036823272705,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "16": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -13.055493354797363,
+          "max": 388.170654296875,
+          "mean": 0.2795879542827606,
+          "std": 6.808530807495117,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "24": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -499.051513671875,
+          "max": 29.230918884277344,
+          "mean": 1.3227190971374512,
+          "std": 6.575668811798096,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        }
+      },
+      "forward_seconds": 0.14998780000314582,
+      "feature_archive_bytes": 12126631,
+      "diagnostic_psnr": 11.312616196100864,
+      "diagnostic_mae": 43.99543253580729,
+      "telemetry": {
+        "at": "2026-10-13T08:41:50.184937+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12679, 38, 43.30, 0",
+        "torch_peak_allocated_bytes": 12516829696,
+        "torch_peak_reserved_bytes": 12886999040
+      }
+    },
+    {
+      "image": "blue_square_right",
+      "kind": "synthetic_control",
+      "input_sha256": "0590bfd90975dc2004d488fa07ab0cbb228353e3d3e55a09a59eb2b7b88169d5",
+      "sigma": 0.1,
+      "seed": 20261013,
+      "text_condition": "official cached empty prompt",
+      "precision": "fp16_autocast",
+      "layers": {
+        "1": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -41.83143997192383,
+          "max": 126.48289489746094,
+          "mean": 0.114305280148983,
+          "std": 2.6536812782287598,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "8": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -43.77756118774414,
+          "max": 256.13720703125,
+          "mean": 0.16707967221736908,
+          "std": 4.340433120727539,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "10": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -43.71841049194336,
+          "max": 62.25352478027344,
+          "mean": 0.029496904462575912,
+          "std": 1.5393027067184448,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "16": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -38.11994171142578,
+          "max": 360.40301513671875,
+          "mean": 0.0894772857427597,
+          "std": 4.480847358703613,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "24": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -716.3773193359375,
+          "max": 40.127708435058594,
+          "mean": 0.04523966461420059,
+          "std": 12.393538475036621,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        }
+      },
+      "forward_seconds": 0.14948739999817917,
+      "feature_archive_bytes": 12167098,
+      "diagnostic_psnr": 39.5139683749083,
+      "diagnostic_mae": 1.9432932535807292,
+      "telemetry": {
+        "at": "2026-10-13T08:41:50.821980+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12679, 38, 43.79, 0",
+        "torch_peak_allocated_bytes": 12516829696,
+        "torch_peak_reserved_bytes": 12886999040
+      }
+    },
+    {
+      "image": "blue_square_right",
+      "kind": "synthetic_control",
+      "input_sha256": "0590bfd90975dc2004d488fa07ab0cbb228353e3d3e55a09a59eb2b7b88169d5",
+      "sigma": 0.5,
+      "seed": 20261013,
+      "text_condition": "official cached empty prompt",
+      "precision": "fp16_autocast",
+      "layers": {
+        "1": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -28.836551666259766,
+          "max": 162.47479248046875,
+          "mean": 0.1509190946817398,
+          "std": 2.980623245239258,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "8": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -30.101728439331055,
+          "max": 307.2648010253906,
+          "mean": 0.20021049678325653,
+          "std": 5.18559455871582,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "10": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -30.067224502563477,
+          "max": 89.20226287841797,
+          "mean": 0.045606594532728195,
+          "std": 1.5478113889694214,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "16": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -28.412487030029297,
+          "max": 376.94659423828125,
+          "mean": 0.1939963549375534,
+          "std": 5.960719108581543,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "24": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -613.6741943359375,
+          "max": 36.2365837097168,
+          "mean": 0.9833292961120605,
+          "std": 9.470935821533203,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        }
+      },
+      "forward_seconds": 0.14936869999655755,
+      "feature_archive_bytes": 12128926,
+      "diagnostic_psnr": 24.93691861504417,
+      "diagnostic_mae": 11.232208251953125,
+      "telemetry": {
+        "at": "2026-10-13T08:41:51.572034+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12679, 38, 43.80, 0",
+        "torch_peak_allocated_bytes": 12516829696,
+        "torch_peak_reserved_bytes": 12886999040
+      }
+    },
+    {
+      "image": "blue_square_right",
+      "kind": "synthetic_control",
+      "input_sha256": "0590bfd90975dc2004d488fa07ab0cbb228353e3d3e55a09a59eb2b7b88169d5",
+      "sigma": 0.9,
+      "seed": 20261013,
+      "text_condition": "official cached empty prompt",
+      "precision": "fp16_autocast",
+      "layers": {
+        "1": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -15.391047477722168,
+          "max": 165.62179565429688,
+          "mean": 0.16422390937805176,
+          "std": 3.106708526611328,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "8": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -13.731574058532715,
+          "max": 349.8755798339844,
+          "mean": 0.2324717938899994,
+          "std": 5.305002212524414,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "10": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -13.729369163513184,
+          "max": 103.77738952636719,
+          "mean": 0.06636577844619751,
+          "std": 1.7082784175872803,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "16": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -13.499762535095215,
+          "max": 409.2518310546875,
+          "mean": 0.2775683104991913,
+          "std": 6.879260540008545,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        },
+        "24": {
+          "shape": [
+            256,
+            2560
+          ],
+          "min": -528.00830078125,
+          "max": 58.44427490234375,
+          "mean": 1.2765631675720215,
+          "std": 6.937131404876709,
+          "fp32_tensor_bytes": 2621440,
+          "fp16_tensor_bytes": 1310720,
+          "finite": true
+        }
+      },
+      "forward_seconds": 0.14940509999723872,
+      "feature_archive_bytes": 12127660,
+      "diagnostic_psnr": 11.349760494738053,
+      "diagnostic_mae": 44.24456787109375,
+      "telemetry": {
+        "at": "2026-10-13T08:41:52.206076+00:00",
+        "nvidia_smi": "<gpu-id-redacted>, Tesla V100-PCIE-32GB, 12679, 38, 43.69, 0",
+        "torch_peak_allocated_bytes": 12516829696,
+        "torch_peak_reserved_bytes": 12886999040
+      }
+    }
+  ],
+  "packets": [
+    {
+      "image": "astronaut",
+      "variant": "full_fp16_none",
+      "file": "astronaut_s0.1_full_fp16_none.zip",
+      "accounting": {
+        "total_bytes": 1199644,
+        "uncompressed_component_bytes": {
+          "metadata.json": 359,
+          "features.bin": 1310720,
+          "scales.bin": 0
+        },
+        "metadata": {
+          "schema": "iris-final-head-pilot-v1",
+          "checkpoint_revision": "adc05b909fb05d4276d26aae5a52b36406b2ef26",
+          "layer": 24,
+          "sigma": 0.1,
+          "seed": 20261013,
+          "noise_rng": "torch-cpu-2.10.0-normal",
+          "image_size": [
+            256,
+            256
+          ],
+          "original_grid": [
+            16,
+            16
+          ],
+          "feature_grid": [
+            16,
+            16
+          ],
+          "shape": [
+            256,
+            2560
+          ],
+          "feature_interpolation": "bilinear_align_corners_false",
+          "thumbnail": false,
+          "encoding": "fp16"
+        }
+      },
+      "encoder_precision": "fp16_autocast"
+    },
+    {
+      "image": "astronaut",
+      "variant": "full_int8_none",
+      "file": "astronaut_s0.1_full_int8_none.zip",
+      "accounting": {
+        "total_bytes": 608423,
+        "uncompressed_component_bytes": {
+          "metadata.json": 393,
+          "features.bin": 655360,
+          "scales.bin": 10240
+        },
+        "metadata": {
+          "schema": "iris-final-head-pilot-v1",
+          "checkpoint_revision": "adc05b909fb05d4276d26aae5a52b36406b2ef26",
+          "layer": 24,
+          "sigma": 0.1,
+          "seed": 20261013,
+          "noise_rng": "torch-cpu-2.10.0-normal",
+          "image_size": [
+            256,
+            256
+          ],
+          "original_grid": [
+            16,
+            16
+          ],
+          "feature_grid": [
+            16,
+            16
+          ],
+          "shape": [
+            256,
+            2560
+          ],
+          "feature_interpolation": "bilinear_align_corners_false",
+          "thumbnail": false,
+          "encoding": "symmetric_int8",
+          "scale_dtype": "float32"
+        }
+      },
+      "encoder_precision": "fp16_autocast"
+    },
+    {
+      "image": "astronaut",
+      "variant": "pool4_int4_none",
+      "file": "astronaut_s0.1_pool4_int4_none.zip",
+      "accounting": {
+        "total_bytes": 27146,
+        "uncompressed_component_bytes": {
+          "metadata.json": 390,
+          "features.bin": 20480,
+          "scales.bin": 10240
+        },
+        "metadata": {
+          "schema": "iris-final-head-pilot-v1",
+          "checkpoint_revision": "adc05b909fb05d4276d26aae5a52b36406b2ef26",
+          "layer": 24,
+          "sigma": 0.1,
+          "seed": 20261013,
+          "noise_rng": "torch-cpu-2.10.0-normal",
+          "image_size": [
+            256,
+            256
+          ],
+          "original_grid": [
+            16,
+            16
+          ],
+          "feature_grid": [
+            4,
+            4
+          ],
+          "shape": [
+            16,
+            2560
+          ],
+          "feature_interpolation": "bilinear_align_corners_false",
+          "thumbnail": false,
+          "encoding": "symmetric_int4",
+          "scale_dtype": "float32"
+        }
+      },
+      "encoder_precision": "fp16_autocast"
+    },
+    {
+      "image": "astronaut",
+      "variant": "full_fp16_thumb64",
+      "file": "astronaut_s0.1_full_fp16_thumb64.zip",
+      "accounting": {
+        "total_bytes": 1202569,
+        "uncompressed_component_bytes": {
+          "metadata.json": 358,
+          "features.bin": 1310720,
+          "scales.bin": 0,
+          "thumbnail.jpg": 2865
+        },
+        "metadata": {
+          "schema": "iris-final-head-pilot-v1",
+          "checkpoint_revision": "adc05b909fb05d4276d26aae5a52b36406b2ef26",
+          "layer": 24,
+          "sigma": 0.1,
+          "seed": 20261013,
+          "noise_rng": "torch-cpu-2.10.0-normal",
+          "image_size": [
+            256,
+            256
+          ],
+          "original_grid": [
+            16,
+            16
+          ],
+          "feature_grid": [
+            16,
+            16
+          ],
+          "shape": [
+            256,
+            2560
+          ],
+          "feature_interpolation": "bilinear_align_corners_false",
+          "thumbnail": true,
+          "encoding": "fp16"
+        }
+      },
+      "encoder_precision": "fp16_autocast"
+    },
+    {
+      "image": "astronaut",
+      "variant": "pool4_int4_thumb64",
+      "file": "astronaut_s0.1_pool4_int4_thumb64.zip",
+      "accounting": {
+        "total_bytes": 30071,
+        "uncompressed_component_bytes": {
+          "metadata.json": 389,
+          "features.bin": 20480,
+          "scales.bin": 10240,
+          "thumbnail.jpg": 2865
+        },
+        "metadata": {
+          "schema": "iris-final-head-pilot-v1",
+          "checkpoint_revision": "adc05b909fb05d4276d26aae5a52b36406b2ef26",
+          "layer": 24,
+          "sigma": 0.1,
+          "seed": 20261013,
+          "noise_rng": "torch-cpu-2.10.0-normal",
+          "image_size": [
+            256,
+            256
+          ],
+          "original_grid": [
+            16,
+            16
+          ],
+          "feature_grid": [
+            4,
+            4
+          ],
+          "shape": [
+            16,
+            2560
+          ],
+          "feature_interpolation": "bilinear_align_corners_false",
+          "thumbnail": true,
+          "encoding": "symmetric_int4",
+          "scale_dtype": "float32"
+        }
+      },
+      "encoder_precision": "fp16_autocast"
+    },
+    {
+      "image": "astronaut",
+      "variant": "pool2_int4_thumb64",
+      "file": "astronaut_s0.1_pool2_int4_thumb64.zip",
+      "accounting": {
+        "total_bytes": 16762,
+        "uncompressed_component_bytes": {
+          "metadata.json": 388,
+          "features.bin": 5120,
+          "scales.bin": 10240,
+          "thumbnail.jpg": 2865
+        },
+        "metadata": {
+          "schema": "iris-final-head-pilot-v1",
+          "checkpoint_revision": "adc05b909fb05d4276d26aae5a52b36406b2ef26",
+          "layer": 24,
+          "sigma": 0.1,
+          "seed": 20261013,
+          "noise_rng": "torch-cpu-2.10.0-normal",
+          "image_size": [
+            256,
+            256
+          ],
+          "original_grid": [
+            16,
+            16
+          ],
+          "feature_grid": [
+            2,
+            2
+          ],
+          "shape": [
+            4,
+            2560
+          ],
+          "feature_interpolation": "bilinear_align_corners_false",
+          "thumbnail": true,
+          "encoding": "symmetric_int4",
+          "scale_dtype": "float32"
+        }
+      },
+      "encoder_precision": "fp16_autocast"
+    },
+    {
+      "image": "coffee",
+      "variant": "full_fp16_none",
+      "file": "coffee_s0.1_full_fp16_none.zip",
+      "accounting": {
+        "total_bytes": 1200256,
+        "uncompressed_component_bytes": {
+          "metadata.json": 359,
+          "features.bin": 1310720,
+          "scales.bin": 0
+        },
+        "metadata": {
+          "schema": "iris-final-head-pilot-v1",
+          "checkpoint_revision": "adc05b909fb05d4276d26aae5a52b36406b2ef26",
+          "layer": 24,
+          "sigma": 0.1,
+          "seed": 20261013,
+          "noise_rng": "torch-cpu-2.10.0-normal",
+          "image_size": [
+            256,
+            256
+          ],
+          "original_grid": [
+            16,
+            16
+          ],
+          "feature_grid": [
+            16,
+            16
+          ],
+          "shape": [
+            256,
+            2560
+          ],
+          "feature_interpolation": "bilinear_align_corners_false",
+          "thumbnail": false,
+          "encoding": "fp16"
+        }
+      },
+      "encoder_precision": "fp16_autocast"
+    },
+    {
+      "image": "coffee",
+      "variant": "full_int8_none",
+      "file": "coffee_s0.1_full_int8_none.zip",
+      "accounting": {
+        "total_bytes": 611203,
+        "uncompressed_component_bytes": {
+          "metadata.json": 393,
+          "features.bin": 655360,
+          "scales.bin": 10240
+        },
+        "metadata": {
+          "schema": "iris-final-head-pilot-v1",
+          "checkpoint_revision": "adc05b909fb05d4276d26aae5a52b36406b2ef26",
+          "layer": 24,
+          "sigma": 0.1,
+          "seed": 20261013,
+          "noise_rng": "torch-cpu-2.10.0-normal",
+          "image_size": [
+            256,
+            256
+          ],
+          "original_grid": [
+            16,
+            16
+          ],
+          "feature_grid": [
+            16,
+            16
+          ],
+          "shape": [
+            256,
+            2560
+          ],
+          "feature_interpolation": "bilinear_align_corners_false",
+          "thumbnail": false,
+          "encoding": "symmetric_int8",
+          "scale_dtype": "float32"
+        }
+      },
+      "encoder_precision": "fp16_autocast"
+    },
+    {
+      "image": "coffee",
+      "variant": "pool4_int4_none",
+      "file": "coffee_s0.1_pool4_int4_none.zip",
+      "accounting": {
+        "total_bytes": 27351,
+        "uncompressed_component_bytes": {
+          "metadata.json": 390,
+          "features.bin": 20480,
+          "scales.bin": 10240
+        },
+        "metadata": {
+          "schema": "iris-final-head-pilot-v1",
+          "checkpoint_revision": "adc05b909fb05d4276d26aae5a52b36406b2ef26",
+          "layer": 24,
+          "sigma": 0.1,
+          "seed": 20261013,
+          "noise_rng": "torch-cpu-2.10.0-normal",
+          "image_size": [
+            256,
+            256
+          ],
+          "original_grid": [
+            16,
+            16
+          ],
+          "feature_grid": [
+            4,
+            4
+          ],
+          "shape": [
+            16,
+            2560
+          ],
+          "feature_interpolation": "bilinear_align_corners_false",
+          "thumbnail": false,
+          "encoding": "symmetric_int4",
+          "scale_dtype": "float32"
+        }
+      },
+      "encoder_precision": "fp16_autocast"
+    },
+    {
+      "image": "coffee",
+      "variant": "full_fp16_thumb64",
+      "file": "coffee_s0.1_full_fp16_thumb64.zip",
+      "accounting": {
+        "total_bytes": 1202875,
+        "uncompressed_component_bytes": {
+          "metadata.json": 358,
+          "features.bin": 1310720,
+          "scales.bin": 0,
+          "thumbnail.jpg": 2554
+        },
+        "metadata": {
+          "schema": "iris-final-head-pilot-v1",
+          "checkpoint_revision": "adc05b909fb05d4276d26aae5a52b36406b2ef26",
+          "layer": 24,
+          "sigma": 0.1,
+          "seed": 20261013,
+          "noise_rng": "torch-cpu-2.10.0-normal",
+          "image_size": [
+            256,
+            256
+          ],
+          "original_grid": [
+            16,
+            16
+          ],
+          "feature_grid": [
+            16,
+            16
+          ],
+          "shape": [
+            256,
+            2560
+          ],
+          "feature_interpolation": "bilinear_align_corners_false",
+          "thumbnail": true,
+          "encoding": "fp16"
+        }
+      },
+      "encoder_precision": "fp16_autocast"
+    },
+    {
+      "image": "coffee",
+      "variant": "pool4_int4_thumb64",
+      "file": "coffee_s0.1_pool4_int4_thumb64.zip",
+      "accounting": {
+        "total_bytes": 29970,
+        "uncompressed_component_bytes": {
+          "metadata.json": 389,
+          "features.bin": 20480,
+          "scales.bin": 10240,
+          "thumbnail.jpg": 2554
+        },
+        "metadata": {
+          "schema": "iris-final-head-pilot-v1",
+          "checkpoint_revision": "adc05b909fb05d4276d26aae5a52b36406b2ef26",
+          "layer": 24,
+          "sigma": 0.1,
+          "seed": 20261013,
+          "noise_rng": "torch-cpu-2.10.0-normal",
+          "image_size": [
+            256,
+            256
+          ],
+          "original_grid": [
+            16,
+            16
+          ],
+          "feature_grid": [
+            4,
+            4
+          ],
+          "shape": [
+            16,
+            2560
+          ],
+          "feature_interpolation": "bilinear_align_corners_false",
+          "thumbnail": true,
+          "encoding": "symmetric_int4",
+          "scale_dtype": "float32"
+        }
+      },
+      "encoder_precision": "fp16_autocast"
+    },
+    {
+      "image": "coffee",
+      "variant": "pool2_int4_thumb64",
+      "file": "coffee_s0.1_pool2_int4_thumb64.zip",
+      "accounting": {
+        "total_bytes": 16409,
+        "uncompressed_component_bytes": {
+          "metadata.json": 388,
+          "features.bin": 5120,
+          "scales.bin": 10240,
+          "thumbnail.jpg": 2554
+        },
+        "metadata": {
+          "schema": "iris-final-head-pilot-v1",
+          "checkpoint_revision": "adc05b909fb05d4276d26aae5a52b36406b2ef26",
+          "layer": 24,
+          "sigma": 0.1,
+          "seed": 20261013,
+          "noise_rng": "torch-cpu-2.10.0-normal",
+          "image_size": [
+            256,
+            256
+          ],
+          "original_grid": [
+            16,
+            16
+          ],
+          "feature_grid": [
+            2,
+            2
+          ],
+          "shape": [
+            4,
+            2560
+          ],
+          "feature_interpolation": "bilinear_align_corners_false",
+          "thumbnail": true,
+          "encoding": "symmetric_int4",
+          "scale_dtype": "float32"
+        }
+      },
+      "encoder_precision": "fp16_autocast"
+    },
+    {
+      "image": "chelsea",
+      "variant": "full_fp16_none",
+      "file": "chelsea_s0.1_full_fp16_none.zip",
+      "accounting": {
+        "total_bytes": 1191573,
+        "uncompressed_component_bytes": {
+          "metadata.json": 359,
+          "features.bin": 1310720,
+          "scales.bin": 0
+        },
+        "metadata": {
+          "schema": "iris-final-head-pilot-v1",
+          "checkpoint_revision": "adc05b909fb05d4276d26aae5a52b36406b2ef26",
+          "layer": 24,
+          "sigma": 0.1,
+          "seed": 20261013,
+          "noise_rng": "torch-cpu-2.10.0-normal",
+          "image_size": [
+            256,
+            256
+          ],
+          "original_grid": [
+            16,
+            16
+          ],
+          "feature_grid": [
+            16,
+            16
+          ],
+          "shape": [
+            256,
+            2560
+          ],
+          "feature_interpolation": "bilinear_align_corners_false",
+          "thumbnail": false,
+          "encoding": "fp16"
+        }
+      },
+      "encoder_precision": "fp16_autocast"
+    },
+    {
+      "image": "chelsea",
+      "variant": "full_int8_none",
+      "file": "chelsea_s0.1_full_int8_none.zip",
+      "accounting": {
+        "total_bytes": 617539,
+        "uncompressed_component_bytes": {
+          "metadata.json": 393,
+          "features.bin": 655360,
+          "scales.bin": 10240
+        },
+        "metadata": {
+          "schema": "iris-final-head-pilot-v1",
+          "checkpoint_revision": "adc05b909fb05d4276d26aae5a52b36406b2ef26",
+          "layer": 24,
+          "sigma": 0.1,
+          "seed": 20261013,
+          "noise_rng": "torch-cpu-2.10.0-normal",
+          "image_size": [
+            256,
+            256
+          ],
+          "original_grid": [
+            16,
+            16
+          ],
+          "feature_grid": [
+            16,
+            16
+          ],
+          "shape": [
+            256,
+            2560
+          ],
+          "feature_interpolation": "bilinear_align_corners_false",
+          "thumbnail": false,
+          "encoding": "symmetric_int8",
+          "scale_dtype": "float32"
+        }
+      },
+      "encoder_precision": "fp16_autocast"
+    },
+    {
+      "image": "chelsea",
+      "variant": "pool4_int4_none",
+      "file": "chelsea_s0.1_pool4_int4_none.zip",
+      "accounting": {
+        "total_bytes": 27038,
+        "uncompressed_component_bytes": {
+          "metadata.json": 390,
+          "features.bin": 20480,
+          "scales.bin": 10240
+        },
+        "metadata": {
+          "schema": "iris-final-head-pilot-v1",
+          "checkpoint_revision": "adc05b909fb05d4276d26aae5a52b36406b2ef26",
+          "layer": 24,
+          "sigma": 0.1,
+          "seed": 20261013,
+          "noise_rng": "torch-cpu-2.10.0-normal",
+          "image_size": [
+            256,
+            256
+          ],
+          "original_grid": [
+            16,
+            16
+          ],
+          "feature_grid": [
+            4,
+            4
+          ],
+          "shape": [
+            16,
+            2560
+          ],
+          "feature_interpolation": "bilinear_align_corners_false",
+          "thumbnail": false,
+          "encoding": "symmetric_int4",
+          "scale_dtype": "float32"
+        }
+      },
+      "encoder_precision": "fp16_autocast"
+    },
+    {
+      "image": "chelsea",
+      "variant": "full_fp16_thumb64",
+      "file": "chelsea_s0.1_full_fp16_thumb64.zip",
+      "accounting": {
+        "total_bytes": 1193675,
+        "uncompressed_component_bytes": {
+          "metadata.json": 358,
+          "features.bin": 1310720,
+          "scales.bin": 0,
+          "thumbnail.jpg": 2035
+        },
+        "metadata": {
+          "schema": "iris-final-head-pilot-v1",
+          "checkpoint_revision": "adc05b909fb05d4276d26aae5a52b36406b2ef26",
+          "layer": 24,
+          "sigma": 0.1,
+          "seed": 20261013,
+          "noise_rng": "torch-cpu-2.10.0-normal",
+          "image_size": [
+            256,
+            256
+          ],
+          "original_grid": [
+            16,
+            16
+          ],
+          "feature_grid": [
+            16,
+            16
+          ],
+          "shape": [
+            256,
+            2560
+          ],
+          "feature_interpolation": "bilinear_align_corners_false",
+          "thumbnail": true,
+          "encoding": "fp16"
+        }
+      },
+      "encoder_precision": "fp16_autocast"
+    },
+    {
+      "image": "chelsea",
+      "variant": "pool4_int4_thumb64",
+      "file": "chelsea_s0.1_pool4_int4_thumb64.zip",
+      "accounting": {
+        "total_bytes": 29140,
+        "uncompressed_component_bytes": {
+          "metadata.json": 389,
+          "features.bin": 20480,
+          "scales.bin": 10240,
+          "thumbnail.jpg": 2035
+        },
+        "metadata": {
+          "schema": "iris-final-head-pilot-v1",
+          "checkpoint_revision": "adc05b909fb05d4276d26aae5a52b36406b2ef26",
+          "layer": 24,
+          "sigma": 0.1,
+          "seed": 20261013,
+          "noise_rng": "torch-cpu-2.10.0-normal",
+          "image_size": [
+            256,
+            256
+          ],
+          "original_grid": [
+            16,
+            16
+          ],
+          "feature_grid": [
+            4,
+            4
+          ],
+          "shape": [
+            16,
+            2560
+          ],
+          "feature_interpolation": "bilinear_align_corners_false",
+          "thumbnail": true,
+          "encoding": "symmetric_int4",
+          "scale_dtype": "float32"
+        }
+      },
+      "encoder_precision": "fp16_autocast"
+    },
+    {
+      "image": "chelsea",
+      "variant": "pool2_int4_thumb64",
+      "file": "chelsea_s0.1_pool2_int4_thumb64.zip",
+      "accounting": {
+        "total_bytes": 15863,
+        "uncompressed_component_bytes": {
+          "metadata.json": 388,
+          "features.bin": 5120,
+          "scales.bin": 10240,
+          "thumbnail.jpg": 2035
+        },
+        "metadata": {
+          "schema": "iris-final-head-pilot-v1",
+          "checkpoint_revision": "adc05b909fb05d4276d26aae5a52b36406b2ef26",
+          "layer": 24,
+          "sigma": 0.1,
+          "seed": 20261013,
+          "noise_rng": "torch-cpu-2.10.0-normal",
+          "image_size": [
+            256,
+            256
+          ],
+          "original_grid": [
+            16,
+            16
+          ],
+          "feature_grid": [
+            2,
+            2
+          ],
+          "shape": [
+            4,
+            2560
+          ],
+          "feature_interpolation": "bilinear_align_corners_false",
+          "thumbnail": true,
+          "encoding": "symmetric_int4",
+          "scale_dtype": "float32"
+        }
+      },
+      "encoder_precision": "fp16_autocast"
+    },
+    {
+      "image": "red_circle_left",
+      "variant": "full_fp16_none",
+      "file": "red_circle_left_s0.1_full_fp16_none.zip",
+      "accounting": {
+        "total_bytes": 1225180,
+        "uncompressed_component_bytes": {
+          "metadata.json": 359,
+          "features.bin": 1310720,
+          "scales.bin": 0
+        },
+        "metadata": {
+          "schema": "iris-final-head-pilot-v1",
+          "checkpoint_revision": "adc05b909fb05d4276d26aae5a52b36406b2ef26",
+          "layer": 24,
+          "sigma": 0.1,
+          "seed": 20261013,
+          "noise_rng": "torch-cpu-2.10.0-normal",
+          "image_size": [
+            256,
+            256
+          ],
+          "original_grid": [
+            16,
+            16
+          ],
+          "feature_grid": [
+            16,
+            16
+          ],
+          "shape": [
+            256,
+            2560
+          ],
+          "feature_interpolation": "bilinear_align_corners_false",
+          "thumbnail": false,
+          "encoding": "fp16"
+        }
+      },
+      "encoder_precision": "fp16_autocast"
+    },
+    {
+      "image": "red_circle_left",
+      "variant": "full_int8_none",
+      "file": "red_circle_left_s0.1_full_int8_none.zip",
+      "accounting": {
+        "total_bytes": 621121,
+        "uncompressed_component_bytes": {
+          "metadata.json": 393,
+          "features.bin": 655360,
+          "scales.bin": 10240
+        },
+        "metadata": {
+          "schema": "iris-final-head-pilot-v1",
+          "checkpoint_revision": "adc05b909fb05d4276d26aae5a52b36406b2ef26",
+          "layer": 24,
+          "sigma": 0.1,
+          "seed": 20261013,
+          "noise_rng": "torch-cpu-2.10.0-normal",
+          "image_size": [
+            256,
+            256
+          ],
+          "original_grid": [
+            16,
+            16
+          ],
+          "feature_grid": [
+            16,
+            16
+          ],
+          "shape": [
+            256,
+            2560
+          ],
+          "feature_interpolation": "bilinear_align_corners_false",
+          "thumbnail": false,
+          "encoding": "symmetric_int8",
+          "scale_dtype": "float32"
+        }
+      },
+      "encoder_precision": "fp16_autocast"
+    },
+    {
+      "image": "red_circle_left",
+      "variant": "pool4_int4_none",
+      "file": "red_circle_left_s0.1_pool4_int4_none.zip",
+      "accounting": {
+        "total_bytes": 29187,
+        "uncompressed_component_bytes": {
+          "metadata.json": 390,
+          "features.bin": 20480,
+          "scales.bin": 10240
+        },
+        "metadata": {
+          "schema": "iris-final-head-pilot-v1",
+          "checkpoint_revision": "adc05b909fb05d4276d26aae5a52b36406b2ef26",
+          "layer": 24,
+          "sigma": 0.1,
+          "seed": 20261013,
+          "noise_rng": "torch-cpu-2.10.0-normal",
+          "image_size": [
+            256,
+            256
+          ],
+          "original_grid": [
+            16,
+            16
+          ],
+          "feature_grid": [
+            4,
+            4
+          ],
+          "shape": [
+            16,
+            2560
+          ],
+          "feature_interpolation": "bilinear_align_corners_false",
+          "thumbnail": false,
+          "encoding": "symmetric_int4",
+          "scale_dtype": "float32"
+        }
+      },
+      "encoder_precision": "fp16_autocast"
+    },
+    {
+      "image": "red_circle_left",
+      "variant": "full_fp16_thumb64",
+      "file": "red_circle_left_s0.1_full_fp16_thumb64.zip",
+      "accounting": {
+        "total_bytes": 1226085,
+        "uncompressed_component_bytes": {
+          "metadata.json": 358,
+          "features.bin": 1310720,
+          "scales.bin": 0,
+          "thumbnail.jpg": 947
+        },
+        "metadata": {
+          "schema": "iris-final-head-pilot-v1",
+          "checkpoint_revision": "adc05b909fb05d4276d26aae5a52b36406b2ef26",
+          "layer": 24,
+          "sigma": 0.1,
+          "seed": 20261013,
+          "noise_rng": "torch-cpu-2.10.0-normal",
+          "image_size": [
+            256,
+            256
+          ],
+          "original_grid": [
+            16,
+            16
+          ],
+          "feature_grid": [
+            16,
+            16
+          ],
+          "shape": [
+            256,
+            2560
+          ],
+          "feature_interpolation": "bilinear_align_corners_false",
+          "thumbnail": true,
+          "encoding": "fp16"
+        }
+      },
+      "encoder_precision": "fp16_autocast"
+    },
+    {
+      "image": "red_circle_left",
+      "variant": "pool4_int4_thumb64",
+      "file": "red_circle_left_s0.1_pool4_int4_thumb64.zip",
+      "accounting": {
+        "total_bytes": 30092,
+        "uncompressed_component_bytes": {
+          "metadata.json": 389,
+          "features.bin": 20480,
+          "scales.bin": 10240,
+          "thumbnail.jpg": 947
+        },
+        "metadata": {
+          "schema": "iris-final-head-pilot-v1",
+          "checkpoint_revision": "adc05b909fb05d4276d26aae5a52b36406b2ef26",
+          "layer": 24,
+          "sigma": 0.1,
+          "seed": 20261013,
+          "noise_rng": "torch-cpu-2.10.0-normal",
+          "image_size": [
+            256,
+            256
+          ],
+          "original_grid": [
+            16,
+            16
+          ],
+          "feature_grid": [
+            4,
+            4
+          ],
+          "shape": [
+            16,
+            2560
+          ],
+          "feature_interpolation": "bilinear_align_corners_false",
+          "thumbnail": true,
+          "encoding": "symmetric_int4",
+          "scale_dtype": "float32"
+        }
+      },
+      "encoder_precision": "fp16_autocast"
+    },
+    {
+      "image": "red_circle_left",
+      "variant": "pool2_int4_thumb64",
+      "file": "red_circle_left_s0.1_pool2_int4_thumb64.zip",
+      "accounting": {
+        "total_bytes": 15303,
+        "uncompressed_component_bytes": {
+          "metadata.json": 388,
+          "features.bin": 5120,
+          "scales.bin": 10240,
+          "thumbnail.jpg": 947
+        },
+        "metadata": {
+          "schema": "iris-final-head-pilot-v1",
+          "checkpoint_revision": "adc05b909fb05d4276d26aae5a52b36406b2ef26",
+          "layer": 24,
+          "sigma": 0.1,
+          "seed": 20261013,
+          "noise_rng": "torch-cpu-2.10.0-normal",
+          "image_size": [
+            256,
+            256
+          ],
+          "original_grid": [
+            16,
+            16
+          ],
+          "feature_grid": [
+            2,
+            2
+          ],
+          "shape": [
+            4,
+            2560
+          ],
+          "feature_interpolation": "bilinear_align_corners_false",
+          "thumbnail": true,
+          "encoding": "symmetric_int4",
+          "scale_dtype": "float32"
+        }
+      },
+      "encoder_precision": "fp16_autocast"
+    },
+    {
+      "image": "blue_square_right",
+      "variant": "full_fp16_none",
+      "file": "blue_square_right_s0.1_full_fp16_none.zip",
+      "accounting": {
+        "total_bytes": 1225014,
+        "uncompressed_component_bytes": {
+          "metadata.json": 359,
+          "features.bin": 1310720,
+          "scales.bin": 0
+        },
+        "metadata": {
+          "schema": "iris-final-head-pilot-v1",
+          "checkpoint_revision": "adc05b909fb05d4276d26aae5a52b36406b2ef26",
+          "layer": 24,
+          "sigma": 0.1,
+          "seed": 20261013,
+          "noise_rng": "torch-cpu-2.10.0-normal",
+          "image_size": [
+            256,
+            256
+          ],
+          "original_grid": [
+            16,
+            16
+          ],
+          "feature_grid": [
+            16,
+            16
+          ],
+          "shape": [
+            256,
+            2560
+          ],
+          "feature_interpolation": "bilinear_align_corners_false",
+          "thumbnail": false,
+          "encoding": "fp16"
+        }
+      },
+      "encoder_precision": "fp16_autocast"
+    },
+    {
+      "image": "blue_square_right",
+      "variant": "full_int8_none",
+      "file": "blue_square_right_s0.1_full_int8_none.zip",
+      "accounting": {
+        "total_bytes": 636009,
+        "uncompressed_component_bytes": {
+          "metadata.json": 393,
+          "features.bin": 655360,
+          "scales.bin": 10240
+        },
+        "metadata": {
+          "schema": "iris-final-head-pilot-v1",
+          "checkpoint_revision": "adc05b909fb05d4276d26aae5a52b36406b2ef26",
+          "layer": 24,
+          "sigma": 0.1,
+          "seed": 20261013,
+          "noise_rng": "torch-cpu-2.10.0-normal",
+          "image_size": [
+            256,
+            256
+          ],
+          "original_grid": [
+            16,
+            16
+          ],
+          "feature_grid": [
+            16,
+            16
+          ],
+          "shape": [
+            256,
+            2560
+          ],
+          "feature_interpolation": "bilinear_align_corners_false",
+          "thumbnail": false,
+          "encoding": "symmetric_int8",
+          "scale_dtype": "float32"
+        }
+      },
+      "encoder_precision": "fp16_autocast"
+    },
+    {
+      "image": "blue_square_right",
+      "variant": "pool4_int4_none",
+      "file": "blue_square_right_s0.1_pool4_int4_none.zip",
+      "accounting": {
+        "total_bytes": 29157,
+        "uncompressed_component_bytes": {
+          "metadata.json": 390,
+          "features.bin": 20480,
+          "scales.bin": 10240
+        },
+        "metadata": {
+          "schema": "iris-final-head-pilot-v1",
+          "checkpoint_revision": "adc05b909fb05d4276d26aae5a52b36406b2ef26",
+          "layer": 24,
+          "sigma": 0.1,
+          "seed": 20261013,
+          "noise_rng": "torch-cpu-2.10.0-normal",
+          "image_size": [
+            256,
+            256
+          ],
+          "original_grid": [
+            16,
+            16
+          ],
+          "feature_grid": [
+            4,
+            4
+          ],
+          "shape": [
+            16,
+            2560
+          ],
+          "feature_interpolation": "bilinear_align_corners_false",
+          "thumbnail": false,
+          "encoding": "symmetric_int4",
+          "scale_dtype": "float32"
+        }
+      },
+      "encoder_precision": "fp16_autocast"
+    },
+    {
+      "image": "blue_square_right",
+      "variant": "full_fp16_thumb64",
+      "file": "blue_square_right_s0.1_full_fp16_thumb64.zip",
+      "accounting": {
+        "total_bytes": 1225824,
+        "uncompressed_component_bytes": {
+          "metadata.json": 358,
+          "features.bin": 1310720,
+          "scales.bin": 0,
+          "thumbnail.jpg": 852
+        },
+        "metadata": {
+          "schema": "iris-final-head-pilot-v1",
+          "checkpoint_revision": "adc05b909fb05d4276d26aae5a52b36406b2ef26",
+          "layer": 24,
+          "sigma": 0.1,
+          "seed": 20261013,
+          "noise_rng": "torch-cpu-2.10.0-normal",
+          "image_size": [
+            256,
+            256
+          ],
+          "original_grid": [
+            16,
+            16
+          ],
+          "feature_grid": [
+            16,
+            16
+          ],
+          "shape": [
+            256,
+            2560
+          ],
+          "feature_interpolation": "bilinear_align_corners_false",
+          "thumbnail": true,
+          "encoding": "fp16"
+        }
+      },
+      "encoder_precision": "fp16_autocast"
+    },
+    {
+      "image": "blue_square_right",
+      "variant": "pool4_int4_thumb64",
+      "file": "blue_square_right_s0.1_pool4_int4_thumb64.zip",
+      "accounting": {
+        "total_bytes": 29967,
+        "uncompressed_component_bytes": {
+          "metadata.json": 389,
+          "features.bin": 20480,
+          "scales.bin": 10240,
+          "thumbnail.jpg": 852
+        },
+        "metadata": {
+          "schema": "iris-final-head-pilot-v1",
+          "checkpoint_revision": "adc05b909fb05d4276d26aae5a52b36406b2ef26",
+          "layer": 24,
+          "sigma": 0.1,
+          "seed": 20261013,
+          "noise_rng": "torch-cpu-2.10.0-normal",
+          "image_size": [
+            256,
+            256
+          ],
+          "original_grid": [
+            16,
+            16
+          ],
+          "feature_grid": [
+            4,
+            4
+          ],
+          "shape": [
+            16,
+            2560
+          ],
+          "feature_interpolation": "bilinear_align_corners_false",
+          "thumbnail": true,
+          "encoding": "symmetric_int4",
+          "scale_dtype": "float32"
+        }
+      },
+      "encoder_precision": "fp16_autocast"
+    },
+    {
+      "image": "blue_square_right",
+      "variant": "pool2_int4_thumb64",
+      "file": "blue_square_right_s0.1_pool2_int4_thumb64.zip",
+      "accounting": {
+        "total_bytes": 15219,
+        "uncompressed_component_bytes": {
+          "metadata.json": 388,
+          "features.bin": 5120,
+          "scales.bin": 10240,
+          "thumbnail.jpg": 852
+        },
+        "metadata": {
+          "schema": "iris-final-head-pilot-v1",
+          "checkpoint_revision": "adc05b909fb05d4276d26aae5a52b36406b2ef26",
+          "layer": 24,
+          "sigma": 0.1,
+          "seed": 20261013,
+          "noise_rng": "torch-cpu-2.10.0-normal",
+          "image_size": [
+            256,
+            256
+          ],
+          "original_grid": [
+            16,
+            16
+          ],
+          "feature_grid": [
+            2,
+            2
+          ],
+          "shape": [
+            4,
+            2560
+          ],
+          "feature_interpolation": "bilinear_align_corners_false",
+          "thumbnail": true,
+          "encoding": "symmetric_int4",
+          "scale_dtype": "float32"
+        }
+      },
+      "encoder_precision": "fp16_autocast"
+    }
+  ],
+  "oracle_replay": [
+    {
+      "image": "astronaut",
+      "max_velocity_error": 0.0,
+      "original_pixels_available": true
+    },
+    {
+      "image": "coffee",
+      "max_velocity_error": 0.0,
+      "original_pixels_available": true
+    },
+    {
+      "image": "chelsea",
+      "max_velocity_error": 0.0,
+      "original_pixels_available": true
+    },
+    {
+      "image": "red_circle_left",
+      "max_velocity_error": 0.0,
+      "original_pixels_available": true
+    },
+    {
+      "image": "blue_square_right",
+      "max_velocity_error": 0.0,
+      "original_pixels_available": true
+    }
+  ],
+  "failures": []
+}

@@ -1,0 +1,22 @@
+Semantic image communication exploratory study
+Copyright 2026 lube8163-lab
+
+Research harness source code: Apache License 2.0 (see LICENSE).
+The frozen Iris pixel-head replay implementation follows the structure in
+Iris-3B by Sperid Labs (Apache License 2.0):
+https://github.com/speridlabs/iris-3b
+Pinned source revision: cee0c130a62a9c288ad8918f1f7cdf23cc228d69
+The public export changes path, GPU-selection and monitoring adapters.
+Scientific results were obtained with the original implementation whose
+SHA-256 values are preserved in sources/export-provenance.json.
+The upstream repository, model weights and packages are not redistributed.
+
+Original article text, measurement tables and charts: CC BY 4.0, attribution
+to lube8163-lab, https://creativecommons.org/licenses/by/4.0/ .
+External photographs retain their own licenses, which also govern crops,
+codec reconstructions and their panels in composite comparison figures.
+See ASSETS.md for image-specific attribution and modification notices.
+Localized Narratives reference captions retain CC BY 4.0, Pont-Tuset et al.,
+Connecting Vision and Language with Localized Narratives, ECCV 2020.
+Generations are disclosed as AI-generated experimental outputs; no claim
+is made that they depict the original person's identity or actual events.

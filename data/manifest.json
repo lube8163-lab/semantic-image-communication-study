@@ -1,0 +1,81 @@
+{
+  "images": [
+    {
+      "id": "astronaut",
+      "kind": "photograph",
+      "source": "https://raw.githubusercontent.com/scikit-image/scikit-image/v0.25.2/skimage/data/astronaut.png",
+      "credit": "NASA / Eileen Collins",
+      "license": "Public domain",
+      "license_source": "https://scikit-image.org/docs/stable/api/skimage.data.html#astronaut",
+      "original_sha256": "88431cd9653ccd539741b555fb0a46b61558b301d4110412b5bc28b5e3ea6cb5",
+      "original_bytes": 791555,
+      "file": "data/processed/astronaut.png",
+      "sha256": "35104b000dbc1b242d19203de6c8be1077cafe367723a8bca39e7f21657d9122",
+      "processing": "RGB, center crop to square and Lanczos resize to 256x256"
+    },
+    {
+      "id": "coffee",
+      "kind": "photograph",
+      "source": "https://raw.githubusercontent.com/scikit-image/scikit-image/v0.25.2/skimage/data/coffee.png",
+      "credit": "Rachel Michetti / Pikolo Espresso Bar",
+      "license": "CC0",
+      "license_source": "https://scikit-image.org/docs/stable/api/skimage.data.html#coffee",
+      "original_sha256": "cc02f8ca188b167c775a7101b5d767d1e71792cf762c33d6fa15a4599b5a8de7",
+      "original_bytes": 466706,
+      "file": "data/processed/coffee.png",
+      "sha256": "ed76d8a096234720bab84b476d1640da817e06813d2a93695c4bebd61cbe10c4",
+      "processing": "RGB, center crop to square and Lanczos resize to 256x256"
+    },
+    {
+      "id": "chelsea",
+      "kind": "photograph",
+      "source": "https://raw.githubusercontent.com/scikit-image/scikit-image/v0.25.2/skimage/data/chelsea.png",
+      "credit": "Stefan van der Walt",
+      "license": "CC0",
+      "license_source": "https://scikit-image.org/docs/stable/api/skimage.data.html#chelsea",
+      "original_sha256": "596aa1e7cb875eb79f437e310381d26b338a81c2da23439704a73c4651e8c4bb",
+      "original_bytes": 240512,
+      "file": "data/processed/chelsea.png",
+      "sha256": "34dd3ca5ca2ccf23024a22092bcd4e61b6fa1a430d92f4025500fb48d1b38264",
+      "processing": "RGB, center crop to square and Lanczos resize to 256x256"
+    },
+    {
+      "id": "red_circle_left",
+      "kind": "synthetic_control",
+      "source": "scripts/prepare_assets.py",
+      "license": "CC0",
+      "attributes": {
+        "color": [
+          215,
+          45,
+          45
+        ],
+        "shape": "circle",
+        "side": "left"
+      },
+      "file": "data/processed/red_circle_left.png",
+      "sha256": "81b9b64cdc602f9b1b35de28ee0046bab507ca62a38984847c699e2e28644ef8"
+    },
+    {
+      "id": "blue_square_right",
+      "kind": "synthetic_control",
+      "source": "scripts/prepare_assets.py",
+      "license": "CC0",
+      "attributes": {
+        "color": [
+          45,
+          85,
+          215
+        ],
+        "shape": "square",
+        "side": "right"
+      },
+      "file": "data/processed/blue_square_right.png",
+      "sha256": "0590bfd90975dc2004d488fa07ab0cbb228353e3d3e55a09a59eb2b7b88169d5"
+    }
+  ],
+  "resolution": [
+    256,
+    256
+  ]
+}

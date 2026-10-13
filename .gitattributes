@@ -1,0 +1,11 @@
+*.py text eol=lf
+*.md text eol=lf
+*.ps1 text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.png binary
+*.jpg binary
+*.pdf binary
+configs/text-route.json -text
+results/**/text-packets/*.json -text
+results/**/text-packets-refine40/*.json -text

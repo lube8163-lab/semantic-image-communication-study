@@ -1,0 +1,153 @@
+{
+  "at": "2026-10-13T15:41:16.735151+00:00",
+  "rows": [
+    {
+      "case_id": "astronaut",
+      "variant": "full_fp16_none",
+      "packet": "astronaut-full_fp16_none.zip",
+      "sha256": "2dd51453c4f7f38c44096420fa4a03957b237dddb542f00a79be2e5bb3739370",
+      "source_sha256": "35104b000dbc1b242d19203de6c8be1077cafe367723a8bca39e7f21657d9122",
+      "wire_bytes": 19620212,
+      "components": {
+        "metadata.json": 362,
+        "features.bin": 20971520,
+        "scales.bin": 0
+      },
+      "oracle_velocity_max_error": 0.0,
+      "sender_seconds": 1.6396139000135008,
+      "scope": "Sender source is the exact 256px common input upsampled to 1024; unconditioned native forward at sigma .1, no learned decoder"
+    },
+    {
+      "case_id": "astronaut",
+      "variant": "pool4_int4_none",
+      "packet": "astronaut-pool4_int4_none.zip",
+      "sha256": "001eb31d2ac9bff535c03990d583eb17c191da3b86f6c84521f383c1a2d3a529",
+      "source_sha256": "35104b000dbc1b242d19203de6c8be1077cafe367723a8bca39e7f21657d9122",
+      "wire_bytes": 29250,
+      "components": {
+        "metadata.json": 392,
+        "features.bin": 20480,
+        "scales.bin": 10240
+      },
+      "oracle_velocity_max_error": 0.0,
+      "sender_seconds": 1.6396139000135008,
+      "scope": "Sender source is the exact 256px common input upsampled to 1024; unconditioned native forward at sigma .1, no learned decoder"
+    },
+    {
+      "case_id": "astronaut",
+      "variant": "pool4_int4_thumb64",
+      "packet": "astronaut-pool4_int4_thumb64.zip",
+      "sha256": "0cd158afee9a8f66994be0486b275d19368793f010fb483fffec7ce7d28c292a",
+      "source_sha256": "35104b000dbc1b242d19203de6c8be1077cafe367723a8bca39e7f21657d9122",
+      "wire_bytes": 31873,
+      "components": {
+        "metadata.json": 391,
+        "features.bin": 20480,
+        "scales.bin": 10240,
+        "thumbnail.jpg": 2661
+      },
+      "oracle_velocity_max_error": 0.0,
+      "sender_seconds": 1.6396139000135008,
+      "scope": "Sender source is the exact 256px common input upsampled to 1024; unconditioned native forward at sigma .1, no learned decoder"
+    },
+    {
+      "case_id": "coffee",
+      "variant": "full_fp16_none",
+      "packet": "coffee-full_fp16_none.zip",
+      "sha256": "a49c50b016aeaf76847447f2b29604688dc61ab0ee788d58e54fd15045e5ddba",
+      "source_sha256": "ed76d8a096234720bab84b476d1640da817e06813d2a93695c4bebd61cbe10c4",
+      "wire_bytes": 19638910,
+      "components": {
+        "metadata.json": 362,
+        "features.bin": 20971520,
+        "scales.bin": 0
+      },
+      "oracle_velocity_max_error": 0.0,
+      "sender_seconds": 1.428287899994757,
+      "scope": "Sender source is the exact 256px common input upsampled to 1024; unconditioned native forward at sigma .1, no learned decoder"
+    },
+    {
+      "case_id": "coffee",
+      "variant": "pool4_int4_none",
+      "packet": "coffee-pool4_int4_none.zip",
+      "sha256": "3ab8cb211b0f18ed964c3b90ba1a2a5ac0a7397767812ca2fa25323a78db52b9",
+      "source_sha256": "ed76d8a096234720bab84b476d1640da817e06813d2a93695c4bebd61cbe10c4",
+      "wire_bytes": 29099,
+      "components": {
+        "metadata.json": 392,
+        "features.bin": 20480,
+        "scales.bin": 10240
+      },
+      "oracle_velocity_max_error": 0.0,
+      "sender_seconds": 1.428287899994757,
+      "scope": "Sender source is the exact 256px common input upsampled to 1024; unconditioned native forward at sigma .1, no learned decoder"
+    },
+    {
+      "case_id": "coffee",
+      "variant": "pool4_int4_thumb64",
+      "packet": "coffee-pool4_int4_thumb64.zip",
+      "sha256": "89ae019d0321af03107cbf2898a4e136d915069ab3439ec8d99e3e6689cb67b4",
+      "source_sha256": "ed76d8a096234720bab84b476d1640da817e06813d2a93695c4bebd61cbe10c4",
+      "wire_bytes": 31359,
+      "components": {
+        "metadata.json": 391,
+        "features.bin": 20480,
+        "scales.bin": 10240,
+        "thumbnail.jpg": 2302
+      },
+      "oracle_velocity_max_error": 0.0,
+      "sender_seconds": 1.428287899994757,
+      "scope": "Sender source is the exact 256px common input upsampled to 1024; unconditioned native forward at sigma .1, no learned decoder"
+    },
+    {
+      "case_id": "chelsea",
+      "variant": "full_fp16_none",
+      "packet": "chelsea-full_fp16_none.zip",
+      "sha256": "2a3b58f01e7cb743656245e1f5145a12989cafc80ad3275a7528c54b1c3bbfdb",
+      "source_sha256": "34dd3ca5ca2ccf23024a22092bcd4e61b6fa1a430d92f4025500fb48d1b38264",
+      "wire_bytes": 19661419,
+      "components": {
+        "metadata.json": 362,
+        "features.bin": 20971520,
+        "scales.bin": 0
+      },
+      "oracle_velocity_max_error": 0.0,
+      "sender_seconds": 1.4262323000002652,
+      "scope": "Sender source is the exact 256px common input upsampled to 1024; unconditioned native forward at sigma .1, no learned decoder"
+    },
+    {
+      "case_id": "chelsea",
+      "variant": "pool4_int4_none",
+      "packet": "chelsea-pool4_int4_none.zip",
+      "sha256": "6965f5ef1c66d976cb6afbe255c867926c3a76df7bd8e485fb581390ec9ce8fe",
+      "source_sha256": "34dd3ca5ca2ccf23024a22092bcd4e61b6fa1a430d92f4025500fb48d1b38264",
+      "wire_bytes": 29289,
+      "components": {
+        "metadata.json": 392,
+        "features.bin": 20480,
+        "scales.bin": 10240
+      },
+      "oracle_velocity_max_error": 0.0,
+      "sender_seconds": 1.4262323000002652,
+      "scope": "Sender source is the exact 256px common input upsampled to 1024; unconditioned native forward at sigma .1, no learned decoder"
+    },
+    {
+      "case_id": "chelsea",
+      "variant": "pool4_int4_thumb64",
+      "packet": "chelsea-pool4_int4_thumb64.zip",
+      "sha256": "02f9c22d75b78cb13fcd93656cdfd25721c82d6d8d657cdd5c89b526ccbbb892",
+      "source_sha256": "34dd3ca5ca2ccf23024a22092bcd4e61b6fa1a430d92f4025500fb48d1b38264",
+      "wire_bytes": 31276,
+      "components": {
+        "metadata.json": 391,
+        "features.bin": 20480,
+        "scales.bin": 10240,
+        "thumbnail.jpg": 2024
+      },
+      "oracle_velocity_max_error": 0.0,
+      "sender_seconds": 1.4262323000002652,
+      "scope": "Sender source is the exact 256px common input upsampled to 1024; unconditioned native forward at sigma .1, no learned decoder"
+    }
+  ],
+  "oracle_role": "Original noisy RGB access only in sender replay diagnostic; excluded from communication results"
+}

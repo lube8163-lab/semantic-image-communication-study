@@ -1,0 +1,2293 @@
+{
+  "at": "2026-10-13T16:17:56.736817+00:00",
+  "photo_aggregates": [
+    {
+      "route": "empty_control",
+      "model": "empty_control",
+      "budget": "empty",
+      "photos": 11,
+      "generated_observations": 22,
+      "clip_image_cosine": 0.5693637484853918,
+      "clip_image_cosine_image_bootstrap95": [
+        0.5266437218947844,
+        0.6072775365954095
+      ],
+      "dino_image_cosine": -0.011079476976936514,
+      "dino_image_cosine_image_bootstrap95": [
+        -0.02574247471268543,
+        0.0050029029900377445
+      ],
+      "psnr_db": 11.280621616672704,
+      "psnr_db_image_bootstrap95": [
+        10.17625773770696,
+        12.439612768141
+      ],
+      "mae_rgb8": 60.50831303452001,
+      "mae_rgb8_image_bootstrap95": [
+        52.10824298280658,
+        68.82744831894385
+      ],
+      "wire_bytes": 103.0,
+      "wire_bytes_image_bootstrap95": [
+        103.0,
+        103.0
+      ]
+    },
+    {
+      "route": "initial_codec",
+      "model": "JPEG",
+      "budget": "full_fp16_none",
+      "photos": 3,
+      "generated_observations": 3,
+      "clip_image_cosine": 0.9979479908943176,
+      "clip_image_cosine_image_bootstrap95": [
+        0.9960150718688965,
+        0.9989924430847168
+      ],
+      "dino_image_cosine": 0.9996285438537598,
+      "dino_image_cosine_image_bootstrap95": [
+        0.9993599653244019,
+        0.9998303651809692
+      ],
+      "psnr_db": 50.57304101039758,
+      "psnr_db_image_bootstrap95": [
+        50.313609148583936,
+        50.79181082988945
+      ],
+      "mae_rgb8": 0.4531758626302083,
+      "mae_rgb8_image_bootstrap95": [
+        0.4324086507161458,
+        0.4798380533854167
+      ],
+      "wire_bytes": 90451.33333333333,
+      "wire_bytes_image_bootstrap95": [
+        85779.0,
+        94522.0
+      ]
+    },
+    {
+      "route": "initial_codec",
+      "model": "JPEG",
+      "budget": "full_fp16_thumb64",
+      "photos": 3,
+      "generated_observations": 3,
+      "clip_image_cosine": 0.9979479908943176,
+      "clip_image_cosine_image_bootstrap95": [
+        0.9960150718688965,
+        0.9989924430847168
+      ],
+      "dino_image_cosine": 0.9996285438537598,
+      "dino_image_cosine_image_bootstrap95": [
+        0.9993599653244019,
+        0.9998303651809692
+      ],
+      "psnr_db": 50.57304101039758,
+      "psnr_db_image_bootstrap95": [
+        50.313609148583936,
+        50.79181082988945
+      ],
+      "mae_rgb8": 0.4531758626302083,
+      "mae_rgb8_image_bootstrap95": [
+        0.4324086507161458,
+        0.4798380533854167
+      ],
+      "wire_bytes": 90451.33333333333,
+      "wire_bytes_image_bootstrap95": [
+        85779.0,
+        94522.0
+      ]
+    },
+    {
+      "route": "initial_codec",
+      "model": "JPEG",
+      "budget": "full_int8_none",
+      "photos": 3,
+      "generated_observations": 3,
+      "clip_image_cosine": 0.9979479908943176,
+      "clip_image_cosine_image_bootstrap95": [
+        0.9960150718688965,
+        0.9989924430847168
+      ],
+      "dino_image_cosine": 0.9996285438537598,
+      "dino_image_cosine_image_bootstrap95": [
+        0.9993599653244019,
+        0.9998303651809692
+      ],
+      "psnr_db": 50.57304101039758,
+      "psnr_db_image_bootstrap95": [
+        50.313609148583936,
+        50.79181082988945
+      ],
+      "mae_rgb8": 0.4531758626302083,
+      "mae_rgb8_image_bootstrap95": [
+        0.4324086507161458,
+        0.4798380533854167
+      ],
+      "wire_bytes": 90451.33333333333,
+      "wire_bytes_image_bootstrap95": [
+        85779.0,
+        94522.0
+      ]
+    },
+    {
+      "route": "initial_codec",
+      "model": "JPEG",
+      "budget": "pool2_int4_thumb64",
+      "photos": 3,
+      "generated_observations": 3,
+      "clip_image_cosine": 0.9365080197652181,
+      "clip_image_cosine_image_bootstrap95": [
+        0.8996312618255615,
+        0.9644449353218079
+      ],
+      "dino_image_cosine": 0.9843544960021973,
+      "dino_image_cosine_image_bootstrap95": [
+        0.9801392555236816,
+        0.9896611571311951
+      ],
+      "psnr_db": 34.467397160104255,
+      "psnr_db_image_bootstrap95": [
+        33.291963626252866,
+        35.941390925144646
+      ],
+      "mae_rgb8": 3.2735697428385415,
+      "mae_rgb8_image_bootstrap95": [
+        3.023193359375,
+        3.520136515299479
+      ],
+      "wire_bytes": 16132.333333333334,
+      "wire_bytes_image_bootstrap95": [
+        15826.0,
+        16654.0
+      ]
+    },
+    {
+      "route": "initial_codec",
+      "model": "JPEG",
+      "budget": "pool4_int4_none",
+      "photos": 3,
+      "generated_observations": 3,
+      "clip_image_cosine": 0.9473309715588888,
+      "clip_image_cosine_image_bootstrap95": [
+        0.926077127456665,
+        0.9666914343833923
+      ],
+      "dino_image_cosine": 0.9952575365702311,
+      "dino_image_cosine_image_bootstrap95": [
+        0.994113028049469,
+        0.9965634942054749
+      ],
+      "psnr_db": 38.04558378496072,
+      "psnr_db_image_bootstrap95": [
+        37.20933211852861,
+        39.31955536423186
+      ],
+      "mae_rgb8": 2.222517225477431,
+      "mae_rgb8_image_bootstrap95": [
+        2.055145263671875,
+        2.312657674153646
+      ],
+      "wire_bytes": 26427.666666666668,
+      "wire_bytes_image_bootstrap95": [
+        26112.0,
+        26643.0
+      ]
+    },
+    {
+      "route": "initial_codec",
+      "model": "JPEG",
+      "budget": "pool4_int4_thumb64",
+      "photos": 3,
+      "generated_observations": 3,
+      "clip_image_cosine": 0.9671491384506226,
+      "clip_image_cosine_image_bootstrap95": [
+        0.9657567739486694,
+        0.968156099319458
+      ],
+      "dino_image_cosine": 0.9959781964619955,
+      "dino_image_cosine_image_bootstrap95": [
+        0.9947400093078613,
+        0.9973183870315552
+      ],
+      "psnr_db": 38.83730307302423,
+      "psnr_db_image_bootstrap95": [
+        38.172593876406474,
+        39.77822698538857
+      ],
+      "mae_rgb8": 2.0424652099609375,
+      "mae_rgb8_image_bootstrap95": [
+        1.9540964762369792,
+        2.09014892578125
+      ],
+      "wire_bytes": 28923.333333333332,
+      "wire_bytes_image_bootstrap95": [
+        27505.0,
+        29712.0
+      ]
+    },
+    {
+      "route": "initial_codec",
+      "model": "WEBP",
+      "budget": "full_fp16_none",
+      "photos": 3,
+      "generated_observations": 3,
+      "clip_image_cosine": 0.9847806692123413,
+      "clip_image_cosine_image_bootstrap95": [
+        0.982481837272644,
+        0.9875062704086304
+      ],
+      "dino_image_cosine": 0.9959538181622823,
+      "dino_image_cosine_image_bootstrap95": [
+        0.9940764307975769,
+        0.9973653554916382
+      ],
+      "psnr_db": 39.30091459505707,
+      "psnr_db_image_bootstrap95": [
+        37.41717651540221,
+        42.58890560924126
+      ],
+      "mae_rgb8": 1.7182464599609375,
+      "mae_rgb8_image_bootstrap95": [
+        1.362640380859375,
+        1.9374440511067708
+      ],
+      "wire_bytes": 33583.333333333336,
+      "wire_bytes_image_bootstrap95": [
+        32432.0,
+        34484.0
+      ]
+    },
+    {
+      "route": "initial_codec",
+      "model": "WEBP",
+      "budget": "full_fp16_thumb64",
+      "photos": 3,
+      "generated_observations": 3,
+      "clip_image_cosine": 0.9847806692123413,
+      "clip_image_cosine_image_bootstrap95": [
+        0.982481837272644,
+        0.9875062704086304
+      ],
+      "dino_image_cosine": 0.9959538181622823,
+      "dino_image_cosine_image_bootstrap95": [
+        0.9940764307975769,
+        0.9973653554916382
+      ],
+      "psnr_db": 39.30091459505707,
+      "psnr_db_image_bootstrap95": [
+        37.41717651540221,
+        42.58890560924126
+      ],
+      "mae_rgb8": 1.7182464599609375,
+      "mae_rgb8_image_bootstrap95": [
+        1.362640380859375,
+        1.9374440511067708
+      ],
+      "wire_bytes": 33583.333333333336,
+      "wire_bytes_image_bootstrap95": [
+        32432.0,
+        34484.0
+      ]
+    },
+    {
+      "route": "initial_codec",
+      "model": "WEBP",
+      "budget": "full_int8_none",
+      "photos": 3,
+      "generated_observations": 3,
+      "clip_image_cosine": 0.9847806692123413,
+      "clip_image_cosine_image_bootstrap95": [
+        0.982481837272644,
+        0.9875062704086304
+      ],
+      "dino_image_cosine": 0.9959538181622823,
+      "dino_image_cosine_image_bootstrap95": [
+        0.9940764307975769,
+        0.9973653554916382
+      ],
+      "psnr_db": 39.30091459505707,
+      "psnr_db_image_bootstrap95": [
+        37.41717651540221,
+        42.58890560924126
+      ],
+      "mae_rgb8": 1.7182464599609375,
+      "mae_rgb8_image_bootstrap95": [
+        1.362640380859375,
+        1.9374440511067708
+      ],
+      "wire_bytes": 33583.333333333336,
+      "wire_bytes_image_bootstrap95": [
+        32432.0,
+        34484.0
+      ]
+    },
+    {
+      "route": "initial_codec",
+      "model": "WEBP",
+      "budget": "pool2_int4_thumb64",
+      "photos": 3,
+      "generated_observations": 3,
+      "clip_image_cosine": 0.9576566616694132,
+      "clip_image_cosine_image_bootstrap95": [
+        0.9508657455444336,
+        0.9704358577728271
+      ],
+      "dino_image_cosine": 0.9870458245277405,
+      "dino_image_cosine_image_bootstrap95": [
+        0.9827899932861328,
+        0.9899637699127197
+      ],
+      "psnr_db": 36.41422868821045,
+      "psnr_db_image_bootstrap95": [
+        35.39462673734092,
+        37.84431438342947
+      ],
+      "mae_rgb8": 2.610741509331597,
+      "mae_rgb8_image_bootstrap95": [
+        2.470555623372396,
+        2.7120463053385415
+      ],
+      "wire_bytes": 15573.333333333334,
+      "wire_bytes_image_bootstrap95": [
+        15278.0,
+        16042.0
+      ]
+    },
+    {
+      "route": "initial_codec",
+      "model": "WEBP",
+      "budget": "pool4_int4_none",
+      "photos": 3,
+      "generated_observations": 3,
+      "clip_image_cosine": 0.9825865427652994,
+      "clip_image_cosine_image_bootstrap95": [
+        0.980238139629364,
+        0.9847958087921143
+      ],
+      "dino_image_cosine": 0.9950531919797262,
+      "dino_image_cosine_image_bootstrap95": [
+        0.9936262369155884,
+        0.9958524107933044
+      ],
+      "psnr_db": 38.62564212723984,
+      "psnr_db_image_bootstrap95": [
+        37.10252903334413,
+        41.24394027433988
+      ],
+      "mae_rgb8": 1.9132300482855904,
+      "mae_rgb8_image_bootstrap95": [
+        1.638916015625,
+        2.07861328125
+      ],
+      "wire_bytes": 26255.333333333332,
+      "wire_bytes_image_bootstrap95": [
+        25858.0,
+        26796.0
+      ]
+    },
+    {
+      "route": "initial_codec",
+      "model": "WEBP",
+      "budget": "pool4_int4_thumb64",
+      "photos": 3,
+      "generated_observations": 3,
+      "clip_image_cosine": 0.984246035416921,
+      "clip_image_cosine_image_bootstrap95": [
+        0.9835745692253113,
+        0.9851555824279785
+      ],
+      "dino_image_cosine": 0.9953499635060629,
+      "dino_image_cosine_image_bootstrap95": [
+        0.994513988494873,
+        0.9959243535995483
+      ],
+      "psnr_db": 38.90216221179841,
+      "psnr_db_image_bootstrap95": [
+        37.25892715179035,
+        41.76205252053096
+      ],
+      "mae_rgb8": 1.8409864637586804,
+      "mae_rgb8_image_bootstrap95": [
+        1.5361531575520833,
+        2.029632568359375
+      ],
+      "wire_bytes": 28445.333333333332,
+      "wire_bytes_image_bootstrap95": [
+        28026.0,
+        28792.0
+      ]
+    },
+    {
+      "route": "initial_feature_head",
+      "model": "Iris_frozen_head",
+      "budget": "full_fp16_none",
+      "photos": 3,
+      "generated_observations": 3,
+      "clip_image_cosine": 0.5433891216913859,
+      "clip_image_cosine_image_bootstrap95": [
+        0.3387507200241089,
+        0.7250834107398987
+      ],
+      "dino_image_cosine": -0.04063600301742554,
+      "dino_image_cosine_image_bootstrap95": [
+        -0.06244227662682533,
+        -0.025551319122314453
+      ],
+      "psnr_db": 11.55875841375343,
+      "psnr_db_image_bootstrap95": [
+        9.824690448171339,
+        15.015562381851131
+      ],
+      "mae_rgb8": 60.66654968261719,
+      "mae_rgb8_image_bootstrap95": [
+        35.92724609375,
+        73.60991923014323
+      ],
+      "wire_bytes": 1197157.6666666667,
+      "wire_bytes_image_bootstrap95": [
+        1191573.0,
+        1200256.0
+      ]
+    },
+    {
+      "route": "initial_feature_head",
+      "model": "Iris_frozen_head",
+      "budget": "full_fp16_thumb64",
+      "photos": 3,
+      "generated_observations": 3,
+      "clip_image_cosine": 0.9075115124384562,
+      "clip_image_cosine_image_bootstrap95": [
+        0.887070894241333,
+        0.9247139096260071
+      ],
+      "dino_image_cosine": 0.7839085857073466,
+      "dino_image_cosine_image_bootstrap95": [
+        0.5781890153884888,
+        0.9114837646484375
+      ],
+      "psnr_db": 23.937568290996552,
+      "psnr_db_image_bootstrap95": [
+        20.779555365898933,
+        26.969386077659166
+      ],
+      "mae_rgb8": 10.517318725585938,
+      "mae_rgb8_image_bootstrap95": [
+        8.26654052734375,
+        14.416646321614584
+      ],
+      "wire_bytes": 1199706.3333333333,
+      "wire_bytes_image_bootstrap95": [
+        1193675.0,
+        1202875.0
+      ]
+    },
+    {
+      "route": "initial_feature_head",
+      "model": "Iris_frozen_head",
+      "budget": "full_int8_none",
+      "photos": 3,
+      "generated_observations": 3,
+      "clip_image_cosine": 0.542802502711614,
+      "clip_image_cosine_image_bootstrap95": [
+        0.3366946876049042,
+        0.7259962558746338
+      ],
+      "dino_image_cosine": -0.040616276363531746,
+      "dino_image_cosine_image_bootstrap95": [
+        -0.06250864267349243,
+        -0.025531556457281113
+      ],
+      "psnr_db": 11.55861692018844,
+      "psnr_db_image_bootstrap95": [
+        9.824367192592952,
+        15.01550778721566
+      ],
+      "mae_rgb8": 60.66771274142795,
+      "mae_rgb8_image_bootstrap95": [
+        35.928609212239586,
+        73.60946655273438
+      ],
+      "wire_bytes": 612388.3333333334,
+      "wire_bytes_image_bootstrap95": [
+        608423.0,
+        617539.0
+      ]
+    },
+    {
+      "route": "initial_feature_head",
+      "model": "Iris_frozen_head",
+      "budget": "pool2_int4_thumb64",
+      "photos": 3,
+      "generated_observations": 3,
+      "clip_image_cosine": 0.8655944069226583,
+      "clip_image_cosine_image_bootstrap95": [
+        0.8434522747993469,
+        0.8928719162940979
+      ],
+      "dino_image_cosine": 0.7075925270716349,
+      "dino_image_cosine_image_bootstrap95": [
+        0.503544270992279,
+        0.8395803570747375
+      ],
+      "psnr_db": 23.04003779899004,
+      "psnr_db_image_bootstrap95": [
+        20.44569414351394,
+        25.942887693850736
+      ],
+      "mae_rgb8": 13.375545925564234,
+      "mae_rgb8_image_bootstrap95": [
+        9.806254069010416,
+        17.380966186523438
+      ],
+      "wire_bytes": 16344.666666666666,
+      "wire_bytes_image_bootstrap95": [
+        15863.0,
+        16762.0
+      ]
+    },
+    {
+      "route": "initial_feature_head",
+      "model": "Iris_frozen_head",
+      "budget": "pool4_int4_none",
+      "photos": 3,
+      "generated_observations": 3,
+      "clip_image_cosine": 0.5541960597038269,
+      "clip_image_cosine_image_bootstrap95": [
+        0.3918229341506958,
+        0.6627388596534729
+      ],
+      "dino_image_cosine": -0.01615815858046214,
+      "dino_image_cosine_image_bootstrap95": [
+        -0.041229039430618286,
+        0.03167756274342537
+      ],
+      "psnr_db": 11.476510306099852,
+      "psnr_db_image_bootstrap95": [
+        9.680089967835974,
+        14.91548895714073
+      ],
+      "mae_rgb8": 61.34053378634983,
+      "mae_rgb8_image_bootstrap95": [
+        36.54649353027344,
+        75.06348673502605
+      ],
+      "wire_bytes": 27178.333333333332,
+      "wire_bytes_image_bootstrap95": [
+        27038.0,
+        27351.0
+      ]
+    },
+    {
+      "route": "initial_feature_head",
+      "model": "Iris_frozen_head",
+      "budget": "pool4_int4_thumb64",
+      "photos": 3,
+      "generated_observations": 3,
+      "clip_image_cosine": 0.8758169611295065,
+      "clip_image_cosine_image_bootstrap95": [
+        0.8605790138244629,
+        0.9050015211105347
+      ],
+      "dino_image_cosine": 0.7354181806246439,
+      "dino_image_cosine_image_bootstrap95": [
+        0.5568121671676636,
+        0.8597428798675537
+      ],
+      "psnr_db": 23.22200742332309,
+      "psnr_db_image_bootstrap95": [
+        20.641732857182188,
+        26.086375931747785
+      ],
+      "mae_rgb8": 12.910159640842013,
+      "mae_rgb8_image_bootstrap95": [
+        9.589930216471354,
+        16.75012715657552
+      ],
+      "wire_bytes": 29727.0,
+      "wire_bytes_image_bootstrap95": [
+        29140.0,
+        30071.0
+      ]
+    },
+    {
+      "route": "native_feature_head",
+      "model": "Iris_frozen_head",
+      "budget": "full_fp16_none",
+      "photos": 3,
+      "generated_observations": 3,
+      "clip_image_cosine": 0.768296480178833,
+      "clip_image_cosine_image_bootstrap95": [
+        0.6859894394874573,
+        0.8242824673652649
+      ],
+      "dino_image_cosine": 0.5164305567741394,
+      "dino_image_cosine_image_bootstrap95": [
+        0.29443424940109253,
+        0.7069615125656128
+      ],
+      "psnr_db": 12.239655708754531,
+      "psnr_db_image_bootstrap95": [
+        10.444281426039696,
+        15.48880683696055
+      ],
+      "mae_rgb8": 56.509229871961814,
+      "mae_rgb8_image_bootstrap95": [
+        34.35063171386719,
+        69.18220520019531
+      ],
+      "wire_bytes": 19640180.333333332,
+      "wire_bytes_image_bootstrap95": [
+        19620212.0,
+        19661419.0
+      ]
+    },
+    {
+      "route": "native_feature_head",
+      "model": "Iris_frozen_head",
+      "budget": "pool4_int4_none",
+      "photos": 3,
+      "generated_observations": 3,
+      "clip_image_cosine": 0.5765476326147715,
+      "clip_image_cosine_image_bootstrap95": [
+        0.4257274568080902,
+        0.6730040907859802
+      ],
+      "dino_image_cosine": 0.0013778942326704662,
+      "dino_image_cosine_image_bootstrap95": [
+        -0.043562889099121094,
+        0.05590938404202461
+      ],
+      "psnr_db": 11.753518658852009,
+      "psnr_db_image_bootstrap95": [
+        10.038654236385728,
+        15.148484805889614
+      ],
+      "mae_rgb8": 59.571948581271705,
+      "mae_rgb8_image_bootstrap95": [
+        35.36983744303385,
+        72.45188395182292
+      ],
+      "wire_bytes": 29212.666666666668,
+      "wire_bytes_image_bootstrap95": [
+        29099.0,
+        29289.0
+      ]
+    },
+    {
+      "route": "native_feature_head",
+      "model": "Iris_frozen_head",
+      "budget": "pool4_int4_thumb64",
+      "photos": 3,
+      "generated_observations": 3,
+      "clip_image_cosine": 0.86296013991038,
+      "clip_image_cosine_image_bootstrap95": [
+        0.8380401134490967,
+        0.8867270350456238
+      ],
+      "dino_image_cosine": 0.7636565764745077,
+      "dino_image_cosine_image_bootstrap95": [
+        0.601828932762146,
+        0.8627583980560303
+      ],
+      "psnr_db": 23.31628012839445,
+      "psnr_db_image_bootstrap95": [
+        20.421909112468658,
+        26.604230787050923
+      ],
+      "mae_rgb8": 12.681498209635416,
+      "mae_rgb8_image_bootstrap95": [
+        8.819869995117188,
+        17.226877848307293
+      ],
+      "wire_bytes": 31502.666666666668,
+      "wire_bytes_image_bootstrap95": [
+        31276.0,
+        31873.0
+      ]
+    },
+    {
+      "route": "native_feature_head",
+      "model": "Iris_frozen_head",
+      "budget": "pool4_int4_thumb64_shuffle",
+      "photos": 3,
+      "generated_observations": 3,
+      "clip_image_cosine": 0.8367781043052673,
+      "clip_image_cosine_image_bootstrap95": [
+        0.816100001335144,
+        0.8691548705101013
+      ],
+      "dino_image_cosine": 0.7060863574345907,
+      "dino_image_cosine_image_bootstrap95": [
+        0.5413553714752197,
+        0.8478999137878418
+      ],
+      "psnr_db": 22.84909785808003,
+      "psnr_db_image_bootstrap95": [
+        19.82100896185613,
+        26.408416321938063
+      ],
+      "mae_rgb8": 14.237380981445312,
+      "mae_rgb8_image_bootstrap95": [
+        9.157414754231771,
+        19.799662272135418
+      ],
+      "wire_bytes": 31502.666666666668,
+      "wire_bytes_image_bootstrap95": [
+        31276.0,
+        31873.0
+      ]
+    },
+    {
+      "route": "native_feature_head",
+      "model": "Iris_frozen_head",
+      "budget": "pool4_int4_thumb64_zero",
+      "photos": 3,
+      "generated_observations": 3,
+      "clip_image_cosine": 0.8463130593299866,
+      "clip_image_cosine_image_bootstrap95": [
+        0.8231568336486816,
+        0.8611755967140198
+      ],
+      "dino_image_cosine": 0.7793513536453247,
+      "dino_image_cosine_image_bootstrap95": [
+        0.6363672018051147,
+        0.8551480770111084
+      ],
+      "psnr_db": 22.29356470221914,
+      "psnr_db_image_bootstrap95": [
+        20.233575936078417,
+        25.088148587995892
+      ],
+      "mae_rgb8": 15.457833184136286,
+      "mae_rgb8_image_bootstrap95": [
+        11.017593383789062,
+        18.766098022460938
+      ],
+      "wire_bytes": 31502.666666666668,
+      "wire_bytes_image_bootstrap95": [
+        31276.0,
+        31873.0
+      ]
+    },
+    {
+      "route": "native_thumbnail",
+      "model": "thumbnail64",
+      "budget": "thumbnail64",
+      "photos": 3,
+      "generated_observations": 3,
+      "clip_image_cosine": 0.836993674437205,
+      "clip_image_cosine_image_bootstrap95": [
+        0.8149901628494263,
+        0.8485142588615417
+      ],
+      "dino_image_cosine": 0.8289996385574341,
+      "dino_image_cosine_image_bootstrap95": [
+        0.741937518119812,
+        0.8957544565200806
+      ],
+      "psnr_db": 24.335612364235775,
+      "psnr_db_image_bootstrap95": [
+        21.553406074812216,
+        27.385405417955003
+      ],
+      "mae_rgb8": 10.301425509982638,
+      "mae_rgb8_image_bootstrap95": [
+        7.954671223958333,
+        13.296427408854166
+      ],
+      "wire_bytes": 2329.0,
+      "wire_bytes_image_bootstrap95": [
+        2024.0,
+        2661.0
+      ]
+    },
+    {
+      "route": "text_only",
+      "model": "lfm16",
+      "budget": "compact",
+      "photos": 11,
+      "generated_observations": 22,
+      "clip_image_cosine": 0.831953994252465,
+      "clip_image_cosine_image_bootstrap95": [
+        0.7876476206562736,
+        0.8751649735326117
+      ],
+      "dino_image_cosine": 0.6408706185492602,
+      "dino_image_cosine_image_bootstrap95": [
+        0.5676653369245204,
+        0.7072490538047118
+      ],
+      "psnr_db": 10.726467325693893,
+      "psnr_db_image_bootstrap95": [
+        9.58016657905183,
+        11.784151170970256
+      ],
+      "mae_rgb8": 59.98386498653528,
+      "mae_rgb8_image_bootstrap95": [
+        52.07289984731963,
+        69.05542471336595
+      ],
+      "wire_bytes": 385.0,
+      "wire_bytes_image_bootstrap95": [
+        347.08863636363634,
+        422.3636363636364
+      ]
+    },
+    {
+      "route": "text_only",
+      "model": "lfm16",
+      "budget": "detailed",
+      "photos": 11,
+      "generated_observations": 22,
+      "clip_image_cosine": 0.8249983218583193,
+      "clip_image_cosine_image_bootstrap95": [
+        0.7817500954324549,
+        0.8645591441203248
+      ],
+      "dino_image_cosine": 0.6368286270986904,
+      "dino_image_cosine_image_bootstrap95": [
+        0.570662332969633,
+        0.698519525473768
+      ],
+      "psnr_db": 10.36289804210822,
+      "psnr_db_image_bootstrap95": [
+        9.131119801246951,
+        11.622589957358423
+      ],
+      "mae_rgb8": 62.71845014167555,
+      "mae_rgb8_image_bootstrap95": [
+        53.284722883051096,
+        72.10089233860825
+      ],
+      "wire_bytes": 512.0909090909091,
+      "wire_bytes_image_bootstrap95": [
+        456.3636363636364,
+        579.9113636363636
+      ]
+    },
+    {
+      "route": "text_only",
+      "model": "minicpm",
+      "budget": "compact",
+      "photos": 11,
+      "generated_observations": 22,
+      "clip_image_cosine": 0.8353117487647317,
+      "clip_image_cosine_image_bootstrap95": [
+        0.7960141622207382,
+        0.873672463270751
+      ],
+      "dino_image_cosine": 0.6747632175683975,
+      "dino_image_cosine_image_bootstrap95": [
+        0.6037278339266777,
+        0.7478923165662722
+      ],
+      "psnr_db": 10.682001976445642,
+      "psnr_db_image_bootstrap95": [
+        9.448187362693528,
+        11.79616898762318
+      ],
+      "mae_rgb8": 60.63675042354701,
+      "mae_rgb8_image_bootstrap95": [
+        51.93603883801084,
+        70.221543265834
+      ],
+      "wire_bytes": 328.27272727272725,
+      "wire_bytes_image_bootstrap95": [
+        310.6363636363636,
+        346.8181818181818
+      ]
+    },
+    {
+      "route": "text_only",
+      "model": "minicpm",
+      "budget": "detailed",
+      "photos": 11,
+      "generated_observations": 22,
+      "clip_image_cosine": 0.8307626030661843,
+      "clip_image_cosine_image_bootstrap95": [
+        0.7903853158381853,
+        0.8713234547186981
+      ],
+      "dino_image_cosine": 0.6760791255669161,
+      "dino_image_cosine_image_bootstrap95": [
+        0.6016645976088264,
+        0.7452686118808659
+      ],
+      "psnr_db": 11.0346198875533,
+      "psnr_db_image_bootstrap95": [
+        10.173532919724146,
+        11.961570666826608
+      ],
+      "mae_rgb8": 56.6152036262281,
+      "mae_rgb8_image_bootstrap95": [
+        50.43691951289321,
+        63.076267288670394
+      ],
+      "wire_bytes": 417.6363636363636,
+      "wire_bytes_image_bootstrap95": [
+        388.54545454545456,
+        445.45454545454544
+      ]
+    },
+    {
+      "route": "text_only",
+      "model": "qwen4b",
+      "budget": "compact",
+      "photos": 11,
+      "generated_observations": 22,
+      "clip_image_cosine": 0.8418648811903867,
+      "clip_image_cosine_image_bootstrap95": [
+        0.8071160114624284,
+        0.8781874759630722
+      ],
+      "dino_image_cosine": 0.6526728407903151,
+      "dino_image_cosine_image_bootstrap95": [
+        0.602582141824744,
+        0.7033453778787093
+      ],
+      "psnr_db": 10.525897934052567,
+      "psnr_db_image_bootstrap95": [
+        9.17950870969168,
+        11.93432422482707
+      ],
+      "mae_rgb8": 62.35471829501066,
+      "mae_rgb8_image_bootstrap95": [
+        51.774423599243164,
+        73.0123789989587
+      ],
+      "wire_bytes": 264.6363636363636,
+      "wire_bytes_image_bootstrap95": [
+        255.9090909090909,
+        274.09090909090907
+      ]
+    },
+    {
+      "route": "text_only",
+      "model": "qwen4b",
+      "budget": "detailed",
+      "photos": 11,
+      "generated_observations": 22,
+      "clip_image_cosine": 0.8532857894897461,
+      "clip_image_cosine_image_bootstrap95": [
+        0.8218659984794531,
+        0.8841445901854472
+      ],
+      "dino_image_cosine": 0.6901971237225966,
+      "dino_image_cosine_image_bootstrap95": [
+        0.6342626236379146,
+        0.7466052551161159
+      ],
+      "psnr_db": 10.582275646892633,
+      "psnr_db_image_bootstrap95": [
+        9.441413768168545,
+        11.70272654955331
+      ],
+      "mae_rgb8": 60.67561733361447,
+      "mae_rgb8_image_bootstrap95": [
+        52.33881192062841,
+        69.4458349343502
+      ],
+      "wire_bytes": 445.27272727272725,
+      "wire_bytes_image_bootstrap95": [
+        429.1818181818182,
+        460.54545454545456
+      ]
+    },
+    {
+      "route": "text_refine40",
+      "model": "lfm16",
+      "budget": "compact",
+      "photos": 3,
+      "generated_observations": 3,
+      "clip_image_cosine": 0.8601018985112509,
+      "clip_image_cosine_image_bootstrap95": [
+        0.7211036086082458,
+        0.9462884664535522
+      ],
+      "dino_image_cosine": 0.6065293749173483,
+      "dino_image_cosine_image_bootstrap95": [
+        0.34815412759780884,
+        0.7873368263244629
+      ],
+      "psnr_db": 10.291673270046944,
+      "psnr_db_image_bootstrap95": [
+        8.419511894764051,
+        11.400629805470594
+      ],
+      "mae_rgb8": 63.07689751519097,
+      "mae_rgb8_image_bootstrap95": [
+        54.07349650065104,
+        78.11342366536458
+      ],
+      "wire_bytes": 380.0,
+      "wire_bytes_image_bootstrap95": [
+        336.0,
+        458.0
+      ]
+    },
+    {
+      "route": "text_refine40",
+      "model": "lfm16",
+      "budget": "detailed",
+      "photos": 3,
+      "generated_observations": 3,
+      "clip_image_cosine": 0.8614118297894796,
+      "clip_image_cosine_image_bootstrap95": [
+        0.7561331391334534,
+        0.9502952098846436
+      ],
+      "dino_image_cosine": 0.6408832470575968,
+      "dino_image_cosine_image_bootstrap95": [
+        0.32262736558914185,
+        0.8798263669013977
+      ],
+      "psnr_db": 9.98927259502399,
+      "psnr_db_image_bootstrap95": [
+        7.747559647767427,
+        11.599200454226462
+      ],
+      "mae_rgb8": 65.40084330240886,
+      "mae_rgb8_image_bootstrap95": [
+        53.38562520345052,
+        83.0864766438802
+      ],
+      "wire_bytes": 554.0,
+      "wire_bytes_image_bootstrap95": [
+        399.0,
+        791.0
+      ]
+    },
+    {
+      "route": "text_refine40",
+      "model": "minicpm",
+      "budget": "compact",
+      "photos": 3,
+      "generated_observations": 3,
+      "clip_image_cosine": 0.8768471876780192,
+      "clip_image_cosine_image_bootstrap95": [
+        0.762579083442688,
+        0.9539685249328613
+      ],
+      "dino_image_cosine": 0.7101912697156271,
+      "dino_image_cosine_image_bootstrap95": [
+        0.5831518173217773,
+        0.8359960317611694
+      ],
+      "psnr_db": 10.20025172757713,
+      "psnr_db_image_bootstrap95": [
+        7.196467180448529,
+        12.646488425186655
+      ],
+      "mae_rgb8": 63.716637505425346,
+      "mae_rgb8_image_bootstrap95": [
+        46.85763041178385,
+        88.92782592773438
+      ],
+      "wire_bytes": 329.0,
+      "wire_bytes_image_bootstrap95": [
+        283.0,
+        361.0
+      ]
+    },
+    {
+      "route": "text_refine40",
+      "model": "minicpm",
+      "budget": "detailed",
+      "photos": 3,
+      "generated_observations": 3,
+      "clip_image_cosine": 0.8467655579249064,
+      "clip_image_cosine_image_bootstrap95": [
+        0.7886999845504761,
+        0.9170992374420166
+      ],
+      "dino_image_cosine": 0.6699390908082327,
+      "dino_image_cosine_image_bootstrap95": [
+        0.3559657633304596,
+        0.8762439489364624
+      ],
+      "psnr_db": 10.640692504173206,
+      "psnr_db_image_bootstrap95": [
+        7.833016873502632,
+        12.944932712079469
+      ],
+      "mae_rgb8": 60.245252821180564,
+      "mae_rgb8_image_bootstrap95": [
+        45.07011922200521,
+        82.09417724609375
+      ],
+      "wire_bytes": 430.0,
+      "wire_bytes_image_bootstrap95": [
+        399.0,
+        462.0
+      ]
+    },
+    {
+      "route": "text_refine40",
+      "model": "qwen4b",
+      "budget": "compact",
+      "photos": 3,
+      "generated_observations": 3,
+      "clip_image_cosine": 0.8758954207102457,
+      "clip_image_cosine_image_bootstrap95": [
+        0.770173192024231,
+        0.9298667907714844
+      ],
+      "dino_image_cosine": 0.7258034547170004,
+      "dino_image_cosine_image_bootstrap95": [
+        0.686261773109436,
+        0.7776370048522949
+      ],
+      "psnr_db": 9.852967773085734,
+      "psnr_db_image_bootstrap95": [
+        7.466509932108266,
+        12.181710174283815
+      ],
+      "mae_rgb8": 66.47887335883247,
+      "mae_rgb8_image_bootstrap95": [
+        49.3736317952474,
+        88.12419128417969
+      ],
+      "wire_bytes": 253.33333333333334,
+      "wire_bytes_image_bootstrap95": [
+        246.0,
+        263.0
+      ]
+    },
+    {
+      "route": "text_refine40",
+      "model": "qwen4b",
+      "budget": "detailed",
+      "photos": 3,
+      "generated_observations": 3,
+      "clip_image_cosine": 0.886263887087504,
+      "clip_image_cosine_image_bootstrap95": [
+        0.8107194304466248,
+        0.9616522789001465
+      ],
+      "dino_image_cosine": 0.6955338716506958,
+      "dino_image_cosine_image_bootstrap95": [
+        0.5134403705596924,
+        0.8615964651107788
+      ],
+      "psnr_db": 10.368879866474067,
+      "psnr_db_image_bootstrap95": [
+        7.790450463723499,
+        12.262365463107223
+      ],
+      "mae_rgb8": 63.08330790201823,
+      "mae_rgb8_image_bootstrap95": [
+        48.582244873046875,
+        85.51682535807292
+      ],
+      "wire_bytes": 418.3333333333333,
+      "wire_bytes_image_bootstrap95": [
+        386.0,
+        444.0
+      ]
+    },
+    {
+      "route": "thumbnail",
+      "model": "thumbnail64",
+      "budget": "thumbnail",
+      "photos": 3,
+      "generated_observations": 3,
+      "clip_image_cosine": 0.8511102199554443,
+      "clip_image_cosine_image_bootstrap95": [
+        0.8312934637069702,
+        0.8665108680725098
+      ],
+      "dino_image_cosine": 0.8154008587201437,
+      "dino_image_cosine_image_bootstrap95": [
+        0.6803804039955139,
+        0.8897837400436401
+      ],
+      "psnr_db": 24.818252097518794,
+      "psnr_db_image_bootstrap95": [
+        21.972606345917086,
+        27.710651018141018
+      ],
+      "mae_rgb8": 9.48399183485243,
+      "mae_rgb8_image_bootstrap95": [
+        7.5717315673828125,
+        12.449559529622396
+      ],
+      "wire_bytes": 2484.6666666666665,
+      "wire_bytes_image_bootstrap95": [
+        2035.0,
+        2865.0
+      ]
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "left": [
+        "text_only",
+        "qwen4b",
+        "compact"
+      ],
+      "right": [
+        "text_only",
+        "minicpm",
+        "compact"
+      ],
+      "paired_photos": 11,
+      "seed_handling": "Mean over seeds within source image before pairing",
+      "metrics": {
+        "clip_image_cosine": {
+          "mean_difference": 0.006553132425655018,
+          "bootstrap95": [
+            -0.012376575849272988,
+            0.028426555137742646
+          ],
+          "image_wins": 5,
+          "image_losses": 6
+        },
+        "dino_image_cosine": {
+          "mean_difference": -0.022090376778082413,
+          "bootstrap95": [
+            -0.0605566794899377,
+            0.021179911460388733
+          ],
+          "image_wins": 2,
+          "image_losses": 9
+        },
+        "psnr_db": {
+          "mean_difference": -0.15610404239307743,
+          "bootstrap95": [
+            -0.6382366254159456,
+            0.29994337938548576
+          ],
+          "image_wins": 6,
+          "image_losses": 5
+        },
+        "mae_rgb8": {
+          "mean_difference": 1.71796787146366,
+          "bootstrap95": [
+            -2.013921882167007,
+            5.639206678217106
+          ],
+          "image_wins": 5,
+          "image_losses": 6
+        }
+      }
+    },
+    {
+      "left": [
+        "text_only",
+        "qwen4b",
+        "compact"
+      ],
+      "right": [
+        "text_only",
+        "lfm16",
+        "compact"
+      ],
+      "paired_photos": 11,
+      "seed_handling": "Mean over seeds within source image before pairing",
+      "metrics": {
+        "clip_image_cosine": {
+          "mean_difference": 0.009910886937921698,
+          "bootstrap95": [
+            -0.00981808386065743,
+            0.031974512745033594
+          ],
+          "image_wins": 6,
+          "image_losses": 5
+        },
+        "dino_image_cosine": {
+          "mean_difference": 0.011802222241054882,
+          "bootstrap95": [
+            -0.02944111160256646,
+            0.05033889842981637
+          ],
+          "image_wins": 6,
+          "image_losses": 5
+        },
+        "psnr_db": {
+          "mean_difference": -0.20056939164132617,
+          "bootstrap95": [
+            -0.855046458715164,
+            0.3876684066928716
+          ],
+          "image_wins": 4,
+          "image_losses": 7
+        },
+        "mae_rgb8": {
+          "mean_difference": 2.370853308475381,
+          "bootstrap95": [
+            -1.9315469106038372,
+            7.160370982776988
+          ],
+          "image_wins": 7,
+          "image_losses": 4
+        }
+      }
+    },
+    {
+      "left": [
+        "text_only",
+        "qwen4b",
+        "detailed"
+      ],
+      "right": [
+        "text_only",
+        "minicpm",
+        "detailed"
+      ],
+      "paired_photos": 11,
+      "seed_handling": "Mean over seeds within source image before pairing",
+      "metrics": {
+        "clip_image_cosine": {
+          "mean_difference": 0.02252318642356179,
+          "bootstrap95": [
+            0.0010104395449161533,
+            0.048153489760377186
+          ],
+          "image_wins": 6,
+          "image_losses": 5
+        },
+        "dino_image_cosine": {
+          "mean_difference": 0.01411799815568057,
+          "bootstrap95": [
+            -0.02277405136688189,
+            0.051397600871595464
+          ],
+          "image_wins": 5,
+          "image_losses": 6
+        },
+        "psnr_db": {
+          "mean_difference": -0.4523442406606687,
+          "bootstrap95": [
+            -0.9363213975717131,
+            -0.01019836947837811
+          ],
+          "image_wins": 4,
+          "image_losses": 7
+        },
+        "mae_rgb8": {
+          "mean_difference": 4.060413707386363,
+          "bootstrap95": [
+            0.6054839047518654,
+            7.91198877276796
+          ],
+          "image_wins": 8,
+          "image_losses": 3
+        }
+      }
+    },
+    {
+      "left": [
+        "text_only",
+        "qwen4b",
+        "detailed"
+      ],
+      "right": [
+        "text_only",
+        "lfm16",
+        "detailed"
+      ],
+      "paired_photos": 11,
+      "seed_handling": "Mean over seeds within source image before pairing",
+      "metrics": {
+        "clip_image_cosine": {
+          "mean_difference": 0.028287467631426724,
+          "bootstrap95": [
+            0.0034522673623128375,
+            0.06470852656797929
+          ],
+          "image_wins": 9,
+          "image_losses": 2
+        },
+        "dino_image_cosine": {
+          "mean_difference": 0.05336849662390622,
+          "bootstrap95": [
+            -0.006693595309149135,
+            0.12519468563524158
+          ],
+          "image_wins": 8,
+          "image_losses": 3
+        },
+        "psnr_db": {
+          "mean_difference": 0.21937760478441282,
+          "bootstrap95": [
+            -0.2595996520011366,
+            0.6874388363258015
+          ],
+          "image_wins": 6,
+          "image_losses": 5
+        },
+        "mae_rgb8": {
+          "mean_difference": -2.0428328080610783,
+          "bootstrap95": [
+            -6.414715697548608,
+            2.2554108821984467
+          ],
+          "image_wins": 4,
+          "image_losses": 7
+        }
+      }
+    },
+    {
+      "left": [
+        "text_only",
+        "qwen4b",
+        "detailed"
+      ],
+      "right": [
+        "text_only",
+        "qwen4b",
+        "compact"
+      ],
+      "paired_photos": 11,
+      "seed_handling": "Mean over seeds within source image before pairing",
+      "metrics": {
+        "clip_image_cosine": {
+          "mean_difference": 0.011420908299359408,
+          "bootstrap95": [
+            -0.003379313850944692,
+            0.02709838687018915
+          ],
+          "image_wins": 6,
+          "image_losses": 5
+        },
+        "dino_image_cosine": {
+          "mean_difference": 0.037524282932281494,
+          "bootstrap95": [
+            0.0008905371481722051,
+            0.08654048334468493
+          ],
+          "image_wins": 9,
+          "image_losses": 2
+        },
+        "psnr_db": {
+          "mean_difference": 0.056377712840064896,
+          "bootstrap95": [
+            -0.4380016833502237,
+            0.5335225308522206
+          ],
+          "image_wins": 7,
+          "image_losses": 4
+        },
+        "mae_rgb8": {
+          "mean_difference": -1.679100961396189,
+          "bootstrap95": [
+            -6.186246739011824,
+            2.5525759090076785
+          ],
+          "image_wins": 4,
+          "image_losses": 7
+        }
+      }
+    },
+    {
+      "left": [
+        "text_only",
+        "minicpm",
+        "detailed"
+      ],
+      "right": [
+        "text_only",
+        "minicpm",
+        "compact"
+      ],
+      "paired_photos": 11,
+      "seed_handling": "Mean over seeds within source image before pairing",
+      "metrics": {
+        "clip_image_cosine": {
+          "mean_difference": -0.004549145698547363,
+          "bootstrap95": [
+            -0.023250392282550984,
+            0.014304071461612522
+          ],
+          "image_wins": 6,
+          "image_losses": 5
+        },
+        "dino_image_cosine": {
+          "mean_difference": 0.0013159079985185103,
+          "bootstrap95": [
+            -0.03906021944501183,
+            0.043250660090283895
+          ],
+          "image_wins": 6,
+          "image_losses": 5
+        },
+        "psnr_db": {
+          "mean_difference": 0.35261791110765617,
+          "bootstrap95": [
+            -0.16659211623040687,
+            1.1426806356209855
+          ],
+          "image_wins": 7,
+          "image_losses": 4
+        },
+        "mae_rgb8": {
+          "mean_difference": -4.021546797318892,
+          "bootstrap95": [
+            -11.267248026529947,
+            0.5394959363070373
+          ],
+          "image_wins": 3,
+          "image_losses": 8
+        }
+      }
+    },
+    {
+      "left": [
+        "text_only",
+        "lfm16",
+        "detailed"
+      ],
+      "right": [
+        "text_only",
+        "lfm16",
+        "compact"
+      ],
+      "paired_photos": 11,
+      "seed_handling": "Mean over seeds within source image before pairing",
+      "metrics": {
+        "clip_image_cosine": {
+          "mean_difference": -0.0069556723941456185,
+          "bootstrap95": [
+            -0.021142401613972402,
+            0.00839888433163816
+          ],
+          "image_wins": 2,
+          "image_losses": 9
+        },
+        "dino_image_cosine": {
+          "mean_difference": -0.004041991450569846,
+          "bootstrap95": [
+            -0.0423979333855889,
+            0.03745505024086343
+          ],
+          "image_wins": 5,
+          "image_losses": 6
+        },
+        "psnr_db": {
+          "mean_difference": -0.3635692835856741,
+          "bootstrap95": [
+            -0.8685044093977172,
+            0.05225244742175206
+          ],
+          "image_wins": 3,
+          "image_losses": 8
+        },
+        "mae_rgb8": {
+          "mean_difference": 2.7345851551402705,
+          "bootstrap95": [
+            -0.2795905373313208,
+            6.494329117283676
+          ],
+          "image_wins": 8,
+          "image_losses": 3
+        }
+      }
+    },
+    {
+      "left": [
+        "text_only",
+        "qwen4b",
+        "compact"
+      ],
+      "right": [
+        "empty_control",
+        "empty_control",
+        "empty"
+      ],
+      "paired_photos": 11,
+      "seed_handling": "Mean over seeds within source image before pairing",
+      "metrics": {
+        "clip_image_cosine": {
+          "mean_difference": 0.2725011327049949,
+          "bootstrap95": [
+            0.24888260825113817,
+            0.29683761657638985
+          ],
+          "image_wins": 11,
+          "image_losses": 0
+        },
+        "dino_image_cosine": {
+          "mean_difference": 0.6637523177672516,
+          "bootstrap95": [
+            0.6033679967597974,
+            0.7259059093342247
+          ],
+          "image_wins": 11,
+          "image_losses": 0
+        },
+        "psnr_db": {
+          "mean_difference": -0.7547236826201366,
+          "bootstrap95": [
+            -1.3554443584507387,
+            -0.06681964707330881
+          ],
+          "image_wins": 3,
+          "image_losses": 8
+        },
+        "mae_rgb8": {
+          "mean_difference": 1.8464052604906511,
+          "bootstrap95": [
+            -4.336985790368281,
+            7.191285549510609
+          ],
+          "image_wins": 8,
+          "image_losses": 3
+        }
+      }
+    },
+    {
+      "left": [
+        "text_only",
+        "minicpm",
+        "compact"
+      ],
+      "right": [
+        "empty_control",
+        "empty_control",
+        "empty"
+      ],
+      "paired_photos": 11,
+      "seed_handling": "Mean over seeds within source image before pairing",
+      "metrics": {
+        "clip_image_cosine": {
+          "mean_difference": 0.2659480002793399,
+          "bootstrap95": [
+            0.22813961709087546,
+            0.30307967554439197
+          ],
+          "image_wins": 11,
+          "image_losses": 0
+        },
+        "dino_image_cosine": {
+          "mean_difference": 0.6858426945453341,
+          "bootstrap95": [
+            0.6096744185165417,
+            0.7647736857264218
+          ],
+          "image_wins": 11,
+          "image_losses": 0
+        },
+        "psnr_db": {
+          "mean_difference": -0.598619640227059,
+          "bootstrap95": [
+            -1.1497211971954961,
+            0.0708044073983646
+          ],
+          "image_wins": 2,
+          "image_losses": 9
+        },
+        "mae_rgb8": {
+          "mean_difference": 0.12843738902699123,
+          "bootstrap95": [
+            -6.209025804924241,
+            5.0940630652687755
+          ],
+          "image_wins": 7,
+          "image_losses": 4
+        }
+      }
+    },
+    {
+      "left": [
+        "text_only",
+        "lfm16",
+        "compact"
+      ],
+      "right": [
+        "empty_control",
+        "empty_control",
+        "empty"
+      ],
+      "paired_photos": 11,
+      "seed_handling": "Mean over seeds within source image before pairing",
+      "metrics": {
+        "clip_image_cosine": {
+          "mean_difference": 0.2625902457670732,
+          "bootstrap95": [
+            0.23620709417895838,
+            0.2869933284819126
+          ],
+          "image_wins": 11,
+          "image_losses": 0
+        },
+        "dino_image_cosine": {
+          "mean_difference": 0.6519500955261968,
+          "bootstrap95": [
+            0.5732830115932632,
+            0.7237464083146982
+          ],
+          "image_wins": 11,
+          "image_losses": 0
+        },
+        "psnr_db": {
+          "mean_difference": -0.5541542909788103,
+          "bootstrap95": [
+            -1.095754320090452,
+            0.11917009032985451
+          ],
+          "image_wins": 2,
+          "image_losses": 9
+        },
+        "mae_rgb8": {
+          "mean_difference": -0.5244480479847301,
+          "bootstrap95": [
+            -6.025571441650391,
+            3.7643511280868993
+          ],
+          "image_wins": 7,
+          "image_losses": 4
+        }
+      }
+    }
+  ],
+  "refinement_same_seed": [
+    {
+      "model": "qwen4b",
+      "budget": "compact",
+      "paired_photos": 3,
+      "seed": 20261013,
+      "comparison": "40 steps minus10, same caption/source/seed; three-photo diagnostic only",
+      "metrics": {
+        "clip_image_cosine": {
+          "mean_difference": 0.006240944067637126,
+          "individual_differences": {
+            "astronaut": 0.019046545028686523,
+            "chelsea": -0.01582092046737671,
+            "coffee": 0.015497207641601562
+          }
+        },
+        "dino_image_cosine": {
+          "mean_difference": 0.04813446601231893,
+          "individual_differences": {
+            "astronaut": 0.13862764835357666,
+            "chelsea": 0.05293649435043335,
+            "coffee": -0.04716074466705322
+          }
+        },
+        "psnr_db": {
+          "mean_difference": -1.3786969026579337,
+          "individual_differences": {
+            "astronaut": -0.2551894119195195,
+            "chelsea": -2.099909697744664,
+            "coffee": -1.7809915983096172
+          }
+        },
+        "mae_rgb8": {
+          "mean_difference": 7.620720757378471,
+          "individual_differences": {
+            "astronaut": 0.3266754150390625,
+            "chelsea": 11.202499389648438,
+            "coffee": 11.332987467447914
+          }
+        }
+      }
+    },
+    {
+      "model": "qwen4b",
+      "budget": "detailed",
+      "paired_photos": 3,
+      "seed": 20261013,
+      "comparison": "40 steps minus10, same caption/source/seed; three-photo diagnostic only",
+      "metrics": {
+        "clip_image_cosine": {
+          "mean_difference": 0.014521976312001547,
+          "individual_differences": {
+            "astronaut": 0.053482234477996826,
+            "chelsea": -0.03375446796417236,
+            "coffee": 0.023838162422180176
+          }
+        },
+        "dino_image_cosine": {
+          "mean_difference": 0.024180293083190918,
+          "individual_differences": {
+            "astronaut": -0.03441435098648071,
+            "chelsea": 0.002147376537322998,
+            "coffee": 0.10480785369873047
+          }
+        },
+        "psnr_db": {
+          "mean_difference": -0.7520133302503925,
+          "individual_differences": {
+            "astronaut": -0.07569275195120628,
+            "chelsea": -1.3549699238299144,
+            "coffee": -0.8253773149700567
+          }
+        },
+        "mae_rgb8": {
+          "mean_difference": 4.182610405815971,
+          "individual_differences": {
+            "astronaut": -0.2465972900390625,
+            "chelsea": 6.429270426432289,
+            "coffee": 6.3651580810546875
+          }
+        }
+      }
+    },
+    {
+      "model": "minicpm",
+      "budget": "compact",
+      "paired_photos": 3,
+      "seed": 20261013,
+      "comparison": "40 steps minus10, same caption/source/seed; three-photo diagnostic only",
+      "metrics": {
+        "clip_image_cosine": {
+          "mean_difference": -0.030833462874094646,
+          "individual_differences": {
+            "astronaut": -0.09994006156921387,
+            "chelsea": -0.009573221206665039,
+            "coffee": 0.01701289415359497
+          }
+        },
+        "dino_image_cosine": {
+          "mean_difference": 0.0014280080795288086,
+          "individual_differences": {
+            "astronaut": 0.03511190414428711,
+            "chelsea": 0.010680198669433594,
+            "coffee": -0.04150807857513428
+          }
+        },
+        "psnr_db": {
+          "mean_difference": -1.1977087116992404,
+          "individual_differences": {
+            "astronaut": -1.138372215571442,
+            "chelsea": -1.30411499622657,
+            "coffee": -1.1506389232997094
+          }
+        },
+        "mae_rgb8": {
+          "mean_difference": 8.056369357638888,
+          "individual_differences": {
+            "astronaut": 10.415700276692704,
+            "chelsea": 6.372894287109375,
+            "coffee": 7.380513509114586
+          }
+        }
+      }
+    },
+    {
+      "model": "minicpm",
+      "budget": "detailed",
+      "paired_photos": 3,
+      "seed": 20261013,
+      "comparison": "40 steps minus10, same caption/source/seed; three-photo diagnostic only",
+      "metrics": {
+        "clip_image_cosine": {
+          "mean_difference": -0.039596498012542725,
+          "individual_differences": {
+            "astronaut": -0.009735822677612305,
+            "chelsea": -0.010610103607177734,
+            "coffee": -0.09844356775283813
+          }
+        },
+        "dino_image_cosine": {
+          "mean_difference": -0.02590691049893697,
+          "individual_differences": {
+            "astronaut": -0.11897143721580505,
+            "chelsea": -0.0029522180557250977,
+            "coffee": 0.04420292377471924
+          }
+        },
+        "psnr_db": {
+          "mean_difference": -0.8378240000348237,
+          "individual_differences": {
+            "astronaut": -0.6224365023541392,
+            "chelsea": -0.8888870364843449,
+            "coffee": -1.0021484612659872
+          }
+        },
+        "mae_rgb8": {
+          "mean_difference": 5.559151543511287,
+          "individual_differences": {
+            "astronaut": 4.621612548828125,
+            "chelsea": 3.658147176106773,
+            "coffee": 8.39769490559896
+          }
+        }
+      }
+    },
+    {
+      "model": "lfm16",
+      "budget": "compact",
+      "paired_photos": 3,
+      "seed": 20261013,
+      "comparison": "40 steps minus10, same caption/source/seed; three-photo diagnostic only",
+      "metrics": {
+        "clip_image_cosine": {
+          "mean_difference": 0.01857660214106242,
+          "individual_differences": {
+            "astronaut": 0.07239013910293579,
+            "chelsea": -0.0216977596282959,
+            "coffee": 0.005037426948547363
+          }
+        },
+        "dino_image_cosine": {
+          "mean_difference": 0.02011805772781372,
+          "individual_differences": {
+            "astronaut": 0.0360751748085022,
+            "chelsea": 0.013607621192932129,
+            "coffee": 0.010671377182006836
+          }
+        },
+        "psnr_db": {
+          "mean_difference": -0.9819423756410952,
+          "individual_differences": {
+            "astronaut": -0.462639815248691,
+            "chelsea": -1.6106531871157213,
+            "coffee": -0.8725341245588734
+          }
+        },
+        "mae_rgb8": {
+          "mean_difference": 6.693745930989581,
+          "individual_differences": {
+            "astronaut": 3.4317474365234375,
+            "chelsea": 9.076807657877602,
+            "coffee": 7.572682698567704
+          }
+        }
+      }
+    },
+    {
+      "model": "lfm16",
+      "budget": "detailed",
+      "paired_photos": 3,
+      "seed": 20261013,
+      "comparison": "40 steps minus10, same caption/source/seed; three-photo diagnostic only",
+      "metrics": {
+        "clip_image_cosine": {
+          "mean_difference": 0.005428532759348552,
+          "individual_differences": {
+            "astronaut": -0.03311127424240112,
+            "chelsea": -0.006201505661010742,
+            "coffee": 0.05559837818145752
+          }
+        },
+        "dino_image_cosine": {
+          "mean_difference": -0.09867825110753377,
+          "individual_differences": {
+            "astronaut": -0.3340291380882263,
+            "chelsea": -0.01267242431640625,
+            "coffee": 0.05066680908203125
+          }
+        },
+        "psnr_db": {
+          "mean_difference": -1.272143893912222,
+          "individual_differences": {
+            "astronaut": -0.7003256753291653,
+            "chelsea": -2.013859519628223,
+            "coffee": -1.1022464867792774
+          }
+        },
+        "mae_rgb8": {
+          "mean_difference": 8.491711086697046,
+          "individual_differences": {
+            "astronaut": 5.01244608561197,
+            "chelsea": 11.650385538736984,
+            "coffee": 8.812301635742188
+          }
+        }
+      }
+    }
+  ],
+  "native_feature_ablation_comparisons": [
+    {
+      "left": "Actual pooled features plus thumbnail",
+      "right": [
+        "native_feature_head",
+        "Iris_frozen_head",
+        "pool4_int4_thumb64_zero"
+      ],
+      "paired_photos": 3,
+      "mean_differences": {
+        "clip_image_cosine": 0.016647080580393474,
+        "dino_image_cosine": -0.01569477717081706,
+        "psnr_db": 1.022715426175311,
+        "mae_rgb8": -2.776334974500868
+      }
+    },
+    {
+      "left": "Actual pooled features plus thumbnail",
+      "right": [
+        "native_feature_head",
+        "Iris_frozen_head",
+        "pool4_int4_thumb64_shuffle"
+      ],
+      "paired_photos": 3,
+      "mean_differences": {
+        "clip_image_cosine": 0.026182035605112713,
+        "dino_image_cosine": 0.05757021903991699,
+        "psnr_db": 0.46718227031442083,
+        "mae_rgb8": -1.5558827718098958
+      }
+    },
+    {
+      "left": "Actual pooled features plus thumbnail",
+      "right": [
+        "native_thumbnail",
+        "thumbnail64",
+        "thumbnail64"
+      ],
+      "paired_photos": 3,
+      "mean_differences": {
+        "clip_image_cosine": 0.02596646547317505,
+        "dino_image_cosine": -0.06534306208292644,
+        "psnr_db": -1.019332235841328,
+        "mae_rgb8": 2.380072699652779
+      }
+    }
+  ],
+  "same_text_ceiling_codec_aggregates": [
+    {
+      "sender_model": "qwen4b",
+      "caption_budget": "compact",
+      "format": "JPEG",
+      "mode": "fixed256",
+      "photos_encoded": 0,
+      "photos_expected": 11
+    },
+    {
+      "sender_model": "qwen4b",
+      "caption_budget": "compact",
+      "format": "JPEG",
+      "mode": "adaptive_resolution",
+      "photos_encoded": 2,
+      "photos_expected": 11,
+      "clip_image_cosine": 0.5359038710594177,
+      "dino_image_cosine": -0.018030188977718353,
+      "psnr_db": 15.246362946229974,
+      "mae_rgb8": 37.34476725260417,
+      "wire_bytes": 289.0
+    },
+    {
+      "sender_model": "qwen4b",
+      "caption_budget": "compact",
+      "format": "WEBP",
+      "mode": "fixed256",
+      "photos_encoded": 0,
+      "photos_expected": 11
+    },
+    {
+      "sender_model": "qwen4b",
+      "caption_budget": "compact",
+      "format": "WEBP",
+      "mode": "adaptive_resolution",
+      "photos_encoded": 11,
+      "photos_expected": 11,
+      "clip_image_cosine": 0.6287701455029574,
+      "dino_image_cosine": 0.257991340350021,
+      "psnr_db": 20.137297852865284,
+      "mae_rgb8": 18.403300429835465,
+      "wire_bytes": 243.45454545454547
+    },
+    {
+      "sender_model": "qwen4b",
+      "caption_budget": "detailed",
+      "format": "JPEG",
+      "mode": "fixed256",
+      "photos_encoded": 0,
+      "photos_expected": 11
+    },
+    {
+      "sender_model": "qwen4b",
+      "caption_budget": "detailed",
+      "format": "JPEG",
+      "mode": "adaptive_resolution",
+      "photos_encoded": 11,
+      "photos_expected": 11,
+      "clip_image_cosine": 0.5478212562474337,
+      "dino_image_cosine": 0.13321904922750863,
+      "psnr_db": 18.87578195849434,
+      "mae_rgb8": 21.546990134499293,
+      "wire_bytes": 425.90909090909093
+    },
+    {
+      "sender_model": "qwen4b",
+      "caption_budget": "detailed",
+      "format": "WEBP",
+      "mode": "fixed256",
+      "photos_encoded": 0,
+      "photos_expected": 11
+    },
+    {
+      "sender_model": "qwen4b",
+      "caption_budget": "detailed",
+      "format": "WEBP",
+      "mode": "adaptive_resolution",
+      "photos_encoded": 11,
+      "photos_expected": 11,
+      "clip_image_cosine": 0.6758348399942572,
+      "dino_image_cosine": 0.5071498954837973,
+      "psnr_db": 21.481261151203697,
+      "mae_rgb8": 15.428366921164773,
+      "wire_bytes": 409.09090909090907
+    },
+    {
+      "sender_model": "minicpm",
+      "caption_budget": "compact",
+      "format": "JPEG",
+      "mode": "fixed256",
+      "photos_encoded": 0,
+      "photos_expected": 11
+    },
+    {
+      "sender_model": "minicpm",
+      "caption_budget": "compact",
+      "format": "JPEG",
+      "mode": "adaptive_resolution",
+      "photos_encoded": 10,
+      "photos_expected": 11,
+      "clip_image_cosine": 0.46924626231193545,
+      "dino_image_cosine": -0.013892941363155841,
+      "psnr_db": 16.727912017016223,
+      "mae_rgb8": 28.707911173502605,
+      "wire_bytes": 328.3
+    },
+    {
+      "sender_model": "minicpm",
+      "caption_budget": "compact",
+      "format": "WEBP",
+      "mode": "fixed256",
+      "photos_encoded": 0,
+      "photos_expected": 11
+    },
+    {
+      "sender_model": "minicpm",
+      "caption_budget": "compact",
+      "format": "WEBP",
+      "mode": "adaptive_resolution",
+      "photos_encoded": 11,
+      "photos_expected": 11,
+      "clip_image_cosine": 0.6268488602204756,
+      "dino_image_cosine": 0.38804378013380547,
+      "psnr_db": 20.75292083373138,
+      "mae_rgb8": 16.929707382664535,
+      "wire_bytes": 306.90909090909093
+    },
+    {
+      "sender_model": "minicpm",
+      "caption_budget": "detailed",
+      "format": "JPEG",
+      "mode": "fixed256",
+      "photos_encoded": 0,
+      "photos_expected": 11
+    },
+    {
+      "sender_model": "minicpm",
+      "caption_budget": "detailed",
+      "format": "JPEG",
+      "mode": "adaptive_resolution",
+      "photos_encoded": 11,
+      "photos_expected": 11,
+      "clip_image_cosine": 0.5608801110224291,
+      "dino_image_cosine": 0.19305199655619534,
+      "psnr_db": 18.547052159583895,
+      "mae_rgb8": 22.46862654252486,
+      "wire_bytes": 406.09090909090907
+    },
+    {
+      "sender_model": "minicpm",
+      "caption_budget": "detailed",
+      "format": "WEBP",
+      "mode": "fixed256",
+      "photos_encoded": 0,
+      "photos_expected": 11
+    },
+    {
+      "sender_model": "minicpm",
+      "caption_budget": "detailed",
+      "format": "WEBP",
+      "mode": "adaptive_resolution",
+      "photos_encoded": 11,
+      "photos_expected": 11,
+      "clip_image_cosine": 0.6712626923214305,
+      "dino_image_cosine": 0.4541173359717835,
+      "psnr_db": 21.331304430160188,
+      "mae_rgb8": 15.7715713038589,
+      "wire_bytes": 379.27272727272725
+    },
+    {
+      "sender_model": "lfm16",
+      "caption_budget": "compact",
+      "format": "JPEG",
+      "mode": "fixed256",
+      "photos_encoded": 0,
+      "photos_expected": 11
+    },
+    {
+      "sender_model": "lfm16",
+      "caption_budget": "compact",
+      "format": "JPEG",
+      "mode": "adaptive_resolution",
+      "photos_encoded": 10,
+      "photos_expected": 11,
+      "clip_image_cosine": 0.5286859542131424,
+      "dino_image_cosine": 0.10590375494211912,
+      "psnr_db": 17.701036247088474,
+      "mae_rgb8": 24.7011225382487,
+      "wire_bytes": 385.4
+    },
+    {
+      "sender_model": "lfm16",
+      "caption_budget": "compact",
+      "format": "WEBP",
+      "mode": "fixed256",
+      "photos_encoded": 0,
+      "photos_expected": 11
+    },
+    {
+      "sender_model": "lfm16",
+      "caption_budget": "compact",
+      "format": "WEBP",
+      "mode": "adaptive_resolution",
+      "photos_encoded": 11,
+      "photos_expected": 11,
+      "clip_image_cosine": 0.6541661565954034,
+      "dino_image_cosine": 0.4162837862121788,
+      "psnr_db": 21.068336577799325,
+      "mae_rgb8": 16.16189482717803,
+      "wire_bytes": 354.90909090909093
+    },
+    {
+      "sender_model": "lfm16",
+      "caption_budget": "detailed",
+      "format": "JPEG",
+      "mode": "fixed256",
+      "photos_encoded": 0,
+      "photos_expected": 11
+    },
+    {
+      "sender_model": "lfm16",
+      "caption_budget": "detailed",
+      "format": "JPEG",
+      "mode": "adaptive_resolution",
+      "photos_encoded": 11,
+      "photos_expected": 11,
+      "clip_image_cosine": 0.6039529144763947,
+      "dino_image_cosine": 0.2988201179964976,
+      "psnr_db": 19.482907461132488,
+      "mae_rgb8": 19.963932846531723,
+      "wire_bytes": 483.45454545454544
+    },
+    {
+      "sender_model": "lfm16",
+      "caption_budget": "detailed",
+      "format": "WEBP",
+      "mode": "fixed256",
+      "photos_encoded": 0,
+      "photos_expected": 11
+    },
+    {
+      "sender_model": "lfm16",
+      "caption_budget": "detailed",
+      "format": "WEBP",
+      "mode": "adaptive_resolution",
+      "photos_encoded": 11,
+      "photos_expected": 11,
+      "clip_image_cosine": 0.6825656511566855,
+      "dino_image_cosine": 0.5285156789151105,
+      "psnr_db": 21.805534936043397,
+      "mae_rgb8": 14.78083708792022,
+      "wire_bytes": 456.3636363636364
+    }
+  ],
+  "limitations": "Exploratory 11-photo convenience cohort. Descriptive percentile bootstrap, 10000 resamples, unadjusted multiple comparisons, unknown pretraining overlap. Synthetic controls excluded. Image cosines are not exact fidelity or identity measurements. Initial feature decoder and text sampler have different byte budgets and compute."
+}

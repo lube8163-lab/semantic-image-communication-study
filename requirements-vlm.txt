@@ -1,0 +1,11 @@
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch==2.10.0+cu128
+torchvision==0.25.0+cu128
+transformers==5.7.0
+huggingface-hub==1.33.0
+numpy==2.2.6
+pillow==11.3.0
+safetensors==0.7.0
+omegaconf==2.3.0
+antlr4-python3-runtime==4.9.3
+PyYAML==6.0.3

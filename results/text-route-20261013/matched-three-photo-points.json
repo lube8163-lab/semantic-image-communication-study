@@ -1,0 +1,145 @@
+[
+  {
+    "route": "native_feature_head",
+    "model": "Iris_frozen_head",
+    "budget": "full_fp16_none",
+    "label": "Feature full_fp16_none",
+    "source_photos": 3,
+    "wire_bytes": 19640180.333333332,
+    "clip_image_cosine": 0.768296480178833,
+    "dino_image_cosine": 0.5164305567741394,
+    "psnr_db": 12.239655708754531
+  },
+  {
+    "route": "native_feature_head",
+    "model": "Iris_frozen_head",
+    "budget": "pool4_int4_none",
+    "label": "Feature pool4_int4_none",
+    "source_photos": 3,
+    "wire_bytes": 29212.666666666668,
+    "clip_image_cosine": 0.5765476326147715,
+    "dino_image_cosine": 0.0013778942326704662,
+    "psnr_db": 11.753518658852009
+  },
+  {
+    "route": "native_feature_head",
+    "model": "Iris_frozen_head",
+    "budget": "pool4_int4_thumb64",
+    "label": "Feature pool4_int4_thumb64",
+    "source_photos": 3,
+    "wire_bytes": 31502.666666666668,
+    "clip_image_cosine": 0.86296013991038,
+    "dino_image_cosine": 0.7636565764745077,
+    "psnr_db": 23.31628012839445
+  },
+  {
+    "route": "native_thumbnail",
+    "model": "thumbnail64",
+    "budget": "thumbnail64",
+    "label": "Thumb64",
+    "source_photos": 3,
+    "wire_bytes": 2329,
+    "clip_image_cosine": 0.836993674437205,
+    "dino_image_cosine": 0.8289996385574341,
+    "psnr_db": 24.335612364235775
+  },
+  {
+    "route": "text_only",
+    "model": "qwen4b",
+    "budget": "compact",
+    "label": "Qwen3-VL-4B / compact",
+    "source_photos": 3,
+    "wire_bytes": 253.33333333333334,
+    "clip_image_cosine": 0.874119242032369,
+    "dino_image_cosine": 0.6931373675664266,
+    "psnr_db": 11.288255442779638
+  },
+  {
+    "route": "text_only",
+    "model": "qwen4b",
+    "budget": "detailed",
+    "label": "Qwen3-VL-4B / detailed",
+    "source_photos": 3,
+    "wire_bytes": 418.3333333333333,
+    "clip_image_cosine": 0.8595757782459259,
+    "dino_image_cosine": 0.7174418270587921,
+    "psnr_db": 11.102140468456941
+  },
+  {
+    "route": "text_only",
+    "model": "minicpm",
+    "budget": "compact",
+    "label": "MiniCPM-V4.6 / compact",
+    "source_photos": 3,
+    "wire_bytes": 329,
+    "clip_image_cosine": 0.8784763514995575,
+    "dino_image_cosine": 0.7426413595676422,
+    "psnr_db": 11.382131825169983
+  },
+  {
+    "route": "text_only",
+    "model": "minicpm",
+    "budget": "detailed",
+    "label": "MiniCPM-V4.6 / detailed",
+    "source_photos": 3,
+    "wire_bytes": 430,
+    "clip_image_cosine": 0.8696560561656952,
+    "dino_image_cosine": 0.7159135490655899,
+    "psnr_db": 11.541024135894512
+  },
+  {
+    "route": "text_only",
+    "model": "lfm16",
+    "budget": "compact",
+    "label": "LFM2.5-VL-1.6B / compact",
+    "source_photos": 3,
+    "wire_bytes": 380,
+    "clip_image_cosine": 0.8384476999441782,
+    "dino_image_cosine": 0.6536600291728973,
+    "psnr_db": 11.301684504904621
+  },
+  {
+    "route": "text_only",
+    "model": "lfm16",
+    "budget": "detailed",
+    "label": "LFM2.5-VL-1.6B / detailed",
+    "source_photos": 3,
+    "wire_bytes": 554,
+    "clip_image_cosine": 0.8391282757123312,
+    "dino_image_cosine": 0.7119868795077006,
+    "psnr_db": 11.311175269775916
+  },
+  {
+    "route": "initial_codec",
+    "model": "JPEG",
+    "budget": "pool4_int4_thumb64",
+    "label": "JPEG ~30k ceiling",
+    "source_photos": 3,
+    "wire_bytes": 28923.333333333332,
+    "clip_image_cosine": 0.9671491384506226,
+    "dino_image_cosine": 0.9959781964619955,
+    "psnr_db": 38.83730307302422
+  },
+  {
+    "route": "codec",
+    "model": "WEBP",
+    "budget": "compact",
+    "label": "Scaled WebP / Qwen compact ceiling",
+    "source_photos": 3,
+    "wire_bytes": 229.33333333333334,
+    "clip_image_cosine": 0.6498343348503113,
+    "dino_image_cosine": 0.23492869238058725,
+    "psnr_db": 20.040768905170165
+  },
+  {
+    "route": "codec",
+    "model": "WEBP",
+    "budget": "detailed",
+    "label": "Scaled WebP / Qwen detailed ceiling",
+    "source_photos": 3,
+    "wire_bytes": 374,
+    "clip_image_cosine": 0.6969550848007202,
+    "dino_image_cosine": 0.5685438712437948,
+    "psnr_db": 21.507317768245503
+  }
+]

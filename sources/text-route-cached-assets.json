@@ -1,0 +1,136 @@
+{
+  "minicpm": {
+    "repo": "openbmb/MiniCPM-V-4.6",
+    "revision": "36f34a661a4bd35d0dc2294cb044d2584646c7d3",
+    "files": [
+      {
+        "path": "chat_template.jinja",
+        "bytes": 7301,
+        "sha256": "dfe1fa43a3444f065406d3a2b9aa315602f5c146b80cf22e0426a6c1466d85aa"
+      },
+      {
+        "path": "config.json",
+        "bytes": 2378,
+        "sha256": "72d83ac9089bebddf28131b9953908acaf0a5740b868263c8aaac7c40b97991c"
+      },
+      {
+        "path": "generation_config.json",
+        "bytes": 214,
+        "sha256": "355e944b910ce784e4c561d67b8e7fee9c6c89385cc790e5a6affb7747b1f118"
+      },
+      {
+        "path": "model.safetensors",
+        "bytes": 2600957528,
+        "sha256": "aa67da5820411176d0f9593a00265bc25a73c45f62dc5a605a93b1b5516a0d34"
+      },
+      {
+        "path": "preprocessor_config.json",
+        "bytes": 315,
+        "sha256": "eb7cd430865c06eeaad22fcd28c6c606ce26b6fd54d3d6d0e99370779b3197a5"
+      },
+      {
+        "path": "README.md",
+        "bytes": 21318,
+        "sha256": "d08f69f90aa371f85fccb9369eb43d9261bed706a9b48e73f0a4553f6a954e50"
+      },
+      {
+        "path": "tokenizer.json",
+        "bytes": 19992481,
+        "sha256": "33861e37bb955af1e3f3061182b820f347eba2b9c2c1011c82794bf0d6e77b54"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "bytes": 8997,
+        "sha256": "f08d15030f1157ca8826aa92f64408dba6ecf50292f5dd74a6287d6aec0c4660"
+      }
+    ],
+    "path": "models/minicpm",
+    "license": "Apache-2.0",
+    "verified_utc": "2026-10-13T14:55:25.768196+00:00",
+    "use": "Immutable read-only shared asset; no old experimental output substituted"
+  },
+  "lfm16": {
+    "repo": "LiquidAI/LFM2.5-VL-1.6B",
+    "revision": "919fde3d022e3f90a4716006f993938ee8c2eb97",
+    "path": "models/lfm16",
+    "files": [
+      {
+        "path": "chat_template.jinja",
+        "bytes": 2596,
+        "sha256": "c20dd9d9f7497c9e520eb51203500604b00f19c9ad54d883066d93a8b8ee8d09"
+      },
+      {
+        "path": "config.json",
+        "bytes": 2376,
+        "sha256": "fbda22b139d38119d8548135b115ec5ec980202392d237267b9cd210da24a51e"
+      },
+      {
+        "path": "generation_config.json",
+        "bytes": 136,
+        "sha256": "40d17f9ec64c97e8fd5400540960b6a9761ed6d6acc0b1ab6a6656055e4755b3"
+      },
+      {
+        "path": "LICENSE",
+        "bytes": 10596,
+        "sha256": "5188f2b355da20647257a3156db5834c794e5fb5e6d8dc4d4cdbb3180e75b85b"
+      },
+      {
+        "path": "model.safetensors",
+        "bytes": 3193334216,
+        "sha256": "7fc7458e4382fc6e558cfdda45857fbf9ab5b40a8bf199c9cd073003b14ac26d"
+      },
+      {
+        "path": "processor_config.json",
+        "bytes": 828,
+        "sha256": "622b75b531b3f49b1cdf4f90626c34e5ffb4f8bba2b8637807af0462398ae718"
+      },
+      {
+        "path": "README.md",
+        "bytes": 11883,
+        "sha256": "689fa5c3561dcb0b0683fa2d61c0e29dc0d5952a8f374402a2c1a1c15a206dac"
+      },
+      {
+        "path": "tokenizer.json",
+        "bytes": 4733040,
+        "sha256": "f3910942aa907c48b0cc20ec426ee38bfa8dcda8feecf035ced981918cb30f14"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "bytes": 843,
+        "sha256": "7a39bd69bf23e03dac8e1b6e37105d42f54b7ff5b7ab370a08ea1b4f4ebcd949"
+      }
+    ],
+    "license": "LFM Open License v1.0; local research",
+    "verified_utc": "2026-10-13T14:55:27.619332+00:00",
+    "use": "Immutable read-only shared asset; no old experimental output substituted"
+  },
+  "dino": {
+    "repo": "facebook/dinov2-small",
+    "revision": "ed25f3a31f01632728cabb09d1542f84ab7b0056",
+    "path": "models/dino",
+    "files": [
+      {
+        "path": "config.json",
+        "bytes": 547,
+        "sha256": "1809f83e3bdb1609a501a610ad4a742f4fd8ae44d72ca4aa0df52d1f2ac8628d"
+      },
+      {
+        "path": "model.safetensors",
+        "bytes": 88249960,
+        "sha256": "ae1e99fcefd534ed978cdeb8326f08030c96e28b7a81ffcbc98a857c84d14be1"
+      },
+      {
+        "path": "preprocessor_config.json",
+        "bytes": 436,
+        "sha256": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828"
+      },
+      {
+        "path": "README.md",
+        "bytes": 3033,
+        "sha256": "4c20dca454a8e5c670e8de5c7e6040f512aeca5438516f7623eedc4e3b00599c"
+      }
+    ],
+    "verified_utc": "2026-10-13T14:55:27.693839+00:00",
+    "use": "Immutable read-only shared asset; no old experimental output substituted"
+  }
+}

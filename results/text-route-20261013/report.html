@@ -1,0 +1,694 @@
+<!doctype html><html lang="ja"><meta charset="utf-8"><title>画像→文章→画像 比較</title>
+<style>body{font-family:Segoe UI,Meiryo,sans-serif;background:#f6f7f9;color:#172534;margin:24px}h1{font-size:27px}p{line-height:1.7;max-width:1000px}.grid{display:grid;grid-template-columns:repeat(7,minmax(135px,1fr));gap:10px}section{background:white;padding:18px;margin:22px 0;border-radius:12px}figure{margin:0}img{width:100%;height:auto}figcaption{font-size:12px;line-height:1.5}details{font-size:12px;line-height:1.5;margin-top:7px}table{border-collapse:collapse;background:white}td,th{padding:9px;border:1px solid #ddd;text-align:right}th:first-child,td:first-child{text-align:left}.note{color:#596773}.controls{position:sticky;top:0;background:#fff;padding:12px;border-bottom:1px solid #ddd}select{padding:6px;margin-right:15px}.seed{display:none}.seed.active{display:block}@media(max-width:1000px){.grid{grid-template-columns:repeat(3,minmax(135px,1fr))}}</style>
+<h1>画像→テキスト→画像：3モデル比較</h1>
+<p>比較完了。原画像13枚（写真11＋図形2）、3モデル、短文・詳細文、2シード。保存済み生成：158件。Irisは標準1024px／10ステップ。評価用画像は256pxへ縮小。元の3写真は同じシードで40ステップも確認します。</p>
+<p class="note">共有済みのモデルを前提とした通信量です。CLIP／DINOは意味・見た目の類似度の参考値で、本人の顔・個体・形状の一致を保証しません。PSNRは元の画素との一致です。小規模な試験で、学習データとの重複は不明です。</p>
+<table><tr><th>モデル／説明</th><th>平均通信B</th><th>CLIP</th><th>DINO</th><th>PSNR dB</th></tr>
+<tr><td>LFM2.5-VL-1.6B／compact</td><td>385</td><td>0.832</td><td>0.641</td><td>10.73</td></tr>
+<tr><td>LFM2.5-VL-1.6B／detailed</td><td>512</td><td>0.825</td><td>0.637</td><td>10.36</td></tr>
+<tr><td>MiniCPM-V4.6／compact</td><td>328</td><td>0.835</td><td>0.675</td><td>10.68</td></tr>
+<tr><td>MiniCPM-V4.6／detailed</td><td>418</td><td>0.831</td><td>0.676</td><td>11.03</td></tr>
+<tr><td>Qwen3-VL-4B／compact</td><td>265</td><td>0.842</td><td>0.653</td><td>10.53</td></tr>
+<tr><td>Qwen3-VL-4B／detailed</td><td>445</td><td>0.853</td><td>0.690</td><td>10.58</td></tr>
+</table><p>写真11枚のみ。各写真内で2シードを平均しています。指標は個別に読む必要があります。</p>
+<p>Qwen詳細と同じバイト上限内の縮小WebP（写真11枚）は平均409B、CLIP 0.676、DINO 0.507、PSNR 21.48dBでした。文章再生成は意味類似度が高く、縮小画像は画素一致が高いという違いがあります。</p>
+<p><a href="model-comparison.png">モデルの比較図</a> ／ <a href="communication-tradeoff.png">同じ3写真での通信量と品質</a> ／ <a href="native-feature-comparison.png">中間特徴・補助画像との比較</a> ／ <a href="evaluation-summary.json">集計と差の区間</a></p>
+<p>同じ説明・入力・シードでの10→40ステップ比較：<a href="refinement-compact.png">短文</a> ／ <a href="refinement-detailed.png">詳細文</a>。対象は元の3写真です。</p>
+<div class="controls">シード <select id="seed"><option>20261013</option><option>20261014</option></select>モデル <select id="model"><option value="all">すべて</option><option value="qwen4b">Qwen3-VL-4B</option><option value="minicpm">MiniCPM-V4.6</option><option value="lfm16">LFM2.5-VL-1.6B</option></select>説明 <select id="budget"><option value="all">短文＋詳細</option><option value="compact">短文</option><option value="detailed">詳細</option></select></div>
+<section><h2>astronaut <small>initial_photo</small></h2><div class="grid"><figure><a href="../../data/processed/astronaut.png"><img src="../../data/processed/astronaut.png"></a><figcaption>入力：全モデルで同じ256px</figcaption></figure>
+<figure data-model="qwen4b" data-budget="compact"><figcaption><b>Qwen3-VL-4B／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/qwen4b-compact-astronaut-s20261013.png"><img loading="lazy" src="evaluated/qwen4b-compact-astronaut-s20261013.png"></a><figcaption>263B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/qwen4b-compact-astronaut-s20261014.png"><img loading="lazy" src="evaluated/qwen4b-compact-astronaut-s20261014.png"></a><figcaption>263B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（27語）</summary>A woman in an orange spacesuit smiles, holding a black helmet. Behind her: American flag on left, white rocket with brown nose cone on right. Framed photograph.</details></figure>
+<figure data-model="qwen4b" data-budget="detailed"><figcaption><b>Qwen3-VL-4B／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/qwen4b-detailed-astronaut-s20261013.png"><img loading="lazy" src="evaluated/qwen4b-detailed-astronaut-s20261013.png"></a><figcaption>444B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/qwen4b-detailed-astronaut-s20261014.png"><img loading="lazy" src="evaluated/qwen4b-detailed-astronaut-s20261014.png"></a><figcaption>444B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（64語）</summary>A woman in an orange spacesuit with a helmet stands smiling, holding a black helmet. Behind her, an American flag is to the left, and a white rocket with a brown nose cone stands to the right. The background is a neutral gray wall. The suit has patches, including one with a blue and white design. The scene is framed as a studio photograph.</details></figure>
+<figure data-model="minicpm" data-budget="compact"><figcaption><b>MiniCPM-V4.6／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/minicpm-compact-astronaut-s20261013.png"><img loading="lazy" src="evaluated/minicpm-compact-astronaut-s20261013.png"></a><figcaption>361B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/minicpm-compact-astronaut-s20261014.png"><img loading="lazy" src="evaluated/minicpm-compact-astronaut-s20261014.png"></a><figcaption>361B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（46語）</summary>A woman in an orange space suit stands beside a black helmet. An American flag is to her left. A space shuttle model is behind her. The setting is indoors. The image is a photograph or illustration. Colors are vibrant, with orange, white, and blue prominent.</details></figure>
+<figure data-model="minicpm" data-budget="detailed"><figcaption><b>MiniCPM-V4.6／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/minicpm-detailed-astronaut-s20261013.png"><img loading="lazy" src="evaluated/minicpm-detailed-astronaut-s20261013.png"></a><figcaption>429B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/minicpm-detailed-astronaut-s20261014.png"><img loading="lazy" src="evaluated/minicpm-detailed-astronaut-s20261014.png"></a><figcaption>429B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（58語）</summary>A woman in an orange astronaut suit stands beside a black helmet. An American flag is to her left, and a space shuttle model is behind her. A white and brown space shuttle is also visible. The setting appears to be a studio with neutral backgrounds. The image is a photograph or illustration, showing clear details and colors.</details></figure>
+<figure data-model="lfm16" data-budget="compact"><figcaption><b>LFM2.5-VL-1.6B／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/lfm16-compact-astronaut-s20261013.png"><img loading="lazy" src="evaluated/lfm16-compact-astronaut-s20261013.png"></a><figcaption>458B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/lfm16-compact-astronaut-s20261014.png"><img loading="lazy" src="evaluated/lfm16-compact-astronaut-s20261014.png"></a><figcaption>458B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（65語）</summary>A person wearing an orange space suit with a helmet on their right shoulder stands in front of an American flag and a model of a space shuttle. The person is smiling and looking directly at the camera. The background includes a plain wall and a table with the space shuttle model. The image appears to be a professional portrait taken in a studio setting.</details></figure>
+<figure data-model="lfm16" data-budget="detailed"><figcaption><b>LFM2.5-VL-1.6B／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/lfm16-detailed-astronaut-s20261013.png"><img loading="lazy" src="evaluated/lfm16-detailed-astronaut-s20261013.png"></a><figcaption>791B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/lfm16-detailed-astronaut-s20261014.png"><img loading="lazy" src="evaluated/lfm16-detailed-astronaut-s20261014.png"></a><figcaption>791B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（118語）</summary>A person wearing an orange space suit with a black helmet is standing in front of an American flag and a model of a space shuttle. The person is smiling and looking directly at the camera. The background includes a plain wall and a table with the space shuttle model. The image appears to be a professional portrait, likely taken in a studio setting. The colors are vibrant, with the orange of the suit contrasting against the blue of the flag and the white of the shuttle model. The person&#x27;s posture is upright and confident, suggesting a sense of pride and accomplishment. The overall composition is balanced, with the person centered and the objects arranged symmetrically around them.</details></figure>
+</div>
+<p class="note">原画像：NASA / Eileen Collins／Public domain</p>
+</section>
+<section><h2>coffee <small>initial_photo</small></h2><div class="grid"><figure><a href="../../data/processed/coffee.png"><img src="../../data/processed/coffee.png"></a><figcaption>入力：全モデルで同じ256px</figcaption></figure>
+<figure data-model="qwen4b" data-budget="compact"><figcaption><b>Qwen3-VL-4B／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/qwen4b-compact-coffee-s20261013.png"><img loading="lazy" src="evaluated/qwen4b-compact-coffee-s20261013.png"></a><figcaption>246B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/qwen4b-compact-coffee-s20261014.png"><img loading="lazy" src="evaluated/qwen4b-compact-coffee-s20261014.png"></a><figcaption>246B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（22語）</summary>Red ceramic cup with espresso sits on matching saucer. Silver spoon rests beside it. Wooden table background. Top-down view. No people present.</details></figure>
+<figure data-model="qwen4b" data-budget="detailed"><figcaption><b>Qwen3-VL-4B／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/qwen4b-detailed-coffee-s20261013.png"><img loading="lazy" src="evaluated/qwen4b-detailed-coffee-s20261013.png"></a><figcaption>425B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/qwen4b-detailed-coffee-s20261014.png"><img loading="lazy" src="evaluated/qwen4b-detailed-coffee-s20261014.png"></a><figcaption>425B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（54語）</summary>A red ceramic espresso cup with a handle sits on a matching saucer. A silver spoon rests beside it. The cup contains amber-brown espresso. The scene is on a wooden surface. The cup is centered, slightly left of the saucer’s edge. Lighting casts soft shadows. No other objects are visible. The image appears photographic.</details></figure>
+<figure data-model="minicpm" data-budget="compact"><figcaption><b>MiniCPM-V4.6／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/minicpm-compact-coffee-s20261013.png"><img loading="lazy" src="evaluated/minicpm-compact-coffee-s20261013.png"></a><figcaption>283B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/minicpm-compact-coffee-s20261014.png"><img loading="lazy" src="evaluated/minicpm-compact-coffee-s20261014.png"></a><figcaption>283B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（33語）</summary>A red cup with white interior holds espresso, placed on a matching red saucer. A silver spoon rests beside the cup. The setting is a wooden surface. The image is clear and focused.</details></figure>
+<figure data-model="minicpm" data-budget="detailed"><figcaption><b>MiniCPM-V4.6／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/minicpm-detailed-coffee-s20261013.png"><img loading="lazy" src="evaluated/minicpm-detailed-coffee-s20261013.png"></a><figcaption>462B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/minicpm-detailed-coffee-s20261014.png"><img loading="lazy" src="evaluated/minicpm-detailed-coffee-s20261014.png"></a><figcaption>462B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（64語）</summary>A red cup with a white interior holds a light brown beverage. A small silver spoon rests beside it on a matching red saucer. The cup and saucer are placed on a wooden surface. The scene is framed, showing a close-up view. The lighting highlights the cup&#x27;s glossy finish and the spoon&#x27;s metallic sheen. The overall setting suggests a cozy café or dining area.</details></figure>
+<figure data-model="lfm16" data-budget="compact"><figcaption><b>LFM2.5-VL-1.6B／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/lfm16-compact-coffee-s20261013.png"><img loading="lazy" src="evaluated/lfm16-compact-coffee-s20261013.png"></a><figcaption>336B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/lfm16-compact-coffee-s20261014.png"><img loading="lazy" src="evaluated/lfm16-compact-coffee-s20261014.png"></a><figcaption>336B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（46語）</summary>A small red cup of espresso sits on a matching saucer with a silver spoon beside it. The cup is filled to the brim with dark brown coffee. The background is a wooden table. The lighting is soft and even. The image is a close-up shot.</details></figure>
+<figure data-model="lfm16" data-budget="detailed"><figcaption><b>LFM2.5-VL-1.6B／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/lfm16-detailed-coffee-s20261013.png"><img loading="lazy" src="evaluated/lfm16-detailed-coffee-s20261013.png"></a><figcaption>472B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/lfm16-detailed-coffee-s20261014.png"><img loading="lazy" src="evaluated/lfm16-detailed-coffee-s20261014.png"></a><figcaption>472B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（69語）</summary>A small red cup of espresso sits on a matching saucer. A silver spoon rests beside the cup. The cup is filled with a light brown liquid. The saucer is circular with a slightly raised edge. The cup has a handle on its right side. The background is a wooden surface. The lighting is even, highlighting the textures of the cup, saucer, and wood. The image is a photograph.</details></figure>
+</div>
+<p class="note">原画像：Rachel Michetti / Pikolo Espresso Bar／CC0</p>
+</section>
+<section><h2>chelsea <small>initial_photo</small></h2><div class="grid"><figure><a href="../../data/processed/chelsea.png"><img src="../../data/processed/chelsea.png"></a><figcaption>入力：全モデルで同じ256px</figcaption></figure>
+<figure data-model="qwen4b" data-budget="compact"><figcaption><b>Qwen3-VL-4B／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/qwen4b-compact-chelsea-s20261013.png"><img loading="lazy" src="evaluated/qwen4b-compact-chelsea-s20261013.png"></a><figcaption>251B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/qwen4b-compact-chelsea-s20261014.png"><img loading="lazy" src="evaluated/qwen4b-compact-chelsea-s20261014.png"></a><figcaption>251B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（22語）</summary>Close-up of a tabby cat’s face. Large green eyes, orange-brown fur with stripes, pink nose, white whiskers. Framed tightly, no background visible.</details></figure>
+<figure data-model="qwen4b" data-budget="detailed"><figcaption><b>Qwen3-VL-4B／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/qwen4b-detailed-chelsea-s20261013.png"><img loading="lazy" src="evaluated/qwen4b-detailed-chelsea-s20261013.png"></a><figcaption>386B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/qwen4b-detailed-chelsea-s20261014.png"><img loading="lazy" src="evaluated/qwen4b-detailed-chelsea-s20261014.png"></a><figcaption>386B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（43語）</summary>Close-up of a tabby cat’s face. Large, round, green eyes with black pupils. Brown and tan fur with distinct stripes. Small, pink nose. Long white whiskers extending from cheeks. Cat gazes forward. Background blurred. No other animals or objects visible. Image appears photographic.</details></figure>
+<figure data-model="minicpm" data-budget="compact"><figcaption><b>MiniCPM-V4.6／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/minicpm-compact-chelsea-s20261013.png"><img loading="lazy" src="evaluated/minicpm-compact-chelsea-s20261013.png"></a><figcaption>343B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/minicpm-compact-chelsea-s20261014.png"><img loading="lazy" src="evaluated/minicpm-compact-chelsea-s20261014.png"></a><figcaption>343B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（43語）</summary>A close-up of a cat with yellow-green eyes and striped fur. Its nose is pink, and whiskers are visible. The focus is on the face, showing detailed texture and color. The background is out of focus. The image is a photograph or illustration.</details></figure>
+<figure data-model="minicpm" data-budget="detailed"><figcaption><b>MiniCPM-V4.6／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/minicpm-detailed-chelsea-s20261013.png"><img loading="lazy" src="evaluated/minicpm-detailed-chelsea-s20261013.png"></a><figcaption>399B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/minicpm-detailed-chelsea-s20261014.png"><img loading="lazy" src="evaluated/minicpm-detailed-chelsea-s20261014.png"></a><figcaption>399B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（54語）</summary>A close-up of a cat&#x27;s face shows large, green eyes with dark pupils. The cat has a striped pattern on its fur, with shades of brown and tan. Its nose is small and pinkish, and whiskers are visible. The background is out of focus, emphasizing the cat. The image is a detailed, close-up photograph.</details></figure>
+<figure data-model="lfm16" data-budget="compact"><figcaption><b>LFM2.5-VL-1.6B／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/lfm16-compact-chelsea-s20261013.png"><img loading="lazy" src="evaluated/lfm16-compact-chelsea-s20261013.png"></a><figcaption>346B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/lfm16-compact-chelsea-s20261014.png"><img loading="lazy" src="evaluated/lfm16-compact-chelsea-s20261014.png"></a><figcaption>346B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（44語）</summary>A close-up of a cat&#x27;s face with wide green eyes, light brown fur with darker stripes, white whiskers, and a pink nose. The cat is looking directly at the camera. The background is blurred, focusing on the cat&#x27;s face. The image is a photograph.</details></figure>
+<figure data-model="lfm16" data-budget="detailed"><figcaption><b>LFM2.5-VL-1.6B／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/lfm16-detailed-chelsea-s20261013.png"><img loading="lazy" src="evaluated/lfm16-detailed-chelsea-s20261013.png"></a><figcaption>399B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/lfm16-detailed-chelsea-s20261014.png"><img loading="lazy" src="evaluated/lfm16-detailed-chelsea-s20261014.png"></a><figcaption>399B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（53語）</summary>A close-up of a cat&#x27;s face with wide green eyes, light brown fur with darker stripes, and a pink nose. The cat is looking directly at the camera with its ears slightly back. The background is blurred, focusing attention on the cat&#x27;s face. The image appears to be taken indoors with soft lighting.</details></figure>
+</div>
+<p class="note">原画像：Stefan van der Walt／CC0</p>
+</section>
+<section><h2>red_circle_left <small>synthetic_control</small></h2><div class="grid"><figure><a href="../../data/processed/red_circle_left.png"><img src="../../data/processed/red_circle_left.png"></a><figcaption>入力：全モデルで同じ256px</figcaption></figure>
+<figure data-model="qwen4b" data-budget="compact"><figcaption><b>Qwen3-VL-4B／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/qwen4b-compact-red_circle_left-s20261013.png"><img loading="lazy" src="evaluated/qwen4b-compact-red_circle_left-s20261013.png"></a><figcaption>231B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/qwen4b-compact-red_circle_left-s20261014.png"><img loading="lazy" src="evaluated/qwen4b-compact-red_circle_left-s20261014.png"></a><figcaption>231B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（20語）</summary>Red circle sits left of horizontal gray line on beige background. No motion or other objects present. Simple illustration style.</details></figure>
+<figure data-model="qwen4b" data-budget="detailed"><figcaption><b>Qwen3-VL-4B／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/qwen4b-detailed-red_circle_left-s20261013.png"><img loading="lazy" src="evaluated/qwen4b-detailed-red_circle_left-s20261013.png"></a><figcaption>428B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/qwen4b-detailed-red_circle_left-s20261014.png"><img loading="lazy" src="evaluated/qwen4b-detailed-red_circle_left-s20261014.png"></a><figcaption>428B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（56語）</summary>A solid red circle sits left of center on a light beige background. A thin dark gray horizontal line runs across the bottom edge. No other shapes or objects are present. The circle is static, untextured, and fully visible. The composition is minimalist, with no motion or depth cues. The image appears as a flat illustration.</details></figure>
+<figure data-model="minicpm" data-budget="compact"><figcaption><b>MiniCPM-V4.6／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/minicpm-compact-red_circle_left-s20261013.png"><img loading="lazy" src="evaluated/minicpm-compact-red_circle_left-s20261013.png"></a><figcaption>268B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/minicpm-compact-red_circle_left-s20261014.png"><img loading="lazy" src="evaluated/minicpm-compact-red_circle_left-s20261014.png"></a><figcaption>268B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（31語）</summary>A red circle is positioned on the left side of a plain background. The scene is simple and flat, with no additional elements. The focus is on the red circular shape.</details></figure>
+<figure data-model="minicpm" data-budget="detailed"><figcaption><b>MiniCPM-V4.6／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/minicpm-detailed-red_circle_left-s20261013.png"><img loading="lazy" src="evaluated/minicpm-detailed-red_circle_left-s20261013.png"></a><figcaption>323B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/minicpm-detailed-red_circle_left-s20261014.png"><img loading="lazy" src="evaluated/minicpm-detailed-red_circle_left-s20261014.png"></a><figcaption>323B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（39語）</summary>A red circular shape is positioned on the left side. The background is light-colored. The image is simple and illustrative. No other objects or details are present. The focus is on the red circle and the space around it.</details></figure>
+<figure data-model="lfm16" data-budget="compact"><figcaption><b>LFM2.5-VL-1.6B／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/lfm16-compact-red_circle_left-s20261013.png"><img loading="lazy" src="evaluated/lfm16-compact-red_circle_left-s20261013.png"></a><figcaption>300B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/lfm16-compact-red_circle_left-s20261014.png"><img loading="lazy" src="evaluated/lfm16-compact-red_circle_left-s20261014.png"></a><figcaption>300B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（37語）</summary>A red circle on a beige background with a thin black line below it. The circle is centered and the line runs horizontally across the bottom of the image. There are no other objects or text present.</details></figure>
+<figure data-model="lfm16" data-budget="detailed"><figcaption><b>LFM2.5-VL-1.6B／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/lfm16-detailed-red_circle_left-s20261013.png"><img loading="lazy" src="evaluated/lfm16-detailed-red_circle_left-s20261013.png"></a><figcaption>343B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/lfm16-detailed-red_circle_left-s20261014.png"><img loading="lazy" src="evaluated/lfm16-detailed-red_circle_left-s20261014.png"></a><figcaption>343B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（43語）</summary>A red circle is centered on a light beige background. A thin black horizontal line runs across the bottom of the image. The circle is solid and unbroken. There are no other objects or text present. The image has a simple, minimalist design.</details></figure>
+</div>
+<p class="note">原画像：Project synthetic control／CC0</p>
+</section>
+<section><h2>blue_square_right <small>synthetic_control</small></h2><div class="grid"><figure><a href="../../data/processed/blue_square_right.png"><img src="../../data/processed/blue_square_right.png"></a><figcaption>入力：全モデルで同じ256px</figcaption></figure>
+<figure data-model="qwen4b" data-budget="compact"><figcaption><b>Qwen3-VL-4B／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/qwen4b-compact-blue_square_right-s20261013.png"><img loading="lazy" src="evaluated/qwen4b-compact-blue_square_right-s20261013.png"></a><figcaption>237B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/qwen4b-compact-blue_square_right-s20261014.png"><img loading="lazy" src="evaluated/qwen4b-compact-blue_square_right-s20261014.png"></a><figcaption>237B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（19語）</summary>Blue square centered right, above dark horizontal line. Light beige background. No motion or other objects. Simple illustration style.</details></figure>
+<figure data-model="qwen4b" data-budget="detailed"><figcaption><b>Qwen3-VL-4B／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/qwen4b-detailed-blue_square_right-s20261013.png"><img loading="lazy" src="evaluated/qwen4b-detailed-blue_square_right-s20261013.png"></a><figcaption>474B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/qwen4b-detailed-blue_square_right-s20261014.png"><img loading="lazy" src="evaluated/qwen4b-detailed-blue_square_right-s20261014.png"></a><figcaption>474B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（61語）</summary>A blue square sits centered on a light beige background. A dark gray horizontal line runs across the bottom edge. The square is positioned above the line, with no other objects or shapes present. The composition is minimal, with clear left-right spatial separation between the square and the line. No motion or action is depicted. The image appears flat and illustrative.</details></figure>
+<figure data-model="minicpm" data-budget="compact"><figcaption><b>MiniCPM-V4.6／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/minicpm-compact-blue_square_right-s20261013.png"><img loading="lazy" src="evaluated/minicpm-compact-blue_square_right-s20261013.png"></a><figcaption>262B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/minicpm-compact-blue_square_right-s20261014.png"><img loading="lazy" src="evaluated/minicpm-compact-blue_square_right-s20261014.png"></a><figcaption>262B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（26語）</summary>A blue square is positioned on a light background. The square is centered horizontally. The setting is plain and neutral. The image is simple and illustrative.</details></figure>
+<figure data-model="minicpm" data-budget="detailed"><figcaption><b>MiniCPM-V4.6／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/minicpm-detailed-blue_square_right-s20261013.png"><img loading="lazy" src="evaluated/minicpm-detailed-blue_square_right-s20261013.png"></a><figcaption>369B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/minicpm-detailed-blue_square_right-s20261014.png"><img loading="lazy" src="evaluated/minicpm-detailed-blue_square_right-s20261014.png"></a><figcaption>369B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（45語）</summary>A blue square is positioned on a light background. The square is centered horizontally. A horizontal line runs across the bottom of the image. The scene is simple and flat, resembling a graphic illustration. The focus is on the blue square and the surrounding space.</details></figure>
+<figure data-model="lfm16" data-budget="compact"><figcaption><b>LFM2.5-VL-1.6B／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/lfm16-compact-blue_square_right-s20261013.png"><img loading="lazy" src="evaluated/lfm16-compact-blue_square_right-s20261013.png"></a><figcaption>453B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/lfm16-compact-blue_square_right-s20261014.png"><img loading="lazy" src="evaluated/lfm16-compact-blue_square_right-s20261014.png"></a><figcaption>453B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（60語）</summary>A blue square is positioned on a light beige background. A thin black line runs horizontally across the bottom of the image. The blue square is centered vertically but shifted slightly to the right. There are no other objects or text present. The image has a simple, minimalist design with a clear contrast between the blue square and the background.</details></figure>
+<figure data-model="lfm16" data-budget="detailed"><figcaption><b>LFM2.5-VL-1.6B／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/lfm16-detailed-blue_square_right-s20261013.png"><img loading="lazy" src="evaluated/lfm16-detailed-blue_square_right-s20261013.png"></a><figcaption>417B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/lfm16-detailed-blue_square_right-s20261014.png"><img loading="lazy" src="evaluated/lfm16-detailed-blue_square_right-s20261014.png"></a><figcaption>417B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（54語）</summary>A blue square is positioned on a light beige background. The square is centered vertically but slightly offset to the right. A thin horizontal line runs across the bottom of the image, separating the blue square from the rest of the background. The image has a minimalist design with no additional objects or text.</details></figure>
+</div>
+<p class="note">原画像：Project synthetic control／CC0</p>
+</section>
+<section><h2>07cdb16d66edeacb <small>people</small></h2><div class="grid"><figure><a href="../../data/text-route/processed/07cdb16d66edeacb.png"><img src="../../data/text-route/processed/07cdb16d66edeacb.png"></a><figcaption>入力：全モデルで同じ256px</figcaption></figure>
+<figure data-model="qwen4b" data-budget="compact"><figcaption><b>Qwen3-VL-4B／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/qwen4b-compact-07cdb16d66edeacb-s20261013.png"><img loading="lazy" src="evaluated/qwen4b-compact-07cdb16d66edeacb-s20261013.png"></a><figcaption>278B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/qwen4b-compact-07cdb16d66edeacb-s20261014.png"><img loading="lazy" src="evaluated/qwen4b-compact-07cdb16d66edeacb-s20261014.png"></a><figcaption>278B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（27語）</summary>Athlete leaps over hurdle on red track, landing in sandpit. Others run nearby. Spectators stand behind. Bright flags line field. Photo captures motion blur and dynamic action.</details></figure>
+<figure data-model="qwen4b" data-budget="detailed"><figcaption><b>Qwen3-VL-4B／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/qwen4b-detailed-07cdb16d66edeacb-s20261013.png"><img loading="lazy" src="evaluated/qwen4b-detailed-07cdb16d66edeacb-s20261013.png"></a><figcaption>450B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/qwen4b-detailed-07cdb16d66edeacb-s20261014.png"><img loading="lazy" src="evaluated/qwen4b-detailed-07cdb16d66edeacb-s20261014.png"></a><figcaption>450B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（57語）</summary>A sprinter leaps over a hurdle on a red track, mid-air with one leg extended forward. Another runner approaches from right. A sandpit lies beyond the track. Spectators stand in the background under a grassy field with colorful flags. The scene is captured in a slightly blurred, candid photograph style. Hurdle and track lines are clearly visible.</details></figure>
+<figure data-model="minicpm" data-budget="compact"><figcaption><b>MiniCPM-V4.6／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/minicpm-compact-07cdb16d66edeacb-s20261013.png"><img loading="lazy" src="evaluated/minicpm-compact-07cdb16d66edeacb-s20261013.png"></a><figcaption>335B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/minicpm-compact-07cdb16d66edeacb-s20261014.png"><img loading="lazy" src="evaluated/minicpm-compact-07cdb16d66edeacb-s20261014.png"></a><figcaption>335B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（41語）</summary>A track event shows a runner jumping over a hurdle. Other runners and spectators are present. The track is red, and the grassy field is behind. The scene is outdoors, during a sports activity. The image is captured with motion blur.</details></figure>
+<figure data-model="minicpm" data-budget="detailed"><figcaption><b>MiniCPM-V4.6／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/minicpm-detailed-07cdb16d66edeacb-s20261013.png"><img loading="lazy" src="evaluated/minicpm-detailed-07cdb16d66edeacb-s20261013.png"></a><figcaption>387B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/minicpm-detailed-07cdb16d66edeacb-s20261014.png"><img loading="lazy" src="evaluated/minicpm-detailed-07cdb16d66edeacb-s20261014.png"></a><figcaption>387B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（49語）</summary>A track event shows a runner jumping over a hurdle. Another runner is visible behind. The track is red with white lanes. Spectators and other participants are in the background on a grassy field. The scene is outdoors, during a sports activity. The image is captured with motion blur.</details></figure>
+<figure data-model="lfm16" data-budget="compact"><figcaption><b>LFM2.5-VL-1.6B／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/lfm16-compact-07cdb16d66edeacb-s20261013.png"><img loading="lazy" src="evaluated/lfm16-compact-07cdb16d66edeacb-s20261013.png"></a><figcaption>453B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/lfm16-compact-07cdb16d66edeacb-s20261014.png"><img loading="lazy" src="evaluated/lfm16-compact-07cdb16d66edeacb-s20261014.png"></a><figcaption>453B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（65語）</summary>A runner is captured mid-air as they leap over a hurdle on a red track. The athlete wears a black and red uniform with white shoes. The hurdle is metallic with a white top rail. Spectators are visible in the background, watching the event. The scene is set outdoors on a grassy field with a clear sky. The image is a photograph taken during daylight.</details></figure>
+<figure data-model="lfm16" data-budget="detailed"><figcaption><b>LFM2.5-VL-1.6B／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/lfm16-detailed-07cdb16d66edeacb-s20261013.png"><img loading="lazy" src="evaluated/lfm16-detailed-07cdb16d66edeacb-s20261013.png"></a><figcaption>491B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/lfm16-detailed-07cdb16d66edeacb-s20261014.png"><img loading="lazy" src="evaluated/lfm16-detailed-07cdb16d66edeacb-s20261014.png"></a><figcaption>491B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（71語）</summary>A track athlete is captured mid-jump over a hurdle. The athlete wears a black and red uniform with white shoes. The hurdle is metallic with a red base. The track surface is red with white lane markings. Spectators are visible in the background, standing on grass. The scene is set outdoors during the day. The photograph is in color and appears to be taken from a side angle of the track.</details></figure>
+</div>
+<p class="note">原写真：Michael Van Gorkom／mlv_VanGorkom417-r。<a href="https://www.flickr.com/photos/vangorkomm/3160601139">出典</a>。<a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>。この研究では中央クロップ・縮小を行いました。</p>
+</section>
+<section><h2>67e67c811336e94b <small>people</small></h2><div class="grid"><figure><a href="../../data/text-route/processed/67e67c811336e94b.png"><img src="../../data/text-route/processed/67e67c811336e94b.png"></a><figcaption>入力：全モデルで同じ256px</figcaption></figure>
+<figure data-model="qwen4b" data-budget="compact"><figcaption><b>Qwen3-VL-4B／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/qwen4b-compact-67e67c811336e94b-s20261013.png"><img loading="lazy" src="evaluated/qwen4b-compact-67e67c811336e94b-s20261013.png"></a><figcaption>266B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/qwen4b-compact-67e67c811336e94b-s20261014.png"><img loading="lazy" src="evaluated/qwen4b-compact-67e67c811336e94b-s20261014.png"></a><figcaption>266B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（25語）</summary>Two figures walk along a sunlit forest path flanked by tall, slender trees. Shadows stretch across the ground. Bright sunlight filters through dense green foliage.</details></figure>
+<figure data-model="qwen4b" data-budget="detailed"><figcaption><b>Qwen3-VL-4B／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/qwen4b-detailed-67e67c811336e94b-s20261013.png"><img loading="lazy" src="evaluated/qwen4b-detailed-67e67c811336e94b-s20261013.png"></a><figcaption>493B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/qwen4b-detailed-67e67c811336e94b-s20261014.png"><img loading="lazy" src="evaluated/qwen4b-detailed-67e67c811336e94b-s20261014.png"></a><figcaption>493B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（61語）</summary>Two figures walk along a sunlit forest path flanked by tall, slender trees. The path curves gently to the right, with dappled sunlight filtering through dense green canopies. Shadows stretch across the ground. Trees line both sides, creating a natural corridor. The scene is captured in a realistic photograph, emphasizing depth and natural lighting. No other objects or people are visible.</details></figure>
+<figure data-model="minicpm" data-budget="compact"><figcaption><b>MiniCPM-V4.6／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/minicpm-compact-67e67c811336e94b-s20261013.png"><img loading="lazy" src="evaluated/minicpm-compact-67e67c811336e94b-s20261013.png"></a><figcaption>343B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/minicpm-compact-67e67c811336e94b-s20261014.png"><img loading="lazy" src="evaluated/minicpm-compact-67e67c811336e94b-s20261014.png"></a><figcaption>343B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（42語）</summary>A tree-lined path with tall trees on both sides. Two small figures walk along the path. The scene is outdoors, bright, and natural. The ground is covered with dry leaves. The atmosphere is serene and wooded. The image is clear and detailed.</details></figure>
+<figure data-model="minicpm" data-budget="detailed"><figcaption><b>MiniCPM-V4.6／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/minicpm-detailed-67e67c811336e94b-s20261013.png"><img loading="lazy" src="evaluated/minicpm-detailed-67e67c811336e94b-s20261013.png"></a><figcaption>500B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/minicpm-detailed-67e67c811336e94b-s20261014.png"><img loading="lazy" src="evaluated/minicpm-detailed-67e67c811336e94b-s20261014.png"></a><figcaption>500B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（71語）</summary>A paved path is flanked by tall, slender trees with dense green foliage. Two small figures walk away down the center of the path. The scene is brightly lit with sunlight filtering through the trees. The setting is a forested area with a clear view of the path extending into the distance. The image is framed to show the path and surrounding trees. It appears to be a natural, outdoor environment.</details></figure>
+<figure data-model="lfm16" data-budget="compact"><figcaption><b>LFM2.5-VL-1.6B／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/lfm16-compact-67e67c811336e94b-s20261013.png"><img loading="lazy" src="evaluated/lfm16-compact-67e67c811336e94b-s20261013.png"></a><figcaption>486B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/lfm16-compact-67e67c811336e94b-s20261014.png"><img loading="lazy" src="evaluated/lfm16-compact-67e67c811336e94b-s20261014.png"></a><figcaption>486B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（68語）</summary>A paved road stretches through a dense forest of tall pine trees. Two people walk side by side on the road, facing away from the camera. The sky is bright and clear, indicating daytime. The road is flanked by tall, straight trees with green needles. The forest floor is covered with fallen leaves and pine needles. The scene is serene and natural, with no signs of urban development.</details></figure>
+<figure data-model="lfm16" data-budget="detailed"><figcaption><b>LFM2.5-VL-1.6B／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/lfm16-detailed-67e67c811336e94b-s20261013.png"><img loading="lazy" src="evaluated/lfm16-detailed-67e67c811336e94b-s20261013.png"></a><figcaption>597B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/lfm16-detailed-67e67c811336e94b-s20261014.png"><img loading="lazy" src="evaluated/lfm16-detailed-67e67c811336e94b-s20261014.png"></a><figcaption>597B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（82語）</summary>A paved road stretches through a dense forest of tall evergreen trees. Two people walk side by side along the road, facing away from the camera. The sunlight filters through the tree canopy, casting dappled shadows on the ground. The scene is serene and natural, with no other vehicles or structures visible. The trees are closely packed, creating a tunnel-like effect down the road. The sky is partially visible through the gaps in the foliage. The overall atmosphere is peaceful and secluded.</details></figure>
+</div>
+<p class="note">原写真：Chika Watanabe／Hiking Trail from Curry Village。<a href="https://www.flickr.com/photos/chikawatanabe/39423671">出典</a>。<a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>。この研究では中央クロップ・縮小を行いました。</p>
+</section>
+<section><h2>79083da149309142 <small>animals</small></h2><div class="grid"><figure><a href="../../data/text-route/processed/79083da149309142.png"><img src="../../data/text-route/processed/79083da149309142.png"></a><figcaption>入力：全モデルで同じ256px</figcaption></figure>
+<figure data-model="qwen4b" data-budget="compact"><figcaption><b>Qwen3-VL-4B／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/qwen4b-compact-79083da149309142-s20261013.png"><img loading="lazy" src="evaluated/qwen4b-compact-79083da149309142-s20261013.png"></a><figcaption>296B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/qwen4b-compact-79083da149309142-s20261014.png"><img loading="lazy" src="evaluated/qwen4b-compact-79083da149309142-s20261014.png"></a><figcaption>296B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（33語）</summary>A colorful bird perches on a bare branch, facing right. Its plumage features purple, blue, and pink hues. Background is blurred green foliage. The bird’s beak is black, and its eyes are dark.</details></figure>
+<figure data-model="qwen4b" data-budget="detailed"><figcaption><b>Qwen3-VL-4B／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/qwen4b-detailed-79083da149309142-s20261013.png"><img loading="lazy" src="evaluated/qwen4b-detailed-79083da149309142-s20261013.png"></a><figcaption>444B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/qwen4b-detailed-79083da149309142-s20261014.png"><img loading="lazy" src="evaluated/qwen4b-detailed-79083da149309142-s20261014.png"></a><figcaption>444B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（56語）</summary>A colorful bird perches on a bare branch, facing right. Its plumage features purple, pink, blue, and brown hues. The bird has a black beak and gray head. Branches extend diagonally across the frame. Background is blurred green foliage. The bird’s feet grip the branch. No other birds or objects are visible. The image appears photographic.</details></figure>
+<figure data-model="minicpm" data-budget="compact"><figcaption><b>MiniCPM-V4.6／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/minicpm-compact-79083da149309142-s20261013.png"><img loading="lazy" src="evaluated/minicpm-compact-79083da149309142-s20261013.png"></a><figcaption>328B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/minicpm-compact-79083da149309142-s20261014.png"><img loading="lazy" src="evaluated/minicpm-compact-79083da149309142-s20261014.png"></a><figcaption>328B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（37語）</summary>A colorful bird perches on a branch. Its plumage features purple, blue, and brown hues. The background shows green foliage. The bird is centered, with branches extending to the left. The image is a photograph or illustration.</details></figure>
+<figure data-model="minicpm" data-budget="detailed"><figcaption><b>MiniCPM-V4.6／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/minicpm-detailed-79083da149309142-s20261013.png"><img loading="lazy" src="evaluated/minicpm-detailed-79083da149309142-s20261013.png"></a><figcaption>432B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/minicpm-detailed-79083da149309142-s20261014.png"><img loading="lazy" src="evaluated/minicpm-detailed-79083da149309142-s20261014.png"></a><figcaption>432B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（55語）</summary>A colorful bird perches on a branch. Its plumage features purple, blue, and brown hues. The bird has a black beak and eye. The background is blurred green foliage. The branch is light brown and extends diagonally. The scene is framed, showing the bird&#x27;s detailed feathers and structure. The image is a photograph or illustration.</details></figure>
+<figure data-model="lfm16" data-budget="compact"><figcaption><b>LFM2.5-VL-1.6B／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/lfm16-compact-79083da149309142-s20261013.png"><img loading="lazy" src="evaluated/lfm16-compact-79083da149309142-s20261013.png"></a><figcaption>342B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/lfm16-compact-79083da149309142-s20261014.png"><img loading="lazy" src="evaluated/lfm16-compact-79083da149309142-s20261014.png"></a><figcaption>342B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（43語）</summary>A colorful bird with a pink chest, blue wings, and brown body perches on a branch. The background is blurred foliage. The bird faces right, showing its profile. The scene is natural, likely in a forest or garden. The image is a photograph.</details></figure>
+<figure data-model="lfm16" data-budget="detailed"><figcaption><b>LFM2.5-VL-1.6B／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/lfm16-detailed-79083da149309142-s20261013.png"><img loading="lazy" src="evaluated/lfm16-detailed-79083da149309142-s20261013.png"></a><figcaption>516B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/lfm16-detailed-79083da149309142-s20261014.png"><img loading="lazy" src="evaluated/lfm16-detailed-79083da149309142-s20261014.png"></a><figcaption>516B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（77語）</summary>A bird with a colorful plumage is perched on a branch. The bird has a mix of pink, purple, blue, and brown feathers. Its beak is black, and its eyes are dark. The background consists of green foliage and a blurred wooden structure. The bird is facing to the right, and its tail feathers are visible. The image appears to be taken in a natural outdoor setting. The photograph is in color and has a realistic style.</details></figure>
+</div>
+<p class="note">原写真：Paul Sturgess／Birdie。<a href="https://www.flickr.com/photos/odetothebigsea/3277383288">出典</a>。<a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>。この研究では中央クロップ・縮小を行いました。</p>
+</section>
+<section><h2>f5f2decfd4122750 <small>animals</small></h2><div class="grid"><figure><a href="../../data/text-route/processed/f5f2decfd4122750.png"><img src="../../data/text-route/processed/f5f2decfd4122750.png"></a><figcaption>入力：全モデルで同じ256px</figcaption></figure>
+<figure data-model="qwen4b" data-budget="compact"><figcaption><b>Qwen3-VL-4B／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/qwen4b-compact-f5f2decfd4122750-s20261013.png"><img loading="lazy" src="evaluated/qwen4b-compact-f5f2decfd4122750-s20261013.png"></a><figcaption>262B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/qwen4b-compact-f5f2decfd4122750-s20261014.png"><img loading="lazy" src="evaluated/qwen4b-compact-f5f2decfd4122750-s20261014.png"></a><figcaption>262B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（21語）</summary>White cockatoo with yellow crest perched on branch, facing left. Background blurred, showing wooden structure and bare branches. Natural daylight illumination.</details></figure>
+<figure data-model="qwen4b" data-budget="detailed"><figcaption><b>Qwen3-VL-4B／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/qwen4b-detailed-f5f2decfd4122750-s20261013.png"><img loading="lazy" src="evaluated/qwen4b-detailed-f5f2decfd4122750-s20261013.png"></a><figcaption>471B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/qwen4b-detailed-f5f2decfd4122750-s20261014.png"><img loading="lazy" src="evaluated/qwen4b-detailed-f5f2decfd4122750-s20261014.png"></a><figcaption>471B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（58語）</summary>A white cockatoo with bright yellow crest feathers perched on a branch. Its gray beak and feet are visible. The bird faces slightly left, head tilted. Background is blurred, showing wooden structures and bare branches. Lighting casts soft shadows. The image is a photograph with shallow depth of field, emphasizing the bird’s sharp features against a muted backdrop.</details></figure>
+<figure data-model="minicpm" data-budget="compact"><figcaption><b>MiniCPM-V4.6／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/minicpm-compact-f5f2decfd4122750-s20261013.png"><img loading="lazy" src="evaluated/minicpm-compact-f5f2decfd4122750-s20261013.png"></a><figcaption>311B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/minicpm-compact-f5f2decfd4122750-s20261014.png"><img loading="lazy" src="evaluated/minicpm-compact-f5f2decfd4122750-s20261014.png"></a><figcaption>311B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（36語）</summary>A white cockatoo with yellow crests perches on a branch. Its beak is gray, and eyes are visible. The background is blurred, showing soft tones. The image is a photograph or illustration, focusing on the bird.</details></figure>
+<figure data-model="minicpm" data-budget="detailed"><figcaption><b>MiniCPM-V4.6／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/minicpm-detailed-f5f2decfd4122750-s20261013.png"><img loading="lazy" src="evaluated/minicpm-detailed-f5f2decfd4122750-s20261013.png"></a><figcaption>471B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/minicpm-detailed-f5f2decfd4122750-s20261014.png"><img loading="lazy" src="evaluated/minicpm-detailed-f5f2decfd4122750-s20261014.png"></a><figcaption>471B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（62語）</summary>A white cockatoo with yellow crests perches on a wooden branch. Its beak is gray, and its eye is visible. The feathers are predominantly white, with yellow accents. The background is out of focus, showing muted tones. The image is a close-up, capturing the bird&#x27;s detailed features. It is framed to show the cockatoo prominently. The medium appears to be a photograph.</details></figure>
+<figure data-model="lfm16" data-budget="compact"><figcaption><b>LFM2.5-VL-1.6B／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/lfm16-compact-f5f2decfd4122750-s20261013.png"><img loading="lazy" src="evaluated/lfm16-compact-f5f2decfd4122750-s20261013.png"></a><figcaption>281B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/lfm16-compact-f5f2decfd4122750-s20261014.png"><img loading="lazy" src="evaluated/lfm16-compact-f5f2decfd4122750-s20261014.png"></a><figcaption>281B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（27語）</summary>White cockatoo with yellow crest perched on branch. Feathers are ruffled. Background is blurred. Light source appears from left. Bird is facing forward. No other objects visible.</details></figure>
+<figure data-model="lfm16" data-budget="detailed"><figcaption><b>LFM2.5-VL-1.6B／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/lfm16-detailed-f5f2decfd4122750-s20261013.png"><img loading="lazy" src="evaluated/lfm16-detailed-f5f2decfd4122750-s20261013.png"></a><figcaption>427B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/lfm16-detailed-f5f2decfd4122750-s20261014.png"><img loading="lazy" src="evaluated/lfm16-detailed-f5f2decfd4122750-s20261014.png"></a><figcaption>427B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（55語）</summary>A white cockatoo with yellow crest feathers perched on a branch. The bird has a curved beak and black eyes. The background is blurred, showing a natural outdoor setting. The bird is facing forward, slightly turned to the left. The branch is brown and appears sturdy. The lighting suggests daytime. The image is a photograph.</details></figure>
+</div>
+<p class="note">原写真：Karsun Designs／DSC_0171。<a href="https://www.flickr.com/photos/karsund/6187601309">出典</a>。<a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>。この研究では中央クロップ・縮小を行いました。</p>
+</section>
+<section><h2>a158e89a4415eb57 <small>objects_food</small></h2><div class="grid"><figure><a href="../../data/text-route/processed/a158e89a4415eb57.png"><img src="../../data/text-route/processed/a158e89a4415eb57.png"></a><figcaption>入力：全モデルで同じ256px</figcaption></figure>
+<figure data-model="qwen4b" data-budget="compact"><figcaption><b>Qwen3-VL-4B／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/qwen4b-compact-a158e89a4415eb57-s20261013.png"><img loading="lazy" src="evaluated/qwen4b-compact-a158e89a4415eb57-s20261013.png"></a><figcaption>286B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/qwen4b-compact-a158e89a4415eb57-s20261014.png"><img loading="lazy" src="evaluated/qwen4b-compact-a158e89a4415eb57-s20261014.png"></a><figcaption>286B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（26語）</summary>Dark blue sedan parked on grass. Front view shows headlight, orange turn signal, Volkswagen emblem, and license plate reading &quot;794-95&quot;. Windshield wipers visible. No people present.</details></figure>
+<figure data-model="qwen4b" data-budget="detailed"><figcaption><b>Qwen3-VL-4B／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/qwen4b-detailed-a158e89a4415eb57-s20261013.png"><img loading="lazy" src="evaluated/qwen4b-detailed-a158e89a4415eb57-s20261013.png"></a><figcaption>424B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/qwen4b-detailed-a158e89a4415eb57-s20261014.png"><img loading="lazy" src="evaluated/qwen4b-detailed-a158e89a4415eb57-s20261014.png"></a><figcaption>424B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（44語）</summary>Dark blue sedan parked on grass. Front grille with Volkswagen emblem. Orange turn signal, white headlight, red license plate reading “794-95”. Windshield wipers visible. Left front wheel with silver hubcap. Grass surrounds vehicle. Image appears photographic, slightly reflective surface. No people or motion present.</details></figure>
+<figure data-model="minicpm" data-budget="compact"><figcaption><b>MiniCPM-V4.6／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/minicpm-compact-a158e89a4415eb57-s20261013.png"><img loading="lazy" src="evaluated/minicpm-compact-a158e89a4415eb57-s20261013.png"></a><figcaption>314B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/minicpm-compact-a158e89a4415eb57-s20261014.png"><img loading="lazy" src="evaluated/minicpm-compact-a158e89a4415eb57-s20261014.png"></a><figcaption>314B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（37語）</summary>A dark blue car is shown, focusing on its front section. The headlight and grille are visible, along with a license plate. The car is parked on grass. The image is a photograph, capturing the vehicle&#x27;s exterior.</details></figure>
+<figure data-model="minicpm" data-budget="detailed"><figcaption><b>MiniCPM-V4.6／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/minicpm-detailed-a158e89a4415eb57-s20261013.png"><img loading="lazy" src="evaluated/minicpm-detailed-a158e89a4415eb57-s20261013.png"></a><figcaption>369B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/minicpm-detailed-a158e89a4415eb57-s20261014.png"><img loading="lazy" src="evaluated/minicpm-detailed-a158e89a4415eb57-s20261014.png"></a><figcaption>369B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（46語）</summary>A dark blue car is shown from the front. The headlight and orange turn signal are visible. A license plate with the number 794-95 is attached. The car is parked on grass. The background includes some greenery. The image is a photograph, capturing the car&#x27;s exterior.</details></figure>
+<figure data-model="lfm16" data-budget="compact"><figcaption><b>LFM2.5-VL-1.6B／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/lfm16-compact-a158e89a4415eb57-s20261013.png"><img loading="lazy" src="evaluated/lfm16-compact-a158e89a4415eb57-s20261013.png"></a><figcaption>423B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/lfm16-compact-a158e89a4415eb57-s20261014.png"><img loading="lazy" src="evaluated/lfm16-compact-a158e89a4415eb57-s20261014.png"></a><figcaption>423B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（56語）</summary>A dark blue Volkswagen car is parked on grass. The front end is visible, with the hood, grille, and headlights in view. The license plate reads &quot;794-95.&quot; The car appears to be stationary, with no motion blur or activity. The background consists of green grass and a clear sky. The image is taken during daylight hours.</details></figure>
+<figure data-model="lfm16" data-budget="detailed"><figcaption><b>LFM2.5-VL-1.6B／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/lfm16-detailed-a158e89a4415eb57-s20261013.png"><img loading="lazy" src="evaluated/lfm16-detailed-a158e89a4415eb57-s20261013.png"></a><figcaption>443B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/lfm16-detailed-a158e89a4415eb57-s20261014.png"><img loading="lazy" src="evaluated/lfm16-detailed-a158e89a4415eb57-s20261014.png"></a><figcaption>443B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（56語）</summary>A dark blue Volkswagen car is parked on grass. The front end is visible, showing the grille, headlights, and license plate. The car has a clean, reflective surface. The background includes green grass and a portion of a sidewalk. The vehicle appears to be stationary with no motion blur. The lighting suggests daytime with natural sunlight.</details></figure>
+</div>
+<p class="note">原写真：Stephen Michael Barnett／Hughs new Polo。<a href="https://www.flickr.com/photos/httpwwwflickrcomphotostopend/2203559148">出典</a>。<a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>。この研究では中央クロップ・縮小を行いました。</p>
+</section>
+<section><h2>e84c2f66a5963a9a <small>objects_food</small></h2><div class="grid"><figure><a href="../../data/text-route/processed/e84c2f66a5963a9a.png"><img src="../../data/text-route/processed/e84c2f66a5963a9a.png"></a><figcaption>入力：全モデルで同じ256px</figcaption></figure>
+<figure data-model="qwen4b" data-budget="compact"><figcaption><b>Qwen3-VL-4B／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/qwen4b-compact-e84c2f66a5963a9a-s20261013.png"><img loading="lazy" src="evaluated/qwen4b-compact-e84c2f66a5963a9a-s20261013.png"></a><figcaption>246B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/qwen4b-compact-e84c2f66a5963a9a-s20261014.png"><img loading="lazy" src="evaluated/qwen4b-compact-e84c2f66a5963a9a-s20261014.png"></a><figcaption>246B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（24語）</summary>Hand holds metal tool over pink bowl filled with white popcorn. Bowl rests on plaid fabric. Scene captured in close-up, shallow depth of field.</details></figure>
+<figure data-model="qwen4b" data-budget="detailed"><figcaption><b>Qwen3-VL-4B／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/qwen4b-detailed-e84c2f66a5963a9a-s20261013.png"><img loading="lazy" src="evaluated/qwen4b-detailed-e84c2f66a5963a9a-s20261013.png"></a><figcaption>440B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/qwen4b-detailed-e84c2f66a5963a9a-s20261014.png"><img loading="lazy" src="evaluated/qwen4b-detailed-e84c2f66a5963a9a-s20261014.png"></a><figcaption>440B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（55語）</summary>A hand holds a metal tool over a pink bowl filled with white popcorn. The bowl rests on a blue-and-white checkered surface. Popcorn kernels are scattered, some popped, others unpopped. The tool is angled diagonally across the bowl’s surface. No other objects or people are visible. The scene is captured in a close-up, real photograph.</details></figure>
+<figure data-model="minicpm" data-budget="compact"><figcaption><b>MiniCPM-V4.6／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/minicpm-compact-e84c2f66a5963a9a-s20261013.png"><img loading="lazy" src="evaluated/minicpm-compact-e84c2f66a5963a9a-s20261013.png"></a><figcaption>302B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/minicpm-compact-e84c2f66a5963a9a-s20261014.png"><img loading="lazy" src="evaluated/minicpm-compact-e84c2f66a5963a9a-s20261014.png"></a><figcaption>302B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（38語）</summary>A hand holds a small tool over a bowl of popped popcorn. The bowl is pink with a red rim. The background shows a checkered fabric. The scene is indoors, likely casual. The image is clear and focused.</details></figure>
+<figure data-model="minicpm" data-budget="detailed"><figcaption><b>MiniCPM-V4.6／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/minicpm-detailed-e84c2f66a5963a9a-s20261013.png"><img loading="lazy" src="evaluated/minicpm-detailed-e84c2f66a5963a9a-s20261013.png"></a><figcaption>321B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/minicpm-detailed-e84c2f66a5963a9a-s20261014.png"><img loading="lazy" src="evaluated/minicpm-detailed-e84c2f66a5963a9a-s20261014.png"></a><figcaption>321B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（42語）</summary>A hand holds a small tool over a large bowl of popped popcorn. The bowl is pink with a red rim. The popcorn is white and fluffy. The background shows a checkered fabric. The scene is indoors. The image is a photograph.</details></figure>
+<figure data-model="lfm16" data-budget="compact"><figcaption><b>LFM2.5-VL-1.6B／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/lfm16-compact-e84c2f66a5963a9a-s20261013.png"><img loading="lazy" src="evaluated/lfm16-compact-e84c2f66a5963a9a-s20261013.png"></a><figcaption>310B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/lfm16-compact-e84c2f66a5963a9a-s20261014.png"><img loading="lazy" src="evaluated/lfm16-compact-e84c2f66a5963a9a-s20261014.png"></a><figcaption>310B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（40語）</summary>A hand holds a crochet hook over a bowl of popcorn. The popcorn is white with yellow kernels. The hand is resting on a plaid fabric surface. The crochet hook is silver with a black tip. The scene is indoors.</details></figure>
+<figure data-model="lfm16" data-budget="detailed"><figcaption><b>LFM2.5-VL-1.6B／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/lfm16-detailed-e84c2f66a5963a9a-s20261013.png"><img loading="lazy" src="evaluated/lfm16-detailed-e84c2f66a5963a9a-s20261013.png"></a><figcaption>413B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/lfm16-detailed-e84c2f66a5963a9a-s20261014.png"><img loading="lazy" src="evaluated/lfm16-detailed-e84c2f66a5963a9a-s20261014.png"></a><figcaption>413B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（56語）</summary>A hand holds a crochet hook over a bowl of popcorn. The bowl is pink with a red rim. Popcorn kernels are white and yellow. The hand has a ring on the ring finger. The background shows a plaid fabric, possibly clothing. The lighting is soft, casting gentle shadows. The scene suggests a casual, relaxed setting.</details></figure>
+</div>
+<p class="note">原写真：The Secret History GRSG／Tonight is: #popcorn + #crochet hook 4 #dreadlocks。<a href="https://www.flickr.com/photos/rmdemsick/7640668976">出典</a>。<a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>。この研究では中央クロップ・縮小を行いました。</p>
+</section>
+<section><h2>05430da00e88b5f9 <small>landscape_buildings</small></h2><div class="grid"><figure><a href="../../data/text-route/processed/05430da00e88b5f9.png"><img src="../../data/text-route/processed/05430da00e88b5f9.png"></a><figcaption>入力：全モデルで同じ256px</figcaption></figure>
+<figure data-model="qwen4b" data-budget="compact"><figcaption><b>Qwen3-VL-4B／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/qwen4b-compact-05430da00e88b5f9-s20261013.png"><img loading="lazy" src="evaluated/qwen4b-compact-05430da00e88b5f9-s20261013.png"></a><figcaption>254B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/qwen4b-compact-05430da00e88b5f9-s20261014.png"><img loading="lazy" src="evaluated/qwen4b-compact-05430da00e88b5f9-s20261014.png"></a><figcaption>254B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（24語）</summary>Man in red shirt draws bow, aiming right. Another person stands left, holding bow. Green arrow nocked. Outdoor grassy area with trees. Bright daylight.</details></figure>
+<figure data-model="qwen4b" data-budget="detailed"><figcaption><b>Qwen3-VL-4B／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/qwen4b-detailed-05430da00e88b5f9-s20261013.png"><img loading="lazy" src="evaluated/qwen4b-detailed-05430da00e88b5f9-s20261013.png"></a><figcaption>457B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/qwen4b-detailed-05430da00e88b5f9-s20261014.png"><img loading="lazy" src="evaluated/qwen4b-detailed-05430da00e88b5f9-s20261014.png"></a><figcaption>457B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（65語）</summary>A man in a red shirt and black cap draws a bow, aiming right. Another person in dark clothing stands behind him, also holding a bow. A third figure is partially visible with a tripod. Green grass and trees frame the scene under blue sky. The bowstring is taut, arrow nocked. A water bottle hangs from the archer’s belt. The image is a clear photograph.</details></figure>
+<figure data-model="minicpm" data-budget="compact"><figcaption><b>MiniCPM-V4.6／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/minicpm-compact-05430da00e88b5f9-s20261013.png"><img loading="lazy" src="evaluated/minicpm-compact-05430da00e88b5f9-s20261013.png"></a><figcaption>295B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/minicpm-compact-05430da00e88b5f9-s20261014.png"><img loading="lazy" src="evaluated/minicpm-compact-05430da00e88b5f9-s20261014.png"></a><figcaption>295B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（29語）</summary>Two archers in outdoor setting. One wears red shirt, black cap, holding arrow. Other in black. Background has trees and grass. Archery equipment visible. Clear daylight. Image is photographic.</details></figure>
+<figure data-model="minicpm" data-budget="detailed"><figcaption><b>MiniCPM-V4.6／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/minicpm-detailed-05430da00e88b5f9-s20261013.png"><img loading="lazy" src="evaluated/minicpm-detailed-05430da00e88b5f9-s20261013.png"></a><figcaption>391B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/minicpm-detailed-05430da00e88b5f9-s20261014.png"><img loading="lazy" src="evaluated/minicpm-detailed-05430da00e88b5f9-s20261014.png"></a><figcaption>391B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（52語）</summary>A person in a red shirt draws a bow, with an arrow nocked. Another individual stands nearby. A black cap and a waist bag are visible. The scene is outdoors on grassy ground under a clear sky. Trees and structures are in the background. The image is a photograph, showing archery activity.</details></figure>
+<figure data-model="lfm16" data-budget="compact"><figcaption><b>LFM2.5-VL-1.6B／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/lfm16-compact-05430da00e88b5f9-s20261013.png"><img loading="lazy" src="evaluated/lfm16-compact-05430da00e88b5f9-s20261013.png"></a><figcaption>404B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/lfm16-compact-05430da00e88b5f9-s20261014.png"><img loading="lazy" src="evaluated/lfm16-compact-05430da00e88b5f9-s20261014.png"></a><figcaption>404B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（55語）</summary>A man in a red shirt is drawing a bow with an arrow nocked. He is wearing a black cap and sunglasses on top. Another person is standing behind him, observing. The setting appears to be outdoors with trees and grass visible. The man is focused on his target, while the other person watches attentively.</details></figure>
+<figure data-model="lfm16" data-budget="detailed"><figcaption><b>LFM2.5-VL-1.6B／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/lfm16-detailed-05430da00e88b5f9-s20261013.png"><img loading="lazy" src="evaluated/lfm16-detailed-05430da00e88b5f9-s20261013.png"></a><figcaption>570B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/lfm16-detailed-05430da00e88b5f9-s20261014.png"><img loading="lazy" src="evaluated/lfm16-detailed-05430da00e88b5f9-s20261014.png"></a><figcaption>570B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（85語）</summary>A person wearing a red shirt is holding a bow and arrow, aiming at a target. Another person in black clothing stands nearby. The scene takes place outdoors with trees and grass visible in the background. The person in red is facing away from the camera, while the person in black is facing towards the camera. The bow is drawn back, ready to release the arrow. The setting appears to be a park or recreational area. The image is a photograph taken during the daytime.</details></figure>
+</div>
+<p class="note">原写真：c-66／Untitled。<a href="https://www.flickr.com/photos/c-66/509197136/">出典</a>。<a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>。この研究では中央クロップ・縮小を行いました。</p>
+</section>
+<section><h2>56e803d5e8c580e0 <small>landscape_buildings</small></h2><div class="grid"><figure><a href="../../data/text-route/processed/56e803d5e8c580e0.png"><img src="../../data/text-route/processed/56e803d5e8c580e0.png"></a><figcaption>入力：全モデルで同じ256px</figcaption></figure>
+<figure data-model="qwen4b" data-budget="compact"><figcaption><b>Qwen3-VL-4B／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/qwen4b-compact-56e803d5e8c580e0-s20261013.png"><img loading="lazy" src="evaluated/qwen4b-compact-56e803d5e8c580e0-s20261013.png"></a><figcaption>263B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/qwen4b-compact-56e803d5e8c580e0-s20261014.png"><img loading="lazy" src="evaluated/qwen4b-compact-56e803d5e8c580e0-s20261014.png"></a><figcaption>263B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（22語）</summary>Classroom with red chairs around blue circular table, whiteboard, American flag, shelves, and windows. Bright lighting, wooden ceiling beams. No people visible.</details></figure>
+<figure data-model="qwen4b" data-budget="detailed"><figcaption><b>Qwen3-VL-4B／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/qwen4b-detailed-56e803d5e8c580e0-s20261013.png"><img loading="lazy" src="evaluated/qwen4b-detailed-56e803d5e8c580e0-s20261013.png"></a><figcaption>464B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/qwen4b-detailed-56e803d5e8c580e0-s20261014.png"><img loading="lazy" src="evaluated/qwen4b-detailed-56e803d5e8c580e0-s20261014.png"></a><figcaption>464B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（63語）</summary>A classroom with red chairs around blue and red tables. A whiteboard with pink marker lines is mounted on the wall. A refrigerator, shelves, and a window with blinds are visible. An American flag hangs on the right. A circular rug lies beneath a table. The ceiling has exposed wooden beams and fluorescent lights. The floor is light wood. No people are present.</details></figure>
+<figure data-model="minicpm" data-budget="compact"><figcaption><b>MiniCPM-V4.6／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/minicpm-compact-56e803d5e8c580e0-s20261013.png"><img loading="lazy" src="evaluated/minicpm-compact-56e803d5e8c580e0-s20261013.png"></a><figcaption>396B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/minicpm-compact-56e803d5e8c580e0-s20261014.png"><img loading="lazy" src="evaluated/minicpm-compact-56e803d5e8c580e0-s20261014.png"></a><figcaption>396B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（49語）</summary>A bright classroom with red chairs and tables. A large blue circular rug is center. A white projector screen is mounted on a wall. Windows let in light. Shelves hold books and supplies. The room is spacious and colorful. Everything is arranged for activity. The scene is indoors, photographed.</details></figure>
+<figure data-model="minicpm" data-budget="detailed"><figcaption><b>MiniCPM-V4.6／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/minicpm-detailed-56e803d5e8c580e0-s20261013.png"><img loading="lazy" src="evaluated/minicpm-detailed-56e803d5e8c580e0-s20261013.png"></a><figcaption>433B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/minicpm-detailed-56e803d5e8c580e0-s20261014.png"><img loading="lazy" src="evaluated/minicpm-detailed-56e803d5e8c580e0-s20261014.png"></a><figcaption>433B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（56語）</summary>A bright classroom with red and blue furniture. Red chairs surround red tables. A large circular blue and white rug is centered. A white projector screen is mounted on a wall. A window with blinds is on the left. Shelves and storage units are visible. Overhead lights illuminate the space. The setting is educational and colorful.</details></figure>
+<figure data-model="lfm16" data-budget="compact"><figcaption><b>LFM2.5-VL-1.6B／compact</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/lfm16-compact-56e803d5e8c580e0-s20261013.png"><img loading="lazy" src="evaluated/lfm16-compact-56e803d5e8c580e0-s20261013.png"></a><figcaption>396B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/lfm16-compact-56e803d5e8c580e0-s20261014.png"><img loading="lazy" src="evaluated/lfm16-compact-56e803d5e8c580e0-s20261014.png"></a><figcaption>396B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（54語）</summary>A classroom with round tables and chairs arranged in a circle. There is a whiteboard on the wall and a colorful rug on the floor. The room has windows with blinds and shelves with books and toys. The walls are painted white and the ceiling has wooden beams. The lighting is bright and natural.</details></figure>
+<figure data-model="lfm16" data-budget="detailed"><figcaption><b>LFM2.5-VL-1.6B／detailed</b></figcaption>
+<div class="seed active" data-seed="20261013">
+<a href="generated/lfm16-detailed-56e803d5e8c580e0-s20261013.png"><img loading="lazy" src="evaluated/lfm16-detailed-56e803d5e8c580e0-s20261013.png"></a><figcaption>514B／20261013／画像をクリックで1024px</figcaption>
+</div>
+<div class="seed " data-seed="20261014">
+<a href="generated/lfm16-detailed-56e803d5e8c580e0-s20261014.png"><img loading="lazy" src="evaluated/lfm16-detailed-56e803d5e8c580e0-s20261014.png"></a><figcaption>514B／20261014／画像をクリックで1024px</figcaption>
+</div>
+<details><summary>実際の説明（71語）</summary>A classroom with round tables and red chairs arranged in a circle. A whiteboard is mounted on the wall, and there are shelves with books and toys. The floor has a blue circular rug. The room has large windows with blinds partially open, allowing natural light to enter. The walls are painted white, and the ceiling has wooden beams. The overall setting appears to be a bright and organized learning environment.</details></figure>
+</div>
+<p class="note">原写真：charlie vinz／kindergarten。<a href="https://www.flickr.com/photos/vinzcha/3856950504">出典</a>。<a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>。この研究では中央クロップ・縮小を行いました。</p>
+</section>
+<p><a href="../../docs/text-route-protocol.md">条件・失敗診断</a> ／ <a href="metrics.csv">全測定CSV</a> ／ <a href="captions/qwen4b.json">Qwen出力</a> ／ <a href="captions/minicpm.json">MiniCPM出力</a> ／ <a href="captions/lfm16.json">LFM出力</a></p><script>function update(){let s=document.getElementById("seed").value,m=document.getElementById("model").value,b=document.getElementById("budget").value;document.querySelectorAll("[data-model]").forEach(x=>x.style.display=(m==="all"||x.dataset.model===m)&&(b==="all"||x.dataset.budget===b)?"":"none");document.querySelectorAll(".seed").forEach(x=>x.classList.toggle("active",x.dataset.seed===s))}document.querySelectorAll("select").forEach(x=>x.addEventListener("change",update));update()</script></html>

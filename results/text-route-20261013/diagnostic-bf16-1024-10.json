@@ -1,0 +1,208 @@
+{
+  "at": "2026-10-13T15:22:28.062185+00:00",
+  "precision": "bf16",
+  "size": 1024,
+  "steps": 10,
+  "prompt": "A woman in an orange spacesuit smiles, holding a black helmet. Behind her: American flag on left, white rocket with brown nose cone on right. Framed photograph.",
+  "seed": 20261013,
+  "trace": [
+    {
+      "step": 1,
+      "sigma": 0.9997498168945312,
+      "input": {
+        "mean": 0.0002825249684974551,
+        "std": 0.9997899532318115,
+        "absmax": 5.574307441711426,
+        "finite": true,
+        "abs_gt1_fraction": 0.317169189453125
+      },
+      "velocity": {
+        "mean": 0.1597379446029663,
+        "std": 1.0361335277557373,
+        "absmax": 5.5625,
+        "finite": true,
+        "abs_gt1_fraction": 0.33882173895835876
+      },
+      "seconds": 16.648722300000372
+    },
+    {
+      "step": 2,
+      "sigma": 0.9727098388671875,
+      "input": {
+        "mean": -0.011161550879478455,
+        "std": 0.9726549983024597,
+        "absmax": 5.439107418060303,
+        "finite": true,
+        "abs_gt1_fraction": 0.30396589636802673
+      },
+      "velocity": {
+        "mean": 0.3647368848323822,
+        "std": 1.0803968906402588,
+        "absmax": 5.65625,
+        "finite": true,
+        "abs_gt1_fraction": 0.3818904757499695
+      },
+      "seconds": 15.668435300001875
+    },
+    {
+      "step": 3,
+      "sigma": 0.9408994750976563,
+      "input": {
+        "mean": -0.02207479439675808,
+        "std": 0.9411382675170898,
+        "absmax": 5.277897834777832,
+        "finite": true,
+        "abs_gt1_fraction": 0.2880439758300781
+      },
+      "velocity": {
+        "mean": 0.3515646457672119,
+        "std": 1.0947322845458984,
+        "absmax": 5.625,
+        "finite": true,
+        "abs_gt1_fraction": 0.3860982358455658
+      },
+      "seconds": 15.669979400001466
+    },
+    {
+      "step": 4,
+      "sigma": 0.9029342651367187,
+      "input": {
+        "mean": -0.0353793203830719,
+        "std": 0.9039793610572815,
+        "absmax": 5.071459770202637,
+        "finite": true,
+        "abs_gt1_fraction": 0.2689511179924011
+      },
+      "velocity": {
+        "mean": 0.3456464409828186,
+        "std": 1.0993424654006958,
+        "absmax": 5.6875,
+        "finite": true,
+        "abs_gt1_fraction": 0.3868786692619324
+      },
+      "seconds": 15.148339200008195
+    },
+    {
+      "step": 5,
+      "sigma": 0.8568365478515625,
+      "input": {
+        "mean": -0.05121104046702385,
+        "std": 0.8594590425491333,
+        "absmax": 4.833177089691162,
+        "finite": true,
+        "abs_gt1_fraction": 0.2454039305448532
+      },
+      "velocity": {
+        "mean": 0.34553274512290955,
+        "std": 1.1033854484558105,
+        "absmax": 5.6875,
+        "finite": true,
+        "abs_gt1_fraction": 0.3884422183036804
+      },
+      "seconds": 15.670829599999706
+    },
+    {
+      "step": 6,
+      "sigma": 0.7996798095703125,
+      "input": {
+        "mean": -0.07101117074489594,
+        "std": 0.8052995204925537,
+        "absmax": 4.524535655975342,
+        "finite": true,
+        "abs_gt1_fraction": 0.21597926318645477
+      },
+      "velocity": {
+        "mean": 0.34629327058792114,
+        "std": 1.106091856956482,
+        "absmax": 5.71875,
+        "finite": true,
+        "abs_gt1_fraction": 0.3895597457885742
+      },
+      "seconds": 15.145207800000207
+    },
+    {
+      "step": 7,
+      "sigma": 0.7269419555664063,
+      "input": {
+        "mean": -0.09616827219724655,
+        "std": 0.7386061549186707,
+        "absmax": 4.128876686096191,
+        "finite": true,
+        "abs_gt1_fraction": 0.17911815643310547
+      },
+      "velocity": {
+        "mean": 0.34734439849853516,
+        "std": 1.1065858602523804,
+        "absmax": 5.75,
+        "finite": true,
+        "abs_gt1_fraction": 0.38991579413414
+      },
+      "seconds": 15.155747700002394
+    },
+    {
+      "step": 8,
+      "sigma": 0.6312463989257813,
+      "input": {
+        "mean": -0.12946796417236328,
+        "std": 0.6561538577079773,
+        "absmax": 3.615969181060791,
+        "finite": true,
+        "abs_gt1_fraction": 0.13488292694091797
+      },
+      "velocity": {
+        "mean": 0.3472341001033783,
+        "std": 1.10813307762146,
+        "absmax": 5.75,
+        "finite": true,
+        "abs_gt1_fraction": 0.39051899313926697
+      },
+      "seconds": 15.674768500000937
+    },
+    {
+      "step": 9,
+      "sigma": 0.4996873779296875,
+      "input": {
+        "mean": -0.17526766657829285,
+        "std": 0.5559580326080322,
+        "absmax": 3.04091477394104,
+        "finite": true,
+        "abs_gt1_fraction": 0.08591461181640625
+      },
+      "velocity": {
+        "mean": 0.3482622504234314,
+        "std": 1.1080673933029175,
+        "absmax": 5.78125,
+        "finite": true,
+        "abs_gt1_fraction": 0.3906796872615814
+      },
+      "seconds": 15.675131299998611
+    },
+    {
+      "step": 10,
+      "sigma": 0.30745556640625,
+      "input": {
+        "mean": -0.24246643483638763,
+        "std": 0.45729362964630127,
+        "absmax": 2.24061918258667,
+        "finite": true,
+        "abs_gt1_fraction": 0.04477723687887192
+      },
+      "velocity": {
+        "mean": 0.3492923974990845,
+        "std": 1.1058522462844849,
+        "absmax": 5.84375,
+        "finite": true,
+        "abs_gt1_fraction": 0.3898892402648926
+      },
+      "seconds": 15.141498099997989
+    }
+  ],
+  "unclamped_output": {
+    "mean": -0.3500092625617981,
+    "std": 0.4878827929496765,
+    "absmax": 1.234386682510376,
+    "finite": true,
+    "abs_gt1_fraction": 0.04815356060862541
+  },
+  "seconds": 156.25671370000055
+}
